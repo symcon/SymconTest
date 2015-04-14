@@ -1,0 +1,14 @@
+{
+	"id": "{6E42BC58-71C5-409A-9707-1E4AA71EBEF7}",
+	"name": "VariableAction",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"VariableAction"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "VAN"
+}
