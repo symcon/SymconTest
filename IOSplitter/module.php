@@ -23,7 +23,7 @@
 		public function ForwardData($JSONString)
 		{
 			$data = json_decode($JSONString);
-			IPS_LogMessage("IOSplitter FRWD", print_r(json_decode($JSONString), true));
+			IPS_LogMessage("IOSplitter FRWD", utf8_decode($data->Buffer));
 
 			//We would package our payload here before sending it further...
 
@@ -33,7 +33,7 @@
 		public function ReceiveData($JSONString)
 		{
 			$data = json_decode($JSONString);
-			IPS_LogMessage("IOSplitter RECV", print_r($data, true));
+			IPS_LogMessage("IOSplitter RECV", utf8_decode($data->Buffer));
 
 			//We would parse our payload here before sending it further...
 
