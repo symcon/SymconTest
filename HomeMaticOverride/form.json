@@ -1,0 +1,7 @@
+{
+	"actions":
+	[
+		{ "type": "Button", "label": "On", "onClick": "HM_WriteValueBoolean($id, \"STATE\", true);" },
+		{ "type": "Button", "label": "Off", "onClick": "HM_WriteValueBoolean($id, \"STATE\", false);" }
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "{0100CA51-D2DA-11E4-8830-0800200C9A66}",
+	"name": "HomeMaticOverride",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"HomeMaticOverride"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HM"
+}
