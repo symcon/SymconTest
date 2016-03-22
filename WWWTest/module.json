@@ -1,0 +1,14 @@
+{
+	"id": "{A21E9015-34B6-4C7A-87B6-278B9A769553}",
+	"name": "WWWTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"WWWTest"
+	],
+	"parentRequirements": ["{D4C1D08F-CD3B-494B-BE18-B36EF73B8F43}"],
+	"childRequirements": [],
+	"implemented": ["{66164EB8-3439-4599-B937-A365D7A68567}"],
+	"prefix": "WWWT"
+}

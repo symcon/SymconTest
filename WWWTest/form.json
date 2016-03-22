@@ -1,0 +1,7 @@
+{
+	"actions":
+	[
+		{ "name": "URL", "type": "ValidationTextBox", "caption": "URL" },
+		{ "type": "Button", "label": "Request URL", "onClick": "WWWT_Get($id, $URL);" }
+	]
+}
