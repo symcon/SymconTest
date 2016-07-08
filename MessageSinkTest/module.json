@@ -1,0 +1,14 @@
+{
+	"id": "{D693696C-1996-4CF6-9163-9B3463F982DD}",
+	"name": "MessageSinkTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"MessageSink"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "MST"
+}

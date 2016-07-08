@@ -1,0 +1,14 @@
+{
+	"id": "{D334DCB7-F6C8-409F-927C-CAA19673A5ED}",
+	"name": "DynamicConfigurationForm",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Dynamic Configuration Form"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DCF"
+}
