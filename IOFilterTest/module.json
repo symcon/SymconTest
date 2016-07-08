@@ -1,0 +1,14 @@
+{
+	"id": "{DE173A7A-7984-485E-9DC8-F252AFB02556}",
+	"name": "IOFilterTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"IOFilterTest"
+	],
+	"parentRequirements": ["{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"],
+	"childRequirements": [],
+	"implemented": ["{018EF6B5-AB94-40C6-AA53-46943E824ACF}"],
+	"prefix": "IOFT"
+}

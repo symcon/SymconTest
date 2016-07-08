@@ -1,0 +1,6 @@
+{
+	"elements":
+	[
+		{ "name": "ReceiveFilter", "type": "ValidationTextBox", "caption": "Receive Filter" }
+	]
+}
