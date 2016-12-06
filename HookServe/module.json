@@ -1,0 +1,14 @@
+{
+	"id": "{BC274F05-3ADD-404E-ACAB-3C8256B0D623}",
+	"name": "HookServe",
+	"type": 0,
+	"vendor": "",
+	"aliases": 
+	[
+		"HookServe"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HKS"
+}
