@@ -1,0 +1,14 @@
+{
+	"id": "{B4D52D38-E1B8-44A8-A3B0-20A1B08D8656}",
+	"name": "OAuthTest",
+	"type": 0,
+	"vendor": "",
+	"aliases": 
+	[
+		"OAuthTest"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "OAT"
+}
