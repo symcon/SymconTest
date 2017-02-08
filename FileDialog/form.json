@@ -1,0 +1,16 @@
+{
+    "elements": [
+        {
+            "name": "FileData",
+            "type": "SelectFile",
+            "caption": "File",
+            "extensions": ".txt,.html"        
+		}
+    ],
+    "actions": [
+        {
+            "type": "Label",
+            "label": "No file was selected yet!"
+        }
+	]
+}

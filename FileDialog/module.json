@@ -1,0 +1,14 @@
+{
+	"id": "{D334DCB7-A3C8-409F-927C-CBB19673A5ED}",
+	"name": "FileDialog",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"File Dialog"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "FDD"
+}
