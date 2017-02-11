@@ -1,0 +1,14 @@
+{
+	"id": "{E41B0744-95B6-4A79-863A-7DB080CA1F19}",
+	"name": "ListBasic",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Basic)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSB"
+}

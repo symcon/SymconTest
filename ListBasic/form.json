@@ -1,0 +1,48 @@
+{
+    "elements": [	
+		{
+			"type": "List",
+			"name": "TreeData",
+			"caption": "Devices",
+			"rowCount": 5,
+			"add": true,
+			"delete": true,
+			"sort": {
+				"column": "name",
+				"direction": "ascending"
+			},
+			"columns": [
+				{
+					"label": "InstanceID",
+					"name": "instanceID", 
+					"width": "75px",
+					"add": 0,
+					"edit": {
+						"type": "SelectInstance"
+					}
+				}, {
+					"label": "Name",
+					"name": "name",
+					"width": "auto",
+					"add": ""
+				}, {
+					"label": "State",
+					"name": "state",
+					"width": "40px",					
+					"add": "New!"
+				}, {
+					"label": "Temperature",
+					"name": "temperature",
+					"width": "75px",					
+					"add": 20.0,
+					"edit": {
+						"type": "NumberSpinner",
+						"digits": 2
+					}
+				}
+			],
+			"values": [
+			]
+		}
+    ]
+}

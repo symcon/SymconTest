@@ -1,0 +1,14 @@
+{
+	"id": "{E56F7E3A-B843-431D-BE61-CCE7AC7B8923}",
+	"name": "ListAction",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Action)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSA"
+}

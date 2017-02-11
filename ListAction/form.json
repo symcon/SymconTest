@@ -1,0 +1,29 @@
+{
+    "elements": [
+		{ 
+			"type": "Label",
+			"label": "Load a comma seperated CSV file. The first line has to include column names!"
+		},
+        {
+            "name": "FileData",
+            "type": "SelectFile",
+            "caption": "CSV-File",
+            "extensions": ".csv"        
+		}
+	],
+	"actions": [
+		{
+			"type": "List",
+			"name": "FileList",
+			"columns": [
+			],
+			"values": [
+			]
+		},
+        {
+            "type": "Button",
+            "label": "Show selected item!",
+            "onClick": "var_dump($FileList);"
+        }
+    ]
+}
