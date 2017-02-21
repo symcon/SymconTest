@@ -1,0 +1,11 @@
+{
+	"id": "{6DC811F3-E51D-4CCE-978B-E56F17213D36}",
+	"name": "ParentConfiguration",
+	"type": 3,
+	"vendor": "",
+	"aliases": [],
+	"parentRequirements": ["{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}"],
+	"childRequirements": ["{66164EB8-3439-4599-B937-A365D7A68567}"],
+	"implemented": ["{018EF6B5-AB94-40C6-AA53-46943E824ACF}", "{B87AC955-F258-468B-92FE-F4E0866A9E18}"],
+	"prefix": "PC"
+}
