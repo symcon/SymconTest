@@ -1,0 +1,14 @@
+{
+	"id": "{94DAAC72-C561-4EA1-A184-A6E19CF6F2C6}",
+	"name": "ListEdgeCases",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (EdgeCases)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSE"
+}

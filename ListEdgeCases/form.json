@@ -1,0 +1,52 @@
+{
+    "elements": [
+		{
+			"type": "List",
+			"name": "TreeData",
+			"caption": "Complex test case",
+			"rowCount": 5,
+			"add": true,
+			"delete": true,
+			"columns": [
+				{
+					"label": "Select",
+					"name": "select", 
+					"width": "75px",
+					"add": 0,
+					"edit": {
+						"type": "Select",
+						"caption": "Mode",
+						"options": [
+							{
+								"label": "Hello",
+								"value": 0
+							},
+							{
+								"label": "World",
+								"value": 1
+							}
+						]
+					}
+				}, {
+					"label": "Color",
+					"name": "color",
+					"width": "auto",
+					"add": -1,
+					"edit": {
+						"type": "SelectColor"
+					}
+				}, {
+					"label": "Data",
+					"name": "Data",
+					"width": "75px",
+					"add": "",
+					"edit": {
+						"type": "SelectFile"
+					}
+				}
+			],
+			"values": [
+			]
+		}
+    ]
+}
