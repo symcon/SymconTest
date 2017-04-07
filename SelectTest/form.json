@@ -1,0 +1,20 @@
+{
+    "actions": [
+        {
+            "name": "ColorData",
+            "type": "SelectColor",
+            "caption": "Color"
+        },
+        {
+            "name": "FileData",
+            "type": "SelectFile",
+            "caption": "File",
+            "extensions": ".txt"
+        },
+        {
+            "type": "Button",
+            "label": "Show file data!",
+            "onClick": "var_dump($FileData);"
+        }
+    ]
+}

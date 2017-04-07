@@ -1,0 +1,14 @@
+{
+	"id": "{3AA4404A-80F3-4721-ACBC-CEF3D1C579E7}",
+	"name": "SelectTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Select Text"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "STSE"
+}
