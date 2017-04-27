@@ -1,0 +1,14 @@
+{
+	"id": "{691BB9C1-7314-4495-9CF3-213AE14A0D2D}",
+	"name": "TranslateTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Translate Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "TLT"
+}
