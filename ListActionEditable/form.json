@@ -1,0 +1,28 @@
+{
+	"actions": [
+		{
+			"type": "List",
+			"name": "FileList",
+			"add": true,
+			"delete": true,
+			"columns": [
+				{
+					"label": "InstanceID",
+					"name": "instanceID", 
+					"width": "125px",
+					"add": 0,
+					"edit": {
+						"type": "SelectInstance"
+					}
+				}
+			],
+			"values": [
+			]
+		},
+        {
+            "type": "Button",
+            "label": "Show selected item!",
+            "onClick": "var_dump($FileList);"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+	"id": "{FD1208C4-5E87-4AA9-88FC-C4A1A6A3BE89}",
+	"name": "ListActionEditable",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Action, Editable)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSB"
+}
