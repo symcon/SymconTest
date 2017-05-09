@@ -1,0 +1,11 @@
+{
+	"id": "{B16E698B-0953-447E-BC47-737587093898}",
+	"name": "Space Module",
+	"type": 3,
+	"vendor": "",
+	"aliases": [],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "SM"
+}
