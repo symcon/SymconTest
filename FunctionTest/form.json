@@ -1,0 +1,9 @@
+{
+	"actions":
+	[
+		{ "type": "Button", "label": "Test Boolean", "onClick": "echo FT_CallBoolean($id, true);" },
+		{ "type": "Button", "label": "Test Integer", "onClick": "FT_CallInteger($id, 42);" },
+		{ "type": "Button", "label": "Test Float", "onClick": "FT_CallFloat($id, 3.14);" },
+		{ "type": "Button", "label": "Test String", "onClick": "FT_CallString($id, \"Test\");" }
+	]
+}

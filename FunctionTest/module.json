@@ -1,0 +1,14 @@
+{
+	"id": "{AD984601-635C-40EC-8E06-939B4B8748A3}",
+	"name": "FunctionTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"FunctionTest"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "FT"
+}
