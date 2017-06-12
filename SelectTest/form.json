@@ -1,9 +1,24 @@
 {
     "actions": [
         {
+            "name": "InstanceData",
+            "type": "SelectInstance",
+            "caption": "InstanceID"
+        },
+        {
+            "type": "Button",
+            "label": "Show InstanceID!",
+            "onClick": "var_dump($InstanceData);"
+        },
+        {
             "name": "ColorData",
             "type": "SelectColor",
             "caption": "Color"
+        },
+        {
+            "type": "Button",
+            "label": "Show color value!",
+            "onClick": "var_dump($ColorData);"
         },
         {
             "name": "FileData",
