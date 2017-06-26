@@ -39,7 +39,8 @@
 					} else {
 						$data->elements[0]->values[] = Array(
 							"name" => "Not found!",
-							"state" => "FAIL!"
+							"state" => "FAIL!",
+							"rowColor" => "#ff0000"
 						);
 					}						
 				}			
