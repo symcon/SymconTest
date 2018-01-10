@@ -1,7 +1,11 @@
 <?
 
+//These constants are predefined with IP-Symcon 5.0+
+if(!defined("IPS_BASE"))
 	define("IPS_BASE", 10000);
+if(!defined("IPS_INSTANCEMESSAGE"))
 	define("IPS_INSTANCEMESSAGE", IPS_BASE + 500);
+if(!defined("IM_CHANGESTATUS"))
 	define("IM_CHANGESTATUS", IPS_INSTANCEMESSAGE + 5);
 
 	class MessageSinkTest extends IPSModule
