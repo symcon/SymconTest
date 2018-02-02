@@ -1,0 +1,14 @@
+{
+    "id": "{80002ECE-6F5D-4E54-82C2-6146B9AFF48A}",
+    "name": "TreeEmbedded",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Tree (Embedded)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "TREM"
+}

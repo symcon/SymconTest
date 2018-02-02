@@ -1,0 +1,53 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "TreeData",
+            "caption": "Top List",
+            "rowCount": 5,
+            "add": true,
+            "delete": false,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "columns": [{
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": "Initial Name"
+                }, {
+                    "label": "List",
+                    "name": "list",
+                    "width": "400px",
+                    "edit": {
+                        "type": "List",
+                        "caption": "Embedded List",
+                        "rowCount": 5,
+                        "add": true,
+                        "delete": false,
+                        "columns": [{
+                            "label": "Name",
+                            "name": "name",
+                            "width": "auto",
+                            "edit": {
+                                "type": "ValidationTextBox"
+                            }
+                        }]
+                    },
+                    "add": [{
+                        "name": "Initial Embedded Name"
+                    }]
+                }
+            ],
+            "values": [{
+                "name": "Top Level Name",
+                "list": [{
+                    "name": "Name1"
+                }, {
+                    "name": "Name2"
+                }]
+            }]
+        }
+    ]
+}

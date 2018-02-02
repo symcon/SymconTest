@@ -1,0 +1,73 @@
+{
+    "elements": [
+        {
+            "type": "Tree",
+            "name": "TreeData",
+            "caption": "Top Tree",
+            "rowCount": 5,
+            "add": true,
+            "delete": false,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "columns": [{
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": "Initial Name"
+                }, {
+                    "label": "Tree",
+                    "name": "tree",
+                    "width": "400px",
+                    "edit": {
+                        "type": "Tree",
+                        "caption": "Embedded Tree",
+                        "rowCount": 5,
+                        "add": true,
+                        "delete": false,
+                        "columns": [{
+                            "label": "Name",
+                            "name": "name",
+                            "width": "auto",
+                            "edit": {
+                                "type": "ValidationTextBox"
+                            }
+                        }]
+                    },
+                    "add": [{
+                        "id": 1,
+                        "name": "Initial Embedded Name"
+                    }]
+                }
+            ],
+            "values": [{
+                "id": 1,
+                "name": "Category",
+                "tree": [{
+                    "id": 1,
+                    "name": "Inner Parent"
+                },
+                {
+                    "id": 2,
+                    "parent": 1,
+                    "name": "Inner Child"
+                }]
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Child",
+                "tree": [{
+                    "id": 1,
+                    "name": "Inner Parent"
+                },
+                {
+                    "id": 2,
+                    "parent": 1,
+                    "name": "Inner Child"
+                }]
+            }]
+        }
+    ]
+}

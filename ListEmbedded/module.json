@@ -1,0 +1,14 @@
+{
+    "id": "{5A498BF1-D3B5-49F7-B05E-E04A57EE479C}",
+    "name": "ListEmbedded",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List (Embedded)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LSEM"
+}
