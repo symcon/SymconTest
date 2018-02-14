@@ -7,6 +7,8 @@
 			//Never delete this line!
 			parent::Create();
 
+			$this->RegisterPropertyInteger("ColorProp", -1);
+			
 		}
 	}
 	

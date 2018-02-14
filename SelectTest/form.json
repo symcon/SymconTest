@@ -1,4 +1,11 @@
 {
+"elements": [
+        {
+            "name": "ColorProp",
+            "type": "SelectColor",
+            "caption": "Color"
+        }
+],
     "actions": [
         {
             "name": "InstanceData",
