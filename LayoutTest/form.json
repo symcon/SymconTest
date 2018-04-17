@@ -1,0 +1,52 @@
+{
+    "elements": [
+        {
+            "type": "ExpansionPanel",
+            "caption": "My Expansion Panel",
+            "items": [
+                {
+                    "type": "SelectFile",
+                    "name": "File",
+                    "caption": "File"
+                },
+                {
+                    "type": "Select",
+                    "name": "Selection",
+                    "caption": "Selection",
+                    "options": [
+                        { "label": "Zero", "value": 0 },
+                        { "label": "One", "value": 1 },
+                        { "label": "Two", "value": 2 }
+                    ]
+                }
+            ]
+        },{
+            "type": "PopupButton",
+            "caption": "Open Popup",
+            "popup": {
+                "caption": "My Popup",
+                "items": [
+                    {
+                        "type": "SelectVariable",
+                        "name": "VariableTest",
+                        "caption": "Some Variable"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Test",
+                    "onClick": "echo 'Hello World';"
+                },{
+                    "type": "Button",
+                    "caption": "Test2",
+                    "onClick": "echo 'Hello Moon';"
+                }
+            ]
+        }
+    ]
+}

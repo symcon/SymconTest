@@ -1,0 +1,17 @@
+{
+    "translations": {
+        "de": {
+            "File": "Datei",
+            "Selection": "Auswahl",
+            "Zero": "Null",
+            "One": "Eins",
+            "Two": "Zwei",
+            "Open Popup": "Öffne Popup",
+            "My Popup": "Mein Popup",
+            "Some Variable": "Irgendeine Variable",
+            "Test": "Test",
+            "Test2": "Test2"
+        
+        }
+    }
+}
