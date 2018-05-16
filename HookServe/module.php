@@ -42,14 +42,9 @@
 		protected function ProcessHookData() {
 			
 			$root = realpath(__DIR__ . "/www");
-			
-			//append index.html
-			if(substr($_SERVER['REQUEST_URI'], -1) == "/") {
-				$_SERVER['REQUEST_URI'] .= "index.html";
-			}
-			
+
 			//reduce any relative paths. this also checks for file existance
-			$path = realpath($root . "/" . substr($_SERVER['REQUEST_URI'], strlen("/hook/hookserve/")));
+			$path = realpath($root . "/" . substr($_SERVER['SCRIPT_NAME'], strlen("/hook/hookserve/")));
 			if($path === false) {
 				http_response_code(404);
 				die("File not found!");
@@ -59,8 +54,33 @@
 				http_response_code(403);
 				die("Security issue. Cannot leave root folder!");
 			}
-			header("Content-Type: ".$this->GetMimeType(pathinfo($path, PATHINFO_EXTENSION)));
-			readfile($path);
+
+			//check dir existance
+            if(substr($_SERVER['SCRIPT_NAME'], -1) != "/") {
+				if(is_dir($path)) {
+                    http_response_code(301);
+                    header("Location: " . $_SERVER['SCRIPT_NAME'] . "/\r\n\r\n");
+                    return;
+				}
+			}
+
+            //append index
+            if(substr($_SERVER['SCRIPT_NAME'], -1) == "/") {
+				if(file_exists($path . "/index.html")) {
+                    $path .= "/index.html";
+				} else if(file_exists($path . "/index.php")) {
+                    $path .= "/index.php";
+                }
+            }
+
+			$extension = pathinfo($path, PATHINFO_EXTENSION);
+
+			if($extension == "php") {
+				include_once($path);
+			} else {
+                header("Content-Type: ".$this->GetMimeType($extension));
+                readfile($path);
+			}
 
 		}
 		
