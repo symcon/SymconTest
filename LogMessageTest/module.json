@@ -1,0 +1,14 @@
+{
+	"id": "{8370E36F-FB61-451C-AA86-29AD45087C1E}",
+	"name": "LogMessageTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"LogMessage Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LMT"
+}

@@ -1,0 +1,23 @@
+{
+    "actions": [
+        {
+            "name": "Message",
+            "type": "ValidationTextBox",
+            "caption": "Message"
+        },
+        { "type": "Select", "name": "Type", "caption": "Type",
+            "options": [
+                { "label": "MESSAGE", "value": 10201 },
+                { "label": "NOTIFY", "value": 10203 },
+                { "label": "WARNING", "value": 10204 },
+                { "label": "ERROR", "value": 10205 },
+                { "label": "DEBUG", "value": 10206 }
+            ]
+        },
+        {
+            "type": "Button",
+            "label": "Send message!",
+            "onClick": "LMT_LogMessage($id, $Message, $Type);"
+        }
+    ]
+}
