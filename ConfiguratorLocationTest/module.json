@@ -1,0 +1,14 @@
+{
+    "id": "{DD7FA750-29D5-4F71-BD36-78F83B9588C3}",
+    "name": "ConfiguratorLocationTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Location)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CTL"
+}
