@@ -1,0 +1,14 @@
+{
+    "id": "{DAA55DF9-AE4D-4006-97F6-32E4CD957CA4}",
+    "name": "ConfiguratorSimpleTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Simple)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CTS"
+}

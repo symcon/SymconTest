@@ -1,0 +1,14 @@
+{
+    "id": "{7DB2CF49-1503-44C5-AB31-8A4B2C8737B3}",
+    "name": "ConfiguratorChainTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Chain)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CTC"
+}

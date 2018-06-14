@@ -1,0 +1,31 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "delete": false,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "values": [{
+                "id": 1,
+                "name": "Category",
+                "address": ""
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Shutter Control (Markise)",
+                "address": "Adress",
+                "create": {
+                    "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                    "configuration": {
+                        "ShutterType": 1
+                    }
+                }
+            }]
+        }
+    ]
+}
