@@ -36,6 +36,12 @@ if(!defined("IM_CHANGESTATUS"))
 			IPS_LogMessage("MessageSink", "New message!!!");
 		
 		}
+
+		public function Dump() {
+
+            return $this->GetMessageList();
+
+		}
 		
 	
 	}
