@@ -26,7 +26,24 @@
 			}
 		
 		}
-		
+
+		public function PrintValue() {
+
+			echo $this->GetValue("TestVariable");
+
+		}
+
+        //Add this Polyfill for IP-Symcon 4.4 and older
+        protected function GetValue($Ident) {
+
+            if(IPS_GetKernelVersion() >= 5) {
+                return parent::GetValue($Ident);
+            } else {
+                return GetValue($this->GetIDForIdent($Ident));
+            }
+
+        }
+
 		//Add this Polyfill for IP-Symcon 4.4 and older
 		protected function SetValue($Ident, $Value) {
 			

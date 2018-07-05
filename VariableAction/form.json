@@ -1,0 +1,6 @@
+{
+    "actions":
+    [
+        { "type": "Button", "label": "Print", "onClick": "echo VAN_PrintValue($id);" }
+    ]
+}
