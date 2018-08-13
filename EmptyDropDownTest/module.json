@@ -1,0 +1,14 @@
+{
+	"id": "{10449A06-1F83-4D2F-8A3F-2B5D012CACC3}",
+	"name": "EmptyDropDownTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Empty DropDown Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "EDDT"
+}

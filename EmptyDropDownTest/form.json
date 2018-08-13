@@ -1,0 +1,15 @@
+{
+    "actions": [
+        {
+            "name": "Data",
+            "type": "Select",
+            "caption": "Data",
+            "options": []
+        },
+        {
+            "type": "Button",
+            "label": "Show selected Data!",
+            "onClick": "EDDT_Test($id, $Data);"
+        }
+    ]
+}
