@@ -1,0 +1,9 @@
+{
+    "actions": [
+        {
+            "type": "Button",
+            "label": "Bump 'n Show!",
+            "onClick": "var_dump(ATSE_BumpAndShow($id));"
+        }
+    ]
+}

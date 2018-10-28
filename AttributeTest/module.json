@@ -1,0 +1,14 @@
+{
+	"id": "{371EFAE8-52DA-4E71-A2E9-CC4FA81EA71F}",
+	"name": "AttributeTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Attribute Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "ATSE"
+}
