@@ -3,7 +3,7 @@
         {
             "type": "Button",
             "label": "Bump 'n Show!",
-            "onClick": "var_dump(ATSE_BumpAndShow($id));"
+            "onClick": "ATSE_BumpAndShow($id);"
         }
     ]
 }
