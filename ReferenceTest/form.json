@@ -1,0 +1,8 @@
+{
+    "actions": [
+        {
+            "type": "Label",
+            "label": "This instance will reference all archive controls"
+        }
+    ]
+}

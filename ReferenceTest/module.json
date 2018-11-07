@@ -1,0 +1,14 @@
+{
+	"id": "{C4B92A9C-8157-46E1-9A4F-8CD050736BDF}",
+	"name": "ReferenceTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Reference Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "RFSE"
+}
