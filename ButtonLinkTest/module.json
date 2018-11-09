@@ -1,0 +1,14 @@
+{
+	"id": "{6F89CB27-5E4D-4D6D-9C25-3C4391182049}",
+	"name": "ButtonLinkTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Button Link Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "BLT"
+}

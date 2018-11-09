@@ -1,0 +1,7 @@
+<?
+
+    class ButtonLinkTest extends IPSModule
+    {
+    }
+    
+?>
