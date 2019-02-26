@@ -1,0 +1,14 @@
+{
+	"id": "{1499BBD9-DCC4-46A8-96C7-90D6DC49EBC2}",
+	"name": "TimerTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Timer Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "TTT"
+}
