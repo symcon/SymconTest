@@ -7,7 +7,7 @@
 		{
 			"type": "Button",
 			"label": "Test",
-			"onClick": "echo sprintf((new IPSModule($id))->Translate(\"The current time is %s\"), date(\"d.m.y H:i\"))"
+			"onClick": "echo sprintf((new IPSModule($id))->Translate(\"The current time is %s\"), date(\"d.m.y H:i\"));"
 		}
 	]
 }
