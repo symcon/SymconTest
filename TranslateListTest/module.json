@@ -1,0 +1,14 @@
+{
+	"id": "{C077213B-818C-4298-0F6B-3FBB1EE490CF}",
+	"name": "TranslateListTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Translate List Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "TLLT"
+}

@@ -1,0 +1,13 @@
+{
+	"translations": {
+		"de": { 
+			"Initial TextBox text": "Initialer Text der TextBox",
+			"This is a value text": "Dies ist ein vorgegebener Text",
+			"The content was not translated": "Dieser Inhalt wurde nicht übersetzt",
+			"Do not translate": "Nicht übersetzen",
+			"Super Secret Default Password!!!832ß6": "xxx",
+			"Text for TextBox": "Text für TextBox",
+			"Nice Text": "Schöner Text"
+		}
+	}
+}

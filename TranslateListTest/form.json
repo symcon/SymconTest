@@ -1,0 +1,123 @@
+{
+	"elements": [
+		{
+			"type": "List",
+			"name": "TranslateList",
+			"add": true,
+			"delete": true,
+			"columns": [
+				{
+					"caption": "Text without value",
+					"name": "textWithoutValue",
+					"width": "200px",
+					"add": "Nice Text"
+				},
+				{
+					"caption": "Text with value",
+					"name": "textWithValue",
+					"width": "auto",
+					"add": ""
+				},
+				{
+					"caption": "TextBox",
+					"name": "textBox",
+					"width": "200px",
+					"add": "Text for TextBox",
+					"edit": {
+						"type": "ValidationTextBox"
+					}
+				},
+				{
+					"caption": "Password",
+					"name": "password",
+					"width": "200px",
+					"add": "Super Secret Default Password!!!832ß6",
+					"edit": {
+						"type": "PasswordTextBox"
+					}
+				},
+				{
+					"caption": "Select with String",
+					"name": "select",
+					"width": "200px",
+					"add": "Do not translate",
+					"edit": {
+						"type": "Select",
+						"options": [
+							{
+								"caption": "The content was not translated",
+								"value": "Do not translate"
+							}
+						]
+					}
+				}
+			],
+			"values": [
+				{
+					"textWithValue": "This is a value text",
+					"textBox": "Initial TextBox text"
+				}
+			]
+		},
+		{
+			"type": "Tree",
+			"name": "TranslateTree",
+			"add": true,
+			"delete": true,
+			"columns": [
+				{
+					"caption": "Text without value",
+					"name": "textWithoutValue",
+					"width": "200px",
+					"add": "Nice Text"
+				},
+				{
+					"caption": "Text with value",
+					"name": "textWithValue",
+					"width": "auto",
+					"add": ""
+				},
+				{
+					"caption": "TextBox",
+					"name": "textBox",
+					"width": "200px",
+					"add": "Text for TextBox",
+					"edit": {
+						"type": "ValidationTextBox"
+					}
+				},
+				{
+					"caption": "Password",
+					"name": "password",
+					"width": "200px",
+					"add": "Super Secret Default Password!!!832ß6",
+					"edit": {
+						"type": "PasswordTextBox"
+					}
+				},
+				{
+					"caption": "Select with String",
+					"name": "select",
+					"width": "200px",
+					"add": "Do not translate",
+					"edit": {
+						"type": "Select",
+						"options": [
+							{
+								"caption": "The content was not translated",
+								"value": "Do not translate"
+							}
+						]
+					}
+				}
+			],
+			"values": [
+				{
+					"id": 1,
+					"textWithValue": "This is a value text",
+					"textBox": "Initial TextBox text"
+				}
+			]
+		}
+	]
+}
