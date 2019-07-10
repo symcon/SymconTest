@@ -4,6 +4,11 @@
             "name": "ColorProp",
             "type": "SelectColor",
             "caption": "Color"
+        },
+        {
+            "name": "LocationProp",
+            "type": "SelectLocation",
+            "caption": "Location"
         }
 ],
     "actions": [
@@ -37,6 +42,10 @@
             "type": "Button",
             "label": "Show file data!",
             "onClick": "var_dump($FileData);"
+        },
+        {
+            "type": "SelectLocation",
+            "caption": "Location"
         }
     ]
 }

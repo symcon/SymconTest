@@ -8,6 +8,7 @@
 			parent::Create();
 
 			$this->RegisterPropertyInteger("ColorProp", -1);
+            $this->RegisterPropertyString("LocationProp", "");
 			
 		}
 	}
