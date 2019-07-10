@@ -44,8 +44,14 @@
             "onClick": "var_dump($FileData);"
         },
         {
+            "name": "LocationData",
             "type": "SelectLocation",
             "caption": "Location"
+        },
+        {
+            "type": "Button",
+            "label": "Show location data!",
+            "onClick": "var_dump($LocationData);"
         }
     ]
 }
