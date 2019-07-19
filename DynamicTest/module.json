@@ -1,0 +1,14 @@
+{
+	"id": "{742F5DB2-B61C-5D93-85E6-243643F8863C}",
+	"name": "DynamicTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Dynamic Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DT"
+}

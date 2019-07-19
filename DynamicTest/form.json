@@ -1,0 +1,1686 @@
+{
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Reload form",
+            "onClick": "DT_Reload($id);"
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Button",
+            "items": [
+                {
+                    "type": "Button",
+                    "name": "Button",
+                    "caption": "I'm a dynamic button",
+                    "onClick": "echo 'Hello World!';"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "OnClick = Hello World",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"onClick\", \"echo 'Hello World';\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnClick = http://symcon.de",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"onClick\", \"echo 'http://symcon.de';\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Confirm = Deactivate",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"confirm\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Confirm = Activate",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"confirm\", \"Are you sure?\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Link = True",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"link\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Link = false",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"link\", false);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Width = Auto",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"width\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 50%",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"width\", \"50%\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 300px",
+                            "onClick": "DT_UpdateParameter($id, \"Button\", \"width\", \"300px\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "CheckBox",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "name": "CheckBox",
+                    "caption": "Dynamic CheckBox",
+                    "value": true
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Activate",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"onChange\", \"echo 'Hello World';\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Deactivate",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"onChange\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = true",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"value\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = false",
+                            "onClick": "DT_UpdateParameter($id, \"CheckBox\", \"value\", false);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Configurator",
+            "items": [
+                {
+                    "type": "Configurator",
+                    "name": "Configurator",
+                    "caption": "Dynamic Configurator",
+                    "rowCount": 3
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Delete = true",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"delete\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Delete = false",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"delete\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "RowCount = 3",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"rowCount\", 3);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "RowCount = 7",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"rowCount\", 7);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Columns = Hidden Address",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"columns\", json_encode([['caption' => 'Address', 'name' => 'address', 'width' => '0px', 'visible' => false ], [ 'caption' => 'Name', 'name' => 'name', 'width' => 'auto' ] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Columns = Displayed Address",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"columns\", json_encode([['caption' => 'Address', 'name' => 'address', 'width' => '250px'], [ 'caption' => 'Name', 'name' => 'name', 'width' => 'auto' ] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Sort = Name Ascending",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"sort\", json_encode(['column' => 'name', 'direction' => 'ascending' ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Sort = None",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"sort\", \"{}\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Values = 3 Dummies",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"values\", json_encode([['name' => 'Dummy 1', 'address' => '#1', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 3', 'address' => '#3', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]]]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Values = Empty",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"values\", \"[]\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "ExpansionPanel",
+            "items": [
+                {
+                    "type": "ExpansionPanel",
+                    "name": "ExpansionPanel",
+                    "caption": "Dynamic Expansion Panel",
+                    "items": [
+                        {
+                            "type": "Label",
+                            "caption": "Some filler"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Expanded = true",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"expanded\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Expanded = false",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"expanded\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"ExpansionPanel\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "HorizontalSlider",
+            "items": [
+                {
+                    "type": "HorizontalSlider",
+                    "name": "HorizontalSlider",
+                    "caption": "Dynamic Slider",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "onChange": "echo $HorizontalSlider;"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 10",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"value\", 10);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 50",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"value\", 50);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Minimum = 20",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"minimum\", 20);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Minimum = 0",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"minimum\", 0);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Maximum = 70",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"maximum\", 70);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Maximum = 100",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"maximum\", 100);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show InstanceID",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"onChange\", \"echo $id;\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show Current Value",
+                            "onClick": "DT_UpdateParameter($id, \"HorizontalSlider\", \"onChange\", 'echo $HorizontalSlider;');"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Image",
+            "items": [
+                {
+                    "type": "Image",
+                    "name": "Image",
+                    "image": "data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Image = Red Dot",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"image\", \"data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Image = Blue Dot",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"image\", \"data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA7SURBVChTY/iPFyCkGRa9gCOoEFwaWQ6CoOJY5SAIXRqkHpVLijQagkpjVQEVh1BAgCkHBAhpLOD/fwCt+OVF4c2kDAAAAABJRU5ErkJggg==\");"
+                        },
+                        {
+                            "type": "SelectMedia",
+                            "name": "ImageSourceID",
+                            "caption": "Image for display by media"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Image by Media ID",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"mediaID\", $ImageSourceID);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Center = false",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"center\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Center = true",
+                            "onClick": "DT_UpdateParameter($id, \"Image\", \"center\", true);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Label",
+            "items": [
+                {
+                    "type": "Label",
+                    "name": "Label",
+                    "caption": "Dynamic Label"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Long Text",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"caption\", \"Wow, this is a really long text to show off how awesome dynamic labels are. Now, you will be able to see changes if you choose to adjust the width of this element. Go ahead, click some button that starts with 'Width = '!\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = Auto",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"width\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 50%",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"width\", \"50%\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 300px",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"width\", \"300px\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "List",
+            "items": [
+                {
+                    "type": "List",
+                    "name": "List",
+                    "rowCount": 3,
+                    "columns": [
+                        {
+                            "name": "column1",
+                            "width": "200px",
+                            "caption": "Column 1",
+                            "add": "Fill 1"
+                        },
+                        {
+                            "name": "column2",
+                            "width": "200px",
+                            "caption": "Column 2",
+                            "add": "Fill 2"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Delete = true",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"delete\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Delete = false",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"delete\", false);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "RowCount = 3",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"rowCount\", 3);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "RowCount = 7",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"rowCount\", 7);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Add = true",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"add\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Add = false",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"add\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Columns = Hidden Column 2",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([['caption' => 'Column 1', 'name' => 'column1', 'width' => '200px', 'add' => 'Fill 1'], [ 'caption' => 'Column 2', 'name' => 'column2', 'width' => '200px', 'visible' => false, 'add' => 'Fill 2'] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Columns = Displayed Column 2",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([['caption' => 'Column 1', 'name' => 'column1', 'width' => '200px', 'add' => 'Fill 1'], [ 'caption' => 'Column 2', 'name' => 'column2', 'width' => '200px', 'add' => 'Fill 2' ] ]));"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Sort = Name Ascending",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"sort\", json_encode(['column' => 'column1', 'direction' => 'ascending' ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Sort = None",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"sort\", \"{}\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Values = 3 Dummies",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values\", json_encode([['column1' => 'Dummy 1', 'column2' => '#1'], ['column1' => 'Dummy 3', 'column2' => '#3'], ['column1' => 'Dummy 2', 'column2' => '#2']]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Values = Empty",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values\", \"[]\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "NumberSpinner",
+            "items": [
+                {
+                    "type": "NumberSpinner",
+                    "name": "NumberSpinner",
+                    "caption": "Dynamic NumberSpinner",
+                    "value": true
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Suffix = seconds",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"suffix\", \"seconds\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Suffix = None",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"suffix\", \"\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = 10",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"value\", 10);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 30",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"value\", 30);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Digits = 0",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"digits\", 0);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Digits = 3",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"digits\", 3);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Hex = true",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"hex\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Hex = false",
+                            "onClick": "DT_UpdateParameter($id, \"NumberSpinner\", \"hex\", false);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "PasswordTextBox",
+            "items": [
+                {
+                    "type": "PasswordTextBox",
+                    "name": "PasswordTextBox",
+                    "caption": "Dynamic PasswordTextBox"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"enabled\", false);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 123",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"value\", \"123\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 12345678",
+                            "onClick": "DT_UpdateParameter($id, \"PasswordTextBox\", \"value\", \"12345678\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "PopupAlert",
+            "items": [
+                {
+                    "type": "PopupAlert",
+                    "name": "PopupAlert",
+                    "visible": false,
+                    "popup": {
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "Some filler"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Visible = false",
+                                "onClick": "DT_UpdateParameter($id, \"PopupAlert\", \"visible\", false);"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"PopupAlert\", \"visible\", true);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "PopupButton",
+            "items": [
+                {
+                    "type": "PopupButton",
+                    "name": "PopupButton",
+                    "caption": "Dynamic PopupButton",
+                    "popup": {
+                        "caption": "Empty Popup",
+                        "items": []
+                    }
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Width = Auto",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"width\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 50%",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"width\", \"50%\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Width = 300px",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"width\", \"300px\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "ProgressBar",
+            "items": [
+                {
+                    "type": "ProgressBar",
+                    "name": "ProgressBar",
+                    "caption": "Dynamic ProgressBar"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Indeterminate = true",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"indeterminate\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Indeterminate = false",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"indeterminate\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Current = 30",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"current\", 30);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Current = 50",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"current\", 50);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Minimum = 0",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"minimum\", 0);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Minimum = 20",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"minimum\", 20);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Maximum = 70",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"maximum\", 70);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Maximum = 100",
+                            "onClick": "DT_UpdateParameter($id, \"ProgressBar\", \"maximum\", 100);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "RowLayout",
+            "items": [
+                {
+                    "type": "RowLayout",
+                    "name": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Label",
+                            "caption": "Some filler"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"RowLayout\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"RowLayout\", \"visible\", false);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Select",
+            "items": [
+                {
+                    "type": "Select",
+                    "name": "Select",
+                    "caption": "Dynamic Select",
+                    "options": [
+                        {
+                            "caption": "One",
+                            "value": 1
+                        },
+                        {
+                            "caption": "Two",
+                            "value": 2
+                        },
+                        {
+                            "caption": "Three",
+                            "value": 3
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = 1",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"value\", 1);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 3",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"value\", 3);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Options = Written",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"options\", json_encode([ [ 'caption' => 'One', 'value' => 1 ], [ 'caption' => 'Two', 'value' => 2 ], [ 'caption' => 'Three', 'value' => 3] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Options = Numbers",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"options\", json_encode([ [ 'caption' => '1', 'value' => 1 ], [ 'caption' => '2', 'value' => 2 ], [ 'caption' => '3', 'value' => 3] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show InstanceID",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"onChange\", \"echo $id;\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show Current Value",
+                            "onClick": "DT_UpdateParameter($id, \"Select\", \"onChange\", 'echo $Select;');"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectObject",
+            "items": [
+                {
+                    "type": "SelectObject",
+                    "name": "SelectObject",
+                    "caption": "Dynamic SelectObject"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = Archive Control",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"value\", IPS_GetInstanceListByModuleID(\"{43192F0B-135B-4CE7-A0A7-1475603F3060}\")[0]);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = Location Control",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"value\", IPS_GetInstanceListByModuleID(\"{45E97A63-F870-408A-B259-2933F7EABF74}\")[0]);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show InstanceID",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"onChange\", \"echo $id;\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show Current Value",
+                            "onClick": "DT_UpdateParameter($id, \"SelectObject\", \"onChange\", 'echo $SelectObject;');"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectColor",
+            "items": [
+                {
+                    "type": "SelectColor",
+                    "name": "SelectColor",
+                    "caption": "Dynamic SelectColor"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = Red",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"value\", 0xFF0000);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = Green",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"value\", 0x00FF00);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show InstanceID",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"onChange\", \"echo $id;\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show Current Value",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"onChange\", 'echo $SelectColor;');"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "AllowTransparent = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"allowTransparent\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "AllowTransparent = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectColor\", \"allowTransparent\", false);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectDate",
+            "items": [
+                {
+                    "type": "SelectDate",
+                    "name": "SelectDate",
+                    "caption": "Dynamic SelectDate"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = 30.7.1986",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"value\", json_encode([ \"year\" => 1986, \"month\" => 7, \"day\" => 30]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 25.1.2020",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDate\", \"value\", json_encode([ \"year\" => 2020, \"month\" => 1, \"day\" => 25]));"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectDateTime",
+            "items": [
+                {
+                    "type": "SelectDateTime",
+                    "name": "SelectDateTime",
+                    "caption": "Dynamic SelectDateTime"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = 30.7.1986 - 22:22:22",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"value\", json_encode([ \"year\" => 1986, \"month\" => 7, \"day\" => 30, \"hour\" => 22, \"minute\" => 22, \"second\" => 22]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 25.1.2020 - 10:00:00",
+                            "onClick": "DT_UpdateParameter($id, \"SelectDateTime\", \"value\", json_encode([ \"year\" => 2020, \"month\" => 1, \"day\" => 25, \"hour\" => 10, \"minute\" => 0, \"second\" => 0]));"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectFile",
+            "items": [
+                {
+                    "type": "SelectFile",
+                    "name": "SelectFile",
+                    "caption": "Dynamic SelectFile"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = Empty",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"value\", \"\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = Blue Dot Data",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"value\", \"iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA7SURBVChTY/iPFyCkGRa9gCOoEFwaWQ6CoOJY5SAIXRqkHpVLijQagkpjVQEVh1BAgCkHBAhpLOD/fwCt+OVF4c2kDAAAAABJRU5ErkJggg==\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show InstanceID",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"onChange\", \"echo $id;\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "OnChange = Show Current Value",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"onChange\", 'echo $SelectFile;');"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "extension = PNG",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"extension\", \".png\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "extension = txt",
+                            "onClick": "DT_UpdateParameter($id, \"SelectFile\", \"extension\", \".txt\");"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectLocation",
+            "items": [
+                {
+                    "type": "SelectLocation",
+                    "name": "SelectLocation",
+                    "caption": "Dynamic SelectLocation"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = Symcon HQ",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"value\", json_encode([\"latitude\" => 53.8745, \"longitude\" => 10.6848]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = Grenoble",
+                            "onClick": "DT_UpdateParameter($id, \"SelectLocation\", \"value\", json_encode([\"latitude\" => 45.1885, \"longitude\" => 5.7245]));"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "SelectTime",
+            "items": [
+                {
+                    "type": "SelectTime",
+                    "name": "SelectTime",
+                    "caption": "Dynamic SelectTime"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"enabled\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"caption\", \"Wow, so dynamic\");"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Value = 22:22:22",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"value\", json_encode([ \"hour\" => 22, \"minute\" => 22, \"second\" => 22]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 10:00:00",
+                            "onClick": "DT_UpdateParameter($id, \"SelectTime\", \"value\", json_encode([ \"hour\" => 10, \"minute\" => 0, \"second\" => 0]));"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "TestCenter",
+            "items": [
+                {
+                    "type": "TestCenter",
+                    "name": "TestCenter",
+                    "caption": "Dynamic TestCenter"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"TestCenter\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"TestCenter\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"TestCenter\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"TestCenter\", \"enabled\", false);"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "ValidationTextBox",
+            "items": [
+                {
+                    "type": "ValidationTextBox",
+                    "name": "ValidationTextBox",
+                    "caption": "Dynamic ValidationTextBox"
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Visible = true",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"visible\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Visible = false",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"visible\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = true",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"enabled\", true);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Enabled = false",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"enabled\", false);"
+                        }
+                    ]
+                },
+                {
+                    "type": "RowLayout",
+                    "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Test",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"caption\", \"Test\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Caption = Wow, so dynamic",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 123",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"value\", \"123\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value = 12345678",
+                            "onClick": "DT_UpdateParameter($id, \"ValidationTextBox\", \"value\", \"12345678\");"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
