@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Some filler",
+            "onClick": "echo 'Hello World!';"
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';",
+                    "visible": false
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';",
+                    "visible": false
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';",
+                    "visible": false
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';",
+                    "visible": false
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';",
+                    "visible": false
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some filler",
+                    "onClick": "echo 'Hello World!';"
+                }
+            ]
+        }
+    ]
+}

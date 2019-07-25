@@ -1,0 +1,14 @@
+{
+	"id": "{C0C03F63-55B6-A87E-6278-370667FA008F}",
+	"name": "InvisiblePaddingTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Invisible Padding Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "IPT"
+}

@@ -1,0 +1,7 @@
+<?
+
+    class InvisiblePaddingTest extends IPSModule
+    {
+    }
+    
+?>
