@@ -44,6 +44,39 @@
                     "onClick": "echo 'Hello World!';"
                 }
             ]
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Some filler",
+            "items": [
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler"
+                },
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler"
+                },
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler",
+                    "visible": false
+                },
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler",
+                    "visible": false
+                },
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler",
+                    "visible": false
+                },
+                {
+                    "type": "CheckBox",
+                    "caption": "Some filler"
+                }
+            ]
         }
     ]
 }
