@@ -1,0 +1,14 @@
+{
+    "id": "{7F0FD26C-7E0D-085F-AACF-4A803DD02052}",
+    "name": "LongLabelTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Long Label Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LLT"
+}
