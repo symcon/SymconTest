@@ -1,0 +1,30 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "delete": false,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "values": [
+            {
+                "name": "Shutter Control (Fancy Variable Names)",
+                "address": "Adress",
+                "create": {
+                    "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                    "configuration": {
+                        "ShutterType": 1
+                    },
+                    "statusVariables": {
+                        "StatusVariable": {
+                            "name": "Fancy Name"
+                        }
+                    }
+                }
+            }]
+        }
+    ]
+}

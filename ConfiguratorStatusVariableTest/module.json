@@ -1,0 +1,14 @@
+{
+    "id": "{BE69A4B9-980B-1784-D5D9-937264A25E96}",
+    "name": "ConfiguratorStatusVariableTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Status Variable)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CSVT"
+}
