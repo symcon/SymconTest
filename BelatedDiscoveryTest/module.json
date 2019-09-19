@@ -1,0 +1,14 @@
+{
+	"id": "{47636A31-16BA-7E22-9A28-CE764E54F91B}",
+	"name": "BelatedDiscoveryTest",
+	"type": 5,
+	"vendor": "",
+	"aliases": 
+	[
+		"Belated Discovery Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "BDT"
+}
