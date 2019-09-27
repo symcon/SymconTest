@@ -1,0 +1,14 @@
+{
+	"id": "{1B38A095-452B-746E-B551-9A4CC8B6E7B6}",
+	"name": "OpenObjectButtonTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Open Object Button Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "OOBT"
+}
