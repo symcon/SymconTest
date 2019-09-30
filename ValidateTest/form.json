@@ -1,0 +1,27 @@
+{
+    "elements": [
+        {
+            "type": "NumberSpinner",
+            "caption": "Hex: 50 - 100 (dec)",
+            "maximum": 100,
+            "minimum": 50,
+            "hex": true
+        },
+        {
+            "type": "NumberSpinner",
+            "caption": "Dec: 50 - 100",
+            "maximum": 100,
+            "minimum": 50
+        },
+        {
+            "type": "ValidationTextBox",
+            "caption": "Only capital letters allowed",
+            "validate": "^[A-Z]*$"
+        },
+        {
+            "type": "PasswordTextBox",
+            "caption": "Only capital letters allowed",
+            "validate": "^[A-Z]*$"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "{1DF83731-C7B1-D9DF-8DAD-020610ACE82F}",
+    "name": "ValidateTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ValidateTest"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "VT"
+}
