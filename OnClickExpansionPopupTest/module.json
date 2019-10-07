@@ -1,0 +1,14 @@
+{
+	"id": "{2FEDCEC0-89D6-B432-B6BA-C2983380209F}",
+	"name": "OnClickExpansionPopupTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"On Click Test (Expansion Panel, Popup Button)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "OCEPT"
+}

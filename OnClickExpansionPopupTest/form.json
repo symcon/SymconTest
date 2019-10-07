@@ -1,0 +1,29 @@
+{
+    "actions": [
+        {
+            "type": "ExpansionPanel",
+            "name": "ExpansionPanel",
+            "caption": "Expansion Panel",
+            "onClick": "echo $id;",
+            "items": [
+
+            ]
+        },
+        {
+            "type": "PopupButton",
+            "caption": "Popup Button",
+            "onClick": "echo $id;",
+            "popup": {
+                "caption": "Popup",
+                "items": [
+
+                ]
+            }
+        },
+        {
+            "type": "Button",
+            "caption": "Expand",
+            "onClick": "OCEPT_Expand($id);"
+        }
+    ]
+}
