@@ -21,8 +21,8 @@
 		},
         {
             "type": "Button",
-            "label": "Show selected item!",
-            "onClick": "var_dump($FileList);"
+            "label": "Show selected InstanceID!",
+            "onClick": "var_dump($FileList['instanceID']);"
         }
     ]
 }

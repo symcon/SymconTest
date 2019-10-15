@@ -20,10 +20,10 @@
 			"values": [
 			]
 		},
-        {
-            "type": "Button",
-            "label": "Show selected item!",
-            "onClick": "var_dump($FileList);"
-        }
+		{
+			"type": "Button",
+			"label": "Show all items!",
+			"onClick": "$values = []; foreach ($FileList as $line) { $values[] = $line; } var_dump($values);"
+		}
     ]
 }
