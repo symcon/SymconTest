@@ -1,0 +1,7 @@
+<?
+
+    class ListEventsTest extends IPSModule
+    {
+    }
+    
+?>

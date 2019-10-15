@@ -1,0 +1,33 @@
+{
+    "actions": [
+        {
+            "type": "List",
+            "name": "List",
+            "add": true,
+            "delete": true,
+            "onEdit": "echo 'Edit: ' . print_r($List, true);",
+            "onAdd": "echo 'Add: ' . print_r($List, true);",
+            "onDelete": "echo 'Delete: ' . print_r($List, true);",
+            "columns": [
+                {
+                    "caption": "Value",
+                    "name": "value",
+                    "width": "auto",
+                    "add": "New",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "caption": "Boolean",
+                    "name": "boolean",
+                    "width": "100px",
+                    "add": false,
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                }
+            ]
+        }
+    ]
+}

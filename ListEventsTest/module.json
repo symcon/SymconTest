@@ -1,0 +1,14 @@
+{
+	"id": "{3225420E-5DA7-07E3-C0DC-7A86157B72A2}",
+	"name": "ListEventsTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Events)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LET"
+}
