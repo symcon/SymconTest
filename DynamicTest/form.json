@@ -502,6 +502,11 @@
                         },
                         {
                             "type": "Button",
+                            "caption": "Caption = Invalid",
+                            "onClick": "DT_UpdateParameter($id, \"Label\", \"caption\", \"invalid\");"
+                        },
+                        {
+                            "type": "Button",
                             "caption": "Caption = Long Text",
                             "onClick": "DT_UpdateParameter($id, \"Label\", \"caption\", \"Wow, this is a really long text to show off how awesome dynamic labels are. Now, you will be able to see changes if you choose to adjust the width of this element. Go ahead, click some button that starts with 'Width = '!\");"
                         },

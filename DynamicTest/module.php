@@ -16,6 +16,10 @@
         public function UpdateParameter($Field, $Parameter, $Value) {
             $this->UpdateFormField($Field, $Parameter, $Value);
         }
+
+        public function SetInvalid() {
+            $this->UpdateFormField('Label', 'caption', 'invalid'); // nicht ok
+        }
         
         public function Reload() {
             $this->ReloadForm();
