@@ -1,0 +1,26 @@
+{
+    "actions": [
+        {
+            "type": "Label",
+            "name": "Label",
+            "caption": "There is a link here: https://symcon.de Wow, so linky"
+        },
+        {
+            "type": "Button",
+            "caption": "Update Label: With URL",
+            "onClick": "DLLT_UpdateLabel($id, 'There is a link here: https://symcon.de Wow, so linky');"
+        },
+        {
+            "type": "Button",
+            "caption": "Update Label: No URL",
+            "onClick": "DLLT_UpdateLabel($id, 'There is no link here :(');"
+        },
+        {
+            "type": "CheckBox",
+            "name": "Link",
+            "caption": "Parse Links",
+            "value": true,
+            "onChange": "DLLT_UpdateLink($id, $Link);"
+        }
+    ]
+}

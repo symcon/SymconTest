@@ -1,0 +1,14 @@
+{
+	"id": "{DC56B080-FFAD-DCDF-BB3C-90CBC7EE51B5}",
+	"name": "DynamicLinkLabelTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Dynamic Link Label Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DLLT"
+}
