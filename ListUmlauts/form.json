@@ -1,0 +1,35 @@
+{
+    "elements": [	
+		{
+			"type": "List",
+			"name": "Umlauts",
+			"columns": [
+				{
+					"label": "Text",
+					"name": "text", 
+					"width": "auto",
+					"save": true
+				}
+			],
+			"values": [
+				{
+					"text": "Würstchenßß"
+				}
+			]
+		},
+		{
+			"type": "CheckBox",
+			"caption": "I'm just here for applying changes"
+		},
+		{
+			"type": "Button",
+			"caption": "Compare text",
+			"onClick": "echo 'Property: ' . json_decode(IPS_GetProperty($id, 'Umlauts'), true)[0]['text'] . \"\\n\"; echo 'Value: ' . $Umlauts[0]['text'];"
+		},
+		{
+			"type": "Button",
+			"caption": "Set value",
+			"onClick": "LUT_UpdateValue($id);"
+		}
+    ]
+}

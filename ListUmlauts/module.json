@@ -1,0 +1,14 @@
+{
+	"id": "{7E4F69FD-ABC2-130D-680B-0A98C6E33CBE}",
+	"name": "ListUmlautsTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Umlauts)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LUT"
+}
