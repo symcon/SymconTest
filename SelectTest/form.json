@@ -13,6 +13,26 @@
 ],
     "actions": [
         {
+            "name": "Select",
+            "type": "Select",
+            "caption": "Select a Number",
+            "options": [
+                {
+                    "value": 0,
+                    "caption": "Zero"
+                },
+                {
+                    "value": 1,
+                    "caption": "One"
+                },
+                {
+                    "value": 2,
+                    "caption": "Two"
+                }
+            ],
+            "value": 2
+        },
+        {
             "name": "InstanceData",
             "type": "SelectInstance",
             "caption": "InstanceID"
