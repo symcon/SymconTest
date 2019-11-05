@@ -1,0 +1,8 @@
+<?
+
+	class WidthTest extends IPSModule
+	{
+		
+	}
+	
+?>

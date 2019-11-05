@@ -1,0 +1,92 @@
+{
+    "actions": [
+        {
+            "type": "CheckBox",
+            "caption": "Some CheckBox",
+            "width": "222px"
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Some ExpansionPanel",
+            "width": "222px",
+            "items": [
+                {
+                    "type": "Label",
+                    "caption": "Some filler"
+                }
+            ]
+        },
+        {
+            "type": "HorizontalSlider",
+            "width": "222px"
+        },
+        {
+            "type": "NumberSpinner",
+            "caption": "Some NumberSpinner",
+            "width": "222px"
+        },
+        {
+            "type": "ProgressBar",
+            "width": "222px"
+        },
+        {
+            "type": "SelectColor",
+            "caption": "Some SelectColor",
+            "width": "222px"
+        },
+        {
+            "type": "SelectDateTime",
+            "caption": "Some SelectDateTime",
+            "width": "500px"
+        },
+        {
+            "type": "SelectDate",
+            "caption": "Some SelectDate",
+            "width": "222px"
+        },
+        {
+            "type": "SelectFile",
+            "caption": "Some SelectFile",
+            "width": "222px"
+        },
+        {
+            "type": "SelectLocation",
+            "caption": "Some SelectLocation",
+            "width": "222px"
+        },
+        {
+            "type": "SelectObject",
+            "caption": "Some SelectObject",
+            "width": "222px"
+        },
+        {
+            "type": "SelectTime",
+            "caption": "Some SelectTime",
+            "width": "222px"
+        },
+        {
+            "type": "Select",
+            "caption": "Select a Number",
+            "width": "222px",
+            "options": [
+                {
+                    "value": 0,
+                    "caption": "Zero"
+                },
+                {
+                    "value": 1,
+                    "caption": "One"
+                },
+                {
+                    "value": 2,
+                    "caption": "Two"
+                }
+            ]
+        },
+        {
+            "type": "ValidationTextBox",
+            "caption": "Some ValidationTextBox",
+            "width": "222px"
+        }
+    ]
+}

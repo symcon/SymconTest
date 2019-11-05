@@ -1,0 +1,14 @@
+{
+	"id": "{5E3AEE1E-1B44-9369-00F6-7D9719DC1025}",
+	"name": "WidthTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Width Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "WT"
+}
