@@ -1,0 +1,14 @@
+{
+	"id": "{29A261D3-7113-7282-7A1A-38512E61922D}",
+	"name": "ListOnChangeTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (onChange)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LOCT"
+}

@@ -1,0 +1,8 @@
+<?
+
+	class ListOnChangeTest extends IPSModule
+	{
+		
+	}
+
+?>

@@ -1,0 +1,52 @@
+{
+    "elements": [
+		{
+			"type": "List",
+			"add": true,
+			"columns": [{
+				"name": "data",
+				"caption": "Data",
+				"add": 1,
+				"edit": {
+					"type": "Select",
+					"options": [
+						{
+							"caption": "One",
+							"value": 1
+						},
+						{
+							"caption": "Two",
+							"value": 2
+						}
+					],
+					"onChange": "echo $id;"
+				}
+			}]
+		}
+	],
+	"actions": [
+		{
+			"type": "List",
+			"add": true,
+			"rowCount": 7,
+			"columns": [{
+				"name": "data",
+				"caption": "Data",
+				"add": 1,
+				"edit": {
+					"type": "Select",
+					"options": [
+						{
+							"caption": "One",
+							"value": 1
+						},
+						{
+							"caption": "Two",
+							"value": 2
+						}
+					],
+					"onChange": "echo $id;"
+				}
+			}]
+		}]
+}
