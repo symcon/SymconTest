@@ -1,0 +1,8 @@
+<?
+
+	class ListLocationTest extends IPSModule
+	{
+		
+	}
+
+?>

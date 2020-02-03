@@ -1,0 +1,14 @@
+{
+	"id": "{AAF7A400-D1AE-D9D5-52D1-D249F2B29A4D}",
+	"name": "ListLocationTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Location)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LLT"
+}

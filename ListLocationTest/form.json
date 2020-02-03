@@ -1,0 +1,17 @@
+{
+	"actions": [
+		{
+			"type": "List",
+			"add": true,
+			"rowCount": 7,
+			"columns": [{
+				"name": "data",
+				"width": "auto",
+				"caption": "Data",
+				"add": "{\"latitude\": 15.6, \"longitude\": 68.55}",
+				"edit": {
+					"type": "SelectLocation"
+				}
+			}]
+		}]
+}
