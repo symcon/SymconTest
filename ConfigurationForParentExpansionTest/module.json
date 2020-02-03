@@ -1,0 +1,14 @@
+{
+	"id": "{F7CA1AA2-5817-0ACB-1AA2-47DF12AF6CFE}",
+	"name": "ConfigurationForParentExpansionTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"ConfigurationForParent Expansion Test"
+	],
+	"parentRequirements": ["{F82F7323-DAD7-9D89-4CB6-EA17E87651D3}"],
+	"childRequirements": [],
+	"implemented": ["{8853EAF3-843D-8477-3E4A-EDE940AFA80D}"],
+	"prefix": "CFPET"
+}

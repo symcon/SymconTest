@@ -1,0 +1,14 @@
+{
+	"id": "{0C7C84AA-494F-A12E-FD4F-D2D6431D6E3D}",
+	"name": "ExpansionIO",
+	"type": 1,
+	"vendor": "",
+	"aliases": 
+	[
+		"Expansion I/O"
+	],
+	"parentRequirements": [],
+	"childRequirements": ["{8853EAF3-843D-8477-3E4A-EDE940AFA80D}"],
+	"implemented": ["{F82F7323-DAD7-9D89-4CB6-EA17E87651D3}"],
+	"prefix": "EIO"
+}

@@ -1,0 +1,14 @@
+{
+	"elements": [
+		{
+			"type": "ExpansionPanel",
+			"caption": "Expansion Panel",
+			"items": [
+				{
+					"name": "SomeSetting",
+					"type": "NumberSpinner",
+					"caption": "Some setting"
+				}
+			]
+		}]
+}
