@@ -33,6 +33,17 @@
             "label": "Text Link false",
             "link": false,
             "onClick": "echo '../'"
+        },
+        {
+            "type": "Button",
+            "label": "Broken Link",
+            "link": true,
+            "onClick": "echo 'This' . PHP_EOL . 'is' . PHP_EOL . 'a' . PHP_EOL . 'test';"
+        },
+        {
+            "type": "Button",
+            "label": "Broken Link with http",
+            "onClick": "echo 'http://' . PHP_EOL . 'google.com';"
         }
     ]
 }
