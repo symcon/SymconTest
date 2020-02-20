@@ -22,16 +22,22 @@
 		*/
 		public function Send($Text)
 		{
-			$this->SendDataToParent(json_encode(Array("DataID" => "{B87AC955-F258-468B-92FE-F4E0866A9E18}", "Buffer" => $Text)));
+			IPS_LogMessage("IOTest SEND", $Text);
+			$response = $this->SendDataToParent(json_encode(Array("DataID" => "{B87AC955-F258-468B-92FE-F4E0866A9E18}", "Buffer" => $Text)));
+			
+			//Use the response which came from the splitter
+			IPS_LogMessage("IOTest SEND-RESP", $response);
 		}
 		
 		public function ReceiveData($JSONString)
 		{
 			$data = json_decode($JSONString);
-			IPS_LogMessage("IOTest", utf8_decode($data->Buffer));
+			IPS_LogMessage("IOTest RECV", utf8_decode($data->Buffer));
 
 			//Parse and write values to our variables
 			
+			//Send response back to the splitter
+			return "OK from " . $this->InstanceID;
 		}
 		
 	
