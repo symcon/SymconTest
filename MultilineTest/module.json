@@ -1,0 +1,14 @@
+{
+	"id": "{BA5C2398-4E7B-E54C-C822-7E3D2CA6A7B9}",
+	"name": "MultilineTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Multiline Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "MT"
+}
