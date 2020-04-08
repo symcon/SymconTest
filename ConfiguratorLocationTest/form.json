@@ -19,16 +19,62 @@
                 "parent": 1,
                 "name": "Shutter Control (Markise - Erdgeschoss - Wohnzimmer - Fenster)",
                 "address": "Adress",
-                "location": [
-                    "Ground Floor", "Living Room", "Windows"
-                ],
                 "create": {
+                    "location": [
+                        "Ground Floor", "Living Room", "Windows"
+                    ],
                     "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
                     "configuration": {
                         "ShutterType": 1
                     }
                 }
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Shutter Control (Rollladen - Erster Stock - Schlafzimmer)",
+                "address": "Adress",
+                "create": {
+                    "location": [
+                        "First Floor", "Bedroom"
+                    ],
+                    "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                    "configuration": {
+                        "ShutterType": 0
+                    }
+                }
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Shutter Control (Auswahl)",
+                "address": "Adress",
+                "create": {
+                    "Ground Floor": {
+                        "location": [
+                            "Ground Floor", "Living Room", "Windows"
+                        ],
+                        "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                        "configuration": {
+                            "ShutterType": 1
+                        }
+                    },
+                    "First Floor": {
+                        "location": [
+                            "First Floor", "Bedroom"
+                        ],
+                        "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                        "configuration": {
+                            "ShutterType": 0
+                        }
+                    }
+                }
             }]
+        },
+        {
+            "type": "Button",
+            "caption": "Output Configurator Values",
+            "onClick": "var_dump(json_encode($Configurator)); echo \"\\n\"; var_dump($Configurator['create']);"
         }
     ]
 }
