@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "type": "Label",
+            "caption": "This test does not work in combination with the api query param (If you don't know what that means, you are probably not using it and everything is fine =) ) "
+        },
+        {
+            "caption": "Open Object Tree",
+            "link": true,
+            "onClick": "echo './?tab=object-tree&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Message Log",
+            "link": true,
+            "onClick": "echo './?tab=message-log&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open PHP Information",
+            "link": true,
+            "onClick": "echo './?tab=php-information&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Profile Manager",
+            "link": true,
+            "onClick": "echo './?tab=profile-manager&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Event Information",
+            "link": true,
+            "onClick": "echo './?tab=event-information&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Timer Information",
+            "link": true,
+            "onClick": "echo './?tab=timer-information&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Physical Tree",
+            "link": true,
+            "onClick": "echo './?tab=physical-tree&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Instance Configuration",
+            "link": true,
+            "onClick": "echo './?tab=instance-editor&objectID=' . IPS_GetInstanceList()[0] .'&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Script Editor",
+            "link": true,
+            "onClick": "echo './?tab=script-editor&objectID=' . IPS_GetScriptList()[0] .'&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        },
+        {
+            "caption": "Open Debug Log",
+            "link": true,
+            "onClick": "echo './?tab=debug-log&objectID=' . IPS_GetInstanceList()[0] .'&token='.IPS_CreateTemporaryToken(3600);",
+            "type": "Button"
+        }
+    ]
+}
