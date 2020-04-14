@@ -1,0 +1,14 @@
+{
+    "id": "{E583E1AA-B444-4C5E-6D9A-CD06A7D98450}",
+    "name": "ConfiguratorNoDiscoveryTest",
+    "type": 4,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (No Discovery)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CTND"
+}
