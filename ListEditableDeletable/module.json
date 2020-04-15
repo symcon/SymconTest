@@ -1,0 +1,14 @@
+{
+	"id": "{27A371A6-5FC3-FAE8-65EC-8A675C2AC7CE}",
+	"name": "ListEditableDeletable",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Editable/Deletable)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSED"
+}

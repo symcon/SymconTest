@@ -1,0 +1,47 @@
+{
+    "actions": [	
+		{
+			"type": "List",
+			"name": "TreeData",
+			"caption": "Devices",
+			"rowCount": 5,
+			"add": true,
+			"delete": true,
+			"columns": [
+                {
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": "Name"
+                },{
+					"label": "Temperature",
+					"name": "temperature",
+					"width": "75px",
+					"add": 20.0,
+					"edit": {
+						"type": "NumberSpinner",
+						"digits": 2
+					}
+				}
+			],
+			"values": [
+                {
+                    "name": "editable/deletable not set (=true by default)",
+                    "temperature": 12.3
+                },
+                {
+                    "name": "editable/deletable set to true",
+                    "temperature": 12.3,
+                    "editable": true,
+                    "deletable": true
+                },
+                {
+                    "name": "editable/deletable set to false",
+                    "temperature": 12.3,
+                    "editable": false,
+                    "deletable": false
+                }
+			]
+		}
+    ]
+}
