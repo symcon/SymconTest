@@ -174,13 +174,21 @@
 			  "http"=>array(
 				"method" => "POST",
 				"header" => "Authorization: Bearer " . $this->FetchAccessToken() . "\r\n" . "Content-Type: application/json" . "\r\n",
-				"content" => "{\"JSON-KEY\":\"THIS WILL BE LOOPED BACK AS RESPONSE!\"}"
+				"content" => "{\"JSON-KEY\":\"THIS WILL BE LOOPED BACK AS RESPONSE!\"}",
+			  	"ignore_errors" => true
 			  )
 			);
 			$context = stream_context_create($opts);
-			
-			return file_get_contents($url, false, $context);
-			
+
+			$result = file_get_contents($url, false, $context);
+
+			if ((strpos($http_response_header[0], '200') === false)) {
+				echo $http_response_header[0] . PHP_EOL . $result;
+				return false;
+			}
+
+			return $result;
+
 		}
 		
 		public function RequestStatus() {
