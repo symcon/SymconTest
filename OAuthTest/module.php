@@ -5,7 +5,12 @@
 		//This one needs to be available on our OAuth client backend.
 		//Please contact us to register for an identifier: https://www.symcon.de/kontakt/#OAuth
 		private $oauthIdentifer = "test";
-		
+		//private $oauthIdentifer = "test_staging";
+
+		//You normally do not need to change this
+		private $oauthServer = "oauth.ipmagic.de";
+		//private $oauthServer = "oauth.symcon.cloud";
+
 		public function Create() {
 			//Never delete this line!
 			parent::Create();
@@ -48,7 +53,7 @@
 		public function Register() {
 			
 			//Return everything which will open the browser
-			return "https://oauth.ipmagic.de/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee());
+			return "https://".$this->oauthServer."/authorize/".$this->oauthIdentifer."?username=".urlencode(IPS_GetLicensee());
 			
 		}
 		
@@ -65,7 +70,7 @@
 				)
 			);
 			$context = stream_context_create($options);
-			$result = file_get_contents("https://oauth.ipmagic.de/access_token/".$this->oauthIdentifer, false, $context);
+			$result = file_get_contents("https://".$this->oauthServer."/access_token/".$this->oauthIdentifer, false, $context);
 
 			$data = json_decode($result);
 			
@@ -135,7 +140,7 @@
 					)
 				);
 				$context = stream_context_create($options);
-				$result = file_get_contents("https://oauth.ipmagic.de/access_token/".$this->oauthIdentifer, false, $context);
+				$result = file_get_contents("https://".$this->oauthServer."/access_token/".$this->oauthIdentifer, false, $context);
 
 				$data = json_decode($result);
 				
@@ -193,7 +198,7 @@
 		
 		public function RequestStatus() {
 			
-			echo $this->FetchData("https://oauth.ipmagic.de/forward");
+			echo $this->FetchData("https://".$this->oauthServer."/forward");
 			
 		}
 		
