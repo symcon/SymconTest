@@ -62,8 +62,18 @@
 			if($extension == "php") {
 				include_once($path);
 			} else {
-                header("Content-Type: ".$this->GetMimeType($extension));
-                readfile($path);
+                header("Content-Type: " . $this->GetMimeType($extension));
+                
+				//Add caching support
+				$etag = md5_file($path);
+				header("ETag: " . $etag);
+				if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && (trim($_SERVER['HTTP_IF_NONE_MATCH']) == $etag)) { 
+					http_response_code(304);
+					return;
+				}
+				
+                header("Content-Length: " . filesize($path));
+				readfile($path);
 			}
 
 		}
