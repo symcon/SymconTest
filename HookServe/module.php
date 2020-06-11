@@ -62,8 +62,9 @@
 			if($extension == "php") {
 				include_once($path);
 			} else {
-                header("Content-Type: " . $this->GetMimeType($extension));
-                
+				$mimeType = $this->GetMimeType($extension);
+				header("Content-Type: " . $mimeType);
+
 				//Add caching support
 				$etag = md5_file($path);
 				header("ETag: " . $etag);
@@ -72,10 +73,36 @@
 					return;
 				}
 				
-                header("Content-Length: " . filesize($path));
-				readfile($path);
+				//Add gzip compression
+				if (strstr($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') && $this->IsCompressionAllowed($mimeType)) {
+					$compressed = gzencode(file_get_contents($path));
+					header("Content-Encoding: gzip");
+					header("Content-Length: " . strlen($compressed));
+					echo $compressed;
+				} else {
+					header("Content-Length: " . filesize($path));
+					readfile($path);
+				}
 			}
 
+		}
+		
+		private function IsCompressionAllowed($mimeType) {
+			return in_array($mimeType, [
+				"text/plain", 
+				"text/html", 
+				"text/xml", 
+				"text/css", 
+				"text/javascript", 
+				"application/xml", 
+				"application/xhtml+xml", 
+				"application/rss+xml", 
+				"application/json", 
+				"application/json; charset=utf-8", 
+				"application/javascript", 
+				"application/x-javascript", 
+				"image/svg+xml"
+			]);
 		}
 		
 		private function GetMimeType($extension) {
