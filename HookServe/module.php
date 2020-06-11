@@ -27,7 +27,7 @@
 			
 			$root = realpath(__DIR__ . "/www");
 
-			//reduce any relative paths. this also checks for file existance
+			//reduce any relative paths. this also checks for file existence
 			$path = realpath($root . "/" . substr($_SERVER['SCRIPT_NAME'], strlen("/hook/hookserve/")));
 			if($path === false) {
 				http_response_code(404);
@@ -39,7 +39,7 @@
 				die("Security issue. Cannot leave root folder!");
 			}
 
-			//check dir existance
+			//check dir existence
             if(substr($_SERVER['SCRIPT_NAME'], -1) != "/") {
 				if(is_dir($path)) {
                     http_response_code(301);
