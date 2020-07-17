@@ -1,0 +1,14 @@
+{
+	"id": "{8761F3B9-4F1D-01F9-EF7D-8477BED5E7FE}",
+	"name": "DebugTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Debug Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DT"
+}

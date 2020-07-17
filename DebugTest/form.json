@@ -1,0 +1,16 @@
+{
+	"elements": [
+		{
+			"type": "CheckBox",
+			"name": "AutoDebug",
+			"caption": "Automatic debugging"
+		}
+	],
+	"actions": [
+		{
+			"type": "Button",
+			"caption": "Debug!",
+			"onClick": "DT_MySendDebug($id);"
+		}	
+	]
+}
