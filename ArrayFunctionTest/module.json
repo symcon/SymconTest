@@ -1,0 +1,14 @@
+{
+	"id": "{A5C95752-EAEB-45A5-6308-2BD7941AF5F9}",
+	"name": "ArrayFunctionTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Array Function Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "AFT"
+}
