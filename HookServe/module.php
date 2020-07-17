@@ -1,6 +1,13 @@
 <?
 
-	class HookServe extends IPSModule {
+	include_once __DIR__ . '/../libs/WebHookModule.php';
+
+	class HookServe extends WebHookModule {
+
+		public function __construct($InstanceID)
+		{
+			parent::__construct($InstanceID, "/hook/hookserve");
+		}		
 		
 		public function Create() {
 			//Never delete this line!
@@ -10,32 +17,9 @@
 	
 		public function ApplyChanges() {
 			//Never delete this line!
-			parent::ApplyChanges();
-			
-			$this->RegisterHook("/hook/hookserve");
+			parent::ApplyChanges();			
 		}
-		
-		private function RegisterHook($WebHook) {
-			$ids = IPS_GetInstanceListByModuleID("{015A6EB8-D6E5-4B93-B496-0D3F77AE9FE1}");
-			if(sizeof($ids) > 0) {
-				$hooks = json_decode(IPS_GetProperty($ids[0], "Hooks"), true);
-				$found = false;
-				foreach($hooks as $index => $hook) {
-					if($hook['Hook'] == $WebHook) {
-						if($hook['TargetID'] == $this->InstanceID)
-							return;
-						$hooks[$index]['TargetID'] = $this->InstanceID;
-						$found = true;
-					}
-				}
-				if(!$found) {
-					$hooks[] = Array("Hook" => $WebHook, "TargetID" => $this->InstanceID);
-				}
-				IPS_SetProperty($ids[0], "Hooks", json_encode($hooks));
-				IPS_ApplyChanges($ids[0]);
-			}
-		}
-	
+
 		/**
 		* This function will be called by the hook control. Visibility should be protected!
 		*/
@@ -43,7 +27,7 @@
 			
 			$root = realpath(__DIR__ . "/www");
 
-			//reduce any relative paths. this also checks for file existance
+			//reduce any relative paths. this also checks for file existence
 			$path = realpath($root . "/" . substr($_SERVER['SCRIPT_NAME'], strlen("/hook/hookserve/")));
 			if($path === false) {
 				http_response_code(404);
@@ -55,7 +39,7 @@
 				die("Security issue. Cannot leave root folder!");
 			}
 
-			//check dir existance
+			//check dir existence
             if(substr($_SERVER['SCRIPT_NAME'], -1) != "/") {
 				if(is_dir($path)) {
                     http_response_code(301);
@@ -78,10 +62,47 @@
 			if($extension == "php") {
 				include_once($path);
 			} else {
-                header("Content-Type: ".$this->GetMimeType($extension));
-                readfile($path);
+				$mimeType = $this->GetMimeType($extension);
+				header("Content-Type: " . $mimeType);
+
+				//Add caching support
+				$etag = md5_file($path);
+				header("ETag: " . $etag);
+				if (isset($_SERVER['HTTP_IF_NONE_MATCH']) && (trim($_SERVER['HTTP_IF_NONE_MATCH']) == $etag)) { 
+					http_response_code(304);
+					return;
+				}
+				
+				//Add gzip compression
+				if (strstr($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip') && $this->IsCompressionAllowed($mimeType)) {
+					$compressed = gzencode(file_get_contents($path));
+					header("Content-Encoding: gzip");
+					header("Content-Length: " . strlen($compressed));
+					echo $compressed;
+				} else {
+					header("Content-Length: " . filesize($path));
+					readfile($path);
+				}
 			}
 
+		}
+		
+		private function IsCompressionAllowed($mimeType) {
+			return in_array($mimeType, [
+				"text/plain", 
+				"text/html", 
+				"text/xml", 
+				"text/css", 
+				"text/javascript", 
+				"application/xml", 
+				"application/xhtml+xml", 
+				"application/rss+xml", 
+				"application/json", 
+				"application/json; charset=utf-8", 
+				"application/javascript", 
+				"application/x-javascript", 
+				"image/svg+xml"
+			]);
 		}
 		
 		private function GetMimeType($extension) {

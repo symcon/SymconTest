@@ -14,6 +14,51 @@
             "minimum": 50
         },
         {
+            "type": "NumberSpinner",
+            "name": "DynamicSpinner",
+            "caption": "Dynamic Interval"
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Min = 0",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'minimum', 0);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Min = 10",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'minimum', 10);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Min = 50",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'minimum', 50);"
+                }
+            ]
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Max = 0",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'maximum', 0);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Max = 10",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'maximum', 10);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Max = 50",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicSpinner', 'maximum', 50);"
+                }
+            ]
+        },
+        {
             "type": "ValidationTextBox",
             "caption": "Only capital letters allowed",
             "validate": "^[A-Z]*$"
@@ -22,6 +67,26 @@
             "type": "PasswordTextBox",
             "caption": "Only capital letters allowed",
             "validate": "^[A-Z]*$"
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "DynamicTextBox",
+            "caption": "Dynamic Text"
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Validate = Only letters",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicTextBox', 'validate', '^[A-Za-z]*$');"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Validate = Only numbers",
+                    "onClick": "VT_UpdateParameter($id, 'DynamicTextBox', 'validate', '^[0-9]*$');"
+                }
+            ]
         }
     ]
 }

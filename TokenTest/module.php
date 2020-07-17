@@ -1,0 +1,7 @@
+<?
+
+    class TokenTest extends IPSModule
+    {
+    }
+    
+?>

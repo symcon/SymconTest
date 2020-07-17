@@ -1,0 +1,8 @@
+<?
+
+	class ListEditableDeletable extends IPSModule
+	{
+	
+	}
+
+?>

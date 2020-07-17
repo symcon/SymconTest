@@ -1,0 +1,23 @@
+{
+    "elements": [
+        {
+            "type": "ValidationTextBox",
+            "name": "Text",
+            "caption": "Multiline Text",
+            "multiline": true
+        },
+        {
+            "type": "PasswordTextBox",
+            "name": "Password",
+            "caption": "Multiline Password",
+            "multiline": true
+        },
+        {
+            "type": "CheckBox",
+            "name": "Multiline",
+            "caption": "Multiline for Text",
+            "value": true,
+            "onChange": "MT_UpdateMultiline($id, $Multiline);"
+        }
+    ]
+}

@@ -20,7 +20,10 @@
 
 			//We would package our payload here before sending it further...
 
-			$this->SendDataToParent(json_encode(Array("DataID" => "{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}", "Buffer" => $data->Buffer)));
+			$response = $this->SendDataToParent(json_encode(Array("DataID" => "{79827379-F36E-4ADA-8A95-5F8D1DC92FA9}", "Buffer" => $data->Buffer)));
+			
+			//If the I/O sends a response you can use it
+			IPS_LogMessage("IOSplitter FRWD-RESP", $response);
 			
 			//Normally we would wait here for ReceiveData getting called asynchronically and buffer some data
 			//Then we should extract the relevant feedback/data and return it to the caller
@@ -35,7 +38,12 @@
 			//We would parse our payload here before sending it further...
 
 			//Lets just forward to our children
-			$this->SendDataToChildren(json_encode(Array("DataID" => "{66164EB8-3439-4599-B937-A365D7A68567}", "Buffer" => $data->Buffer)));
+			$responses = $this->SendDataToChildren(json_encode(Array("DataID" => "{66164EB8-3439-4599-B937-A365D7A68567}", "Buffer" => $data->Buffer)));
+			
+			//If a children sends a response you can use it
+			foreach($responses as $response) {
+				IPS_LogMessage("IOSplitter RECV-RESP", $response);
+			}
 		}
 		
 	

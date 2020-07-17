@@ -1,0 +1,14 @@
+{
+	"id": "{F2930DEE-79BE-5563-078A-5B427E135761}",
+	"name": "TokenTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Token Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "TT"
+}

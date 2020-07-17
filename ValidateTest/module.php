@@ -8,6 +8,10 @@
             parent::Create();
 
         }
+
+        public function UpdateParameter($name, $parameter, $value) {
+            $this->UpdateFormField($name, $parameter, $value);
+        }
     }
 
 ?>
