@@ -22,24 +22,36 @@
 						"type": "NumberSpinner",
 						"digits": 2
 					}
-				}
+                },
+                {
+                    "caption": "Checkbox",
+                    "name": "check",
+					"width": "150px",
+                    "add": true,
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                }
 			],
 			"values": [
                 {
                     "name": "editable/deletable not set (=true by default)",
-                    "temperature": 12.3
+                    "temperature": 12.3,
+                    "check": false
                 },
                 {
                     "name": "editable/deletable set to true",
                     "temperature": 12.3,
                     "editable": true,
-                    "deletable": true
+                    "deletable": true,
+                    "check": false
                 },
                 {
                     "name": "editable/deletable set to false",
                     "temperature": 12.3,
                     "editable": false,
-                    "deletable": false
+                    "deletable": false,
+                    "check": true
                 }
 			]
 		}
