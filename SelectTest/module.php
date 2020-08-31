@@ -11,6 +11,10 @@
             $this->RegisterPropertyString("LocationProp", "");
 			
 		}
+
+		public function ChangeProfileType($profileType) {
+			$this->UpdateFormField('ProfileDynamic', 'profileType', $profileType);
+		}
 	}
 	
 ?>

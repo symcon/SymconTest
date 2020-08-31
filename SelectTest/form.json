@@ -72,6 +72,74 @@
             "type": "Button",
             "label": "Show location data!",
             "onClick": "var_dump($LocationData);"
+        },
+        {
+            "name": "ProfileAll",
+            "type": "SelectProfile",
+            "caption": "Profile All"
+        },
+        {
+            "type": "Button",
+            "label": "Show profile Data!",
+            "onClick": "var_dump($ProfileAll);"
+        },
+        {
+            "name": "ProfileBool",
+            "type": "SelectProfile",
+            "caption": "Profile - Boolean",
+            "profileType": 0
+        },
+        {
+            "name": "ProfileInt",
+            "type": "SelectProfile",
+            "caption": "Profile - Integer",
+            "profileType": 1
+        },
+        {
+            "name": "ProfileFloat",
+            "type": "SelectProfile",
+            "caption": "Profile - Float",
+            "profileType": 2
+        },
+        {
+            "name": "ProfileString",
+            "type": "SelectProfile",
+            "caption": "Profile - String",
+            "profileType": 3
+        },
+        {
+            "name": "ProfileDynamic",
+            "type": "SelectProfile",
+            "caption": "Profile Dynamic"
+        },
+        {
+            "name": "SelectDynamicProfile",
+            "type": "Select",
+            "caption": "Profile Type",
+            "options": [
+                {
+                    "caption": "All",
+                    "value": -1
+                },
+                {
+                    "caption": "Boolean",
+                    "value": 0
+                },
+                {
+                    "caption": "Integer",
+                    "value": 1
+                },
+                {
+                    "caption": "Float",
+                    "value": 2
+                },
+                {
+                    "caption": "String",
+                    "value": 3
+                }
+            ],
+            "onChange": "STSE_ChangeProfileType($id, $SelectDynamicProfile);"
         }
+
     ]
 }
