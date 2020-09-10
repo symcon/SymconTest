@@ -43,6 +43,47 @@
             "onClick": "var_dump($InstanceData);"
         },
         {
+            "name": "InstanceOne",
+            "type": "SelectInstance",
+            "caption": "Select ImageTest",
+            "validModules": ["{CA44FD1A-754F-4B54-89B3-4B71C3AEE188}"]
+        },
+        {
+            "name": "InstanceMulti",
+            "type": "SelectInstance",
+            "caption": "Select ImageTest TestCenterTest",
+            "validModules": ["{CA44FD1A-754F-4B54-89B3-4B71C3AEE188}", "{235328F5-8F15-EE29-2730-B2A064F77398}"]
+        },
+        {
+            "name": "InstanceNotInstalled",
+            "type": "SelectInstance",
+            "caption": "Select Not Installed",
+            "validModules": ["{NOT-INSTALLED-GUID}"]
+        },
+        {
+            "name": "InstanceDynamic",
+            "type": "SelectInstance",
+            "caption": "Select Dynaimc Valid Instance",
+            "validModules": ["{CA44FD1A-754F-4B54-89B3-4B71C3AEE188}"]
+        },
+        {
+            "name": "ValidInstance",
+            "type": "Select",
+            "caption": "Valid Instance",
+            "options" : [
+                {
+                    "caption": "ImageTest", "value": "{CA44FD1A-754F-4B54-89B3-4B71C3AEE188}"
+                },
+                {
+                    "caption": "TestCenterTest", "value": "{235328F5-8F15-EE29-2730-B2A064F77398}"
+                },
+                {
+                    "caption": "InvalidModule", "value": "{NOT-INSTALLED-GUID}"
+                }
+            ],
+            "onChange": "STSE_ChangeValidModule($id, $ValidInstance);"
+        },
+        {
             "name": "ColorData",
             "type": "SelectColor",
             "caption": "Color"
