@@ -19,6 +19,11 @@
 		public function ChangeValidModule($guid) {
 			$this->UpdateFormField('InstanceDynamic', 'validModules', json_encode([$guid]));
 		}
+
+		public function ChangeModule($guid)
+		{
+			$this->UpdateFormField('SelectModuleData', 'moduleID', $guid);
+		}
 	}
 	
 ?>
