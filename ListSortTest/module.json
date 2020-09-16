@@ -1,0 +1,14 @@
+{
+	"id": "{F99C98CF-3FAA-09B2-3510-7E3706852A42}",
+	"name": "ListSortTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Sort)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LST"
+}
