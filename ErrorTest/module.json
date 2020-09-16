@@ -1,0 +1,14 @@
+{
+	"id": "{41E6AF92-DE9D-6D7D-8E51-6C89B11F4BA6}",
+	"name": "ErrorTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Error Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "ET"
+}
