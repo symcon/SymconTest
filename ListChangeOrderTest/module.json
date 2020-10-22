@@ -1,0 +1,14 @@
+{
+	"id": "{56C89B03-0F3E-1890-82C4-E0BAECF5DC5C}",
+	"name": "ListChangeOrderTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Change Order)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LCOT"
+}
