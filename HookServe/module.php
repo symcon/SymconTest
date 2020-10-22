@@ -6,7 +6,7 @@
 
 		public function __construct($InstanceID)
 		{
-			parent::__construct($InstanceID, "/hook/hookserve");
+			parent::__construct($InstanceID, "hookserve");
 		}		
 		
 		public function Create() {

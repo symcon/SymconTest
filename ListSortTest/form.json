@@ -1,0 +1,42 @@
+{
+    "elements": [	
+		{
+			"type": "List",
+			"name": "SortList",
+			"caption": "List",
+			"rowCount": 5,
+			"add": true,
+			"delete": true,
+			"sort": {
+				"column": "text",
+				"direction": "ascending"
+			},
+			"columns": [
+				{
+					"label": "Order",
+					"name": "order",
+					"width": "100px",					
+					"add": 0,
+					"edit": {
+						"type": "NumberSpinner"
+					}
+				},
+				{
+					"label": "Text",
+					"name": "text",
+					"width": "auto",
+					"add": "",
+					"edit": {
+						"type": "ValidationTextBox"
+					}
+				}
+			],
+			"values": [
+				{"text": "a", "order": 0},
+				{"text": "b", "order": 1},
+				{"text": "C", "order": 2},
+				{"text": "D", "order": 3}
+			]
+		}
+    ]
+}
