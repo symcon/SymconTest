@@ -25,17 +25,24 @@
 		* This function will be called by the hook control. Visibility should be protected!
 		*/
 		protected function ProcessHookData() {
+
+			// Determine the path to the real file here, depending on the called hook address
 			$path = '';
 			if ($_SERVER['SCRIPT_NAME'] === '/hook/hookservesimple/text') {
+				// Link to a file in this directory
 				$path = __DIR__ . '/test.txt';
 			}
 			else if (($_SERVER['SCRIPT_NAME'] === '/hook/hookservesimple/media') && IPS_MediaExists($this->ReadPropertyInteger('MediaID'))) {
+				// Link to a media file
 				$path = IPS_GetKernelDir() . '/' . IPS_GetMedia($this->ReadPropertyInteger('MediaID'))['MediaFile'];
 			}
 			else {
+				// Fail if there is nothing there
 				http_response_code(404);
 				die("File not found!");
 			}
+
+			// --------------------- After this line, there are probably no adjustments needed ---------------------------------------
 
 			$extension = pathinfo($path, PATHINFO_EXTENSION);
 
