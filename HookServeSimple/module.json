@@ -1,0 +1,14 @@
+{
+	"id": "{7987877A-D0B5-E1CE-9D4A-830B0DFF1E18}",
+	"name": "HookServeSimple",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"HookServeSimple"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HSS"
+}
