@@ -6,6 +6,8 @@
 		public function Create() {
 			//Never delete this line!
 			parent::Create();
+
+            $this->RegisterPropertyInteger('SelectIntegerFloat', 0);
 			
 		}
 

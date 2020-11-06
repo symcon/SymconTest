@@ -1,4 +1,27 @@
 {
+    "elements": [
+        {
+            "type": "SelectVariable",
+            "name": "SelectIntegerFloat",
+            "caption": "Variable Integer/Float",
+            "validVariableTypes": [1, 2]
+        },
+        {
+            "type": "SelectObject",
+            "name": "Object",
+            "caption": "Property Object"
+        },
+        {
+            "type": "Button",
+            "caption": "Set Property",
+            "onClick": "IPS_SetProperty($id, 'SelectIntegerFloat', $Object); IPS_ApplyChanges($id);"
+        },
+        {
+            "type": "Button",
+            "caption": "Set random id",
+            "onClick": "IPS_SetProperty($id, 'SelectIntegerFloat', rand(10000, 99999)); IPS_ApplyChanges($id);"
+        }
+    ],
     "actions": [
         {
             "type": "SelectVariable",
