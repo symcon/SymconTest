@@ -1,0 +1,14 @@
+{
+    "id": "{66C85A6F-5286-3240-C6DB-8B5912FF8533}",
+    "name": "NumberSpinnerTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "NumberSpinner Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "NST"
+}

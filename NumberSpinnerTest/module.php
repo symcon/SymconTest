@@ -1,0 +1,7 @@
+<?
+
+    class NumberSpinnerTest extends IPSModule
+    {
+    }
+
+?>
