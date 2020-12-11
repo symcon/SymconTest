@@ -12,7 +12,8 @@
 					"width": "125px",
 					"add": 0,
 					"edit": {
-						"type": "SelectInstance"
+						"type": "SelectInstance",
+						"onChange": "var_dump($id);"
 					}
 				}
 			],
