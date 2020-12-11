@@ -9,6 +9,7 @@
 
 			$this->RegisterPropertyInteger("ColorProp", -1);
             $this->RegisterPropertyString("LocationProp", "");
+            $this->RegisterPropertyString("ActionProp", "");
 			
 		}
 

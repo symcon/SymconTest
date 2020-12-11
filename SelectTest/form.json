@@ -9,8 +9,12 @@
             "name": "LocationProp",
             "type": "SelectLocation",
             "caption": "Location"
+        },
+        {
+            "name": "ActionProp",
+            "type": "SelectAction"
         }
-],
+    ],
     "actions": [
         {
             "name": "ValidModule",
