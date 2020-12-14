@@ -8,17 +8,18 @@
             parent::Create();
 
             $this->RegisterPropertyInteger('SelectIntegerFloat', 0);
+            $this->RegisterPropertyInteger('SelectDynamic', 0);
         }
 
         public function ChangeAction($action)
         {
-            $this->UpdateFormField('dynamic', 'requiredAction', $action);
+            $this->UpdateFormField('SelectDynamic', 'requiredAction', $action);
         }
 
         
         public function ChangeLogging($logging)
         {
-            $this->UpdateFormField('dynamic', 'requiredLogging', $logging);
+            $this->UpdateFormField('SelectDynamic', 'requiredLogging', $logging);
         }
 
         public function UpdateTypes($types)
@@ -29,6 +30,6 @@
                     $newTypes[]= $i;
                 }
             }
-            $this->UpdateFormField('dynamic', 'validVariableTypes', json_encode($newTypes));
+            $this->UpdateFormField('SelectDynamic', 'validVariableTypes', json_encode($newTypes));
         }
     }

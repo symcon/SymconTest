@@ -20,55 +20,14 @@
             "type": "Button",
             "caption": "Set random id",
             "onClick": "IPS_SetProperty($id, 'SelectIntegerFloat', rand(10000, 99999)); IPS_ApplyChanges($id);"
+        },
+        {
+            "type": "SelectVariable",
+            "name": "SelectDynamic",
+            "caption": "Dynamic"
         }
     ],
     "actions": [
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Default"
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Integer/Float",
-            "validVariableTypes": [1, 2]
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Action",
-            "requiredAction": 1
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable No Action",
-            "requiredAction": 2
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Logged",
-            "requiredLogging": 1
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Not Logged",
-            "requiredLogging": 2
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Gauge",
-            "requiredLogging": 3
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "Variable Counter",
-            "requiredLogging": 4
-        },
-        {
-            "type": "SelectVariable",
-            "caption": "All",
-            "requiredLogging": 3,
-            "validVariableTypes": [1, 2],
-            "requiredAction": 1
-        },
         {
             "type": "ExpansionPanel",
             "caption": "Dynamic",
@@ -120,13 +79,54 @@
                         {"caption": "no action", "value": 2}
                     ],
                     "onChange": "STSVT_ChangeAction($id, $action);"
-                },
-                {
-                    "type": "SelectVariable",
-                    "name": "dynamic",
-                    "caption": "Dynamic"
                 }
             ]
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Default"
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Integer/Float",
+            "validVariableTypes": [1, 2]
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Action",
+            "requiredAction": 1
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable No Action",
+            "requiredAction": 2
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Logged",
+            "requiredLogging": 1
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Not Logged",
+            "requiredLogging": 2
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Gauge",
+            "requiredLogging": 3
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Counter",
+            "requiredLogging": 4
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "All",
+            "requiredLogging": 3,
+            "validVariableTypes": [1, 2],
+            "requiredAction": 1
         }
     ]
 }
