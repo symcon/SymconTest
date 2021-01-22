@@ -1,0 +1,14 @@
+{
+	"id": "{AE04912D-7B1E-76F3-A237-751E9943B59A}",
+	"name": "SelectVariableTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[	
+		"Select Variable Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "STSVT"
+}
