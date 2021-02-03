@@ -21,6 +21,15 @@
 						"type": "SelectInstance"
 					}
 				}, {
+					"label": "WebFront",
+					"name": "webfrontID", 
+					"width": "75px",
+					"add": 0,
+					"edit": {
+						"type": "SelectModule",
+						"moduleID": "{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}"
+					}
+				}, {
 					"label": "Name",
 					"name": "name",
 					"width": "auto",
