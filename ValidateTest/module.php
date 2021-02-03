@@ -7,6 +7,7 @@
             //Never delete this line!
             parent::Create();
 
+            $this->RegisterPropertyString('DynamicTextBox', '');
         }
 
         public function UpdateParameter($name, $parameter, $value) {
