@@ -1,0 +1,14 @@
+{
+	"id": "{09039E12-7DC6-D5AA-36D8-5D433D7C626D}",
+	"name": "ListAdd",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Add)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LAD"
+}

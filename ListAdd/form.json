@@ -1,0 +1,19 @@
+{
+    "elements": [	
+		{
+			"type": "CheckBox",
+			"caption": "Display ID",
+			"name": "DisplayID"
+		},
+		{
+			"type": "List",
+			"name": "Targets",
+			"caption": "Variables",
+			"width": "auto",
+			"onAdd": "LAD_NewID($id, $Targets);",
+			"add": true,
+			"delete": true,
+			"columns": []
+		}
+    ]
+}
