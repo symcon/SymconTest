@@ -36,6 +36,12 @@
         },
         {
             "type": "Button",
+            "label": "/test",
+            "link": true,
+            "onClick": "echo '/test';"
+        },
+        {
+            "type": "Button",
             "label": "Broken Link",
             "link": true,
             "onClick": "echo 'This' . PHP_EOL . 'is' . PHP_EOL . 'a' . PHP_EOL . 'test';"
