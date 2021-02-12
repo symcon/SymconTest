@@ -3,36 +3,36 @@
         {
             "type": "Button",
             "label": "HTTP Link undefined",
-            "onClick": "echo 'http://google.com'"
+            "onClick": "echo 'http://google.com';"
         },
         {
             "type": "Button",
             "label": "HTTP Link true",
             "link": true,
-            "onClick": "echo 'http://google.com'"
+            "onClick": "echo 'http://google.com';"
         },
         {
             "type": "Button",
             "label": "HTTP Link false",
             "link": false,
-            "onClick": "echo 'http://google.com'"
+            "onClick": "echo 'http://google.com';"
         },
         {
             "type": "Button",
             "label": "Text Link undefined",
-            "onClick": "echo '../'"
+            "onClick": "echo '../';"
         },
         {
             "type": "Button",
             "label": "Text Link true",
             "link": true,
-            "onClick": "echo '../'"
+            "onClick": "echo '../';"
         },
         {
             "type": "Button",
             "label": "Text Link false",
             "link": false,
-            "onClick": "echo '../'"
+            "onClick": "echo '../';"
         },
         {
             "type": "Button",
