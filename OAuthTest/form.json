@@ -1,10 +1,7 @@
 {
-	"elements":
-	[
-		{ "name": "Token", "type": "ValidationTextBox", "caption": "Token" }
-	],
 	"actions":
 	[
-		{ "type": "Button", "label": "Register", "onClick": "echo OAT_Register($id);" }
+		{ "type": "Button", "label": "Register", "onClick": "echo OAT_Register($id);" },
+		{ "type": "Label", "name": "Token", "caption": "Token" }
 	]
 }

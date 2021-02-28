@@ -22,7 +22,7 @@
 			//Never delete this line!
 			parent::Create();
 			
-			$this->RegisterPropertyString("Token", "");
+			$this->RegisterAttributeString("Token", "");
 
 		}
 	
@@ -31,6 +31,14 @@
 			parent::ApplyChanges();
 		}
 	
+		public function GetConfigurationForm()
+		{
+			
+			$data = json_decode(file_get_contents(__DIR__ . "/form.json"));
+			$data->actions[1]->caption = $this->ReadAttributeString("Token") ? "Token: " . substr($this->ReadAttributeString("Token"), 0, 16) . "..." : "Token: Not registered yet";
+			return json_encode($data);
+		}
+
 		/**
 		* This function will be called by the register button on the property page!
 		*/
@@ -86,8 +94,8 @@
 				
 				$this->SendDebug("ProcessOAuthData", "OK! Let's save the Refresh Token permanently", 0);
 
-				IPS_SetProperty($this->InstanceID, "Token", $token);
-				IPS_ApplyChanges($this->InstanceID);
+				$this->WriteAttributeString("Token", $token);
+				$this->UpdateFormField("Token", "caption", "Token: " . substr($token, 0, 16) . "...");
 			
 			} else {
 				
@@ -120,7 +128,7 @@
 					"http" => array(
 						"header" => "Content-Type: application/x-www-form-urlencoded\r\n",
 						"method"  => "POST",
-						"content" => http_build_query(Array("refresh_token" => $this->ReadPropertyString("Token")))
+						"content" => http_build_query(Array("refresh_token" => $this->ReadAttributeString("Token")))
 					)
 				);
 				$context = stream_context_create($options);
@@ -140,8 +148,8 @@
 				if(isset($data->refresh_token)) {
 					$this->SendDebug("FetchAccessToken", "NEW! Let's save the updated Refresh Token permanently", 0);
 
-					IPS_SetProperty($this->InstanceID, "Token", $data->refresh_token);
-					IPS_ApplyChanges($this->InstanceID);
+					$this->WriteAttributeString("Token", $data->refresh_token);
+					$this->UpdateFormField("Token", "caption", "Token: " . substr($data->refresh_token, 0, 16) . "...");
 				}
 				
 				
