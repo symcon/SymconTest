@@ -4,7 +4,10 @@
             "type": "ExpansionPanel",
             "name": "ExpansionPanel",
             "caption": "Expansion Panel",
-            "onClick": "echo $id;",
+            "onClick": [
+                "$test = $id;",
+                "echo $test;"
+            ],
             "items": [
 
             ]
