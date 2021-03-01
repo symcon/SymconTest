@@ -1,0 +1,29 @@
+{
+    "actions": [
+        {
+            "type": "List",
+            "add": true,
+            "rowCount": 7,
+            "onEdit": "echo 'https://symcon.de';",
+            "columns": [{
+                "name": "data",
+                "caption": "Data",
+                "add": 1,
+                "width": "auto",
+                "edit": {
+                    "type": "Select",
+                    "options": [
+                        {
+                            "caption": "One",
+                            "value": 1
+                        },
+                        {
+                            "caption": "Two",
+                            "value": 2
+                        }
+                    ]
+                }
+            }]
+        }
+    ]
+}

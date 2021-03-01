@@ -1,0 +1,8 @@
+<?
+
+	class ListOnEditTest extends IPSModule
+	{
+		
+	}
+
+?>

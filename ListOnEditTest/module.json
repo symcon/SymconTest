@@ -1,0 +1,14 @@
+{
+	"id": "{5226094C-F52B-64A8-1DF5-EDC4352933BA}",
+	"name": "ListOnEditTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (onEdit)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LOET"
+}
