@@ -1,0 +1,109 @@
+{
+    "elements": [	
+        {
+            "type": "List",
+            "name": "TreeData",
+            "caption": "Devices",
+            "rowCount": 5,
+            "add": true,
+            "delete": true,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "label": "InstanceID",
+                    "name": "instanceID", 
+                    "width": "200px",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectInstance"
+                    }
+                }, {
+                    "label": "WebFront",
+                    "name": "webfrontID", 
+                    "width": "25%",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectModule",
+                        "moduleID": "{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}"
+                    }
+                }, {
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": ""
+                }, {
+                    "label": "State",
+                    "name": "state",
+                    "width": "40px",					
+                    "add": "New!"
+                }, {
+                    "label": "Temperature",
+                    "name": "temperature",
+                    "width": "25%",					
+                    "add": 20.0,
+                    "edit": {
+                        "type": "NumberSpinner",
+                        "digits": 2
+                    }
+                }
+            ],
+            "values": [
+            ]
+        },	
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "rowCount": 5,
+            "delete": true,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "label": "InstanceID",
+                    "name": "instanceID", 
+                    "width": "200px",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectInstance"
+                    }
+                }, {
+                    "label": "WebFront",
+                    "name": "webfrontID", 
+                    "width": "25%",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectModule",
+                        "moduleID": "{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}"
+                    }
+                }, {
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": ""
+                }, {
+                    "label": "State",
+                    "name": "state",
+                    "width": "40px",					
+                    "add": "New!"
+                }, {
+                    "label": "Temperature",
+                    "name": "temperature",
+                    "width": "25%",					
+                    "add": 20.0,
+                    "edit": {
+                        "type": "NumberSpinner",
+                        "digits": 2
+                    }
+                }
+            ],
+            "values": [
+            ]
+        }
+    ]
+}

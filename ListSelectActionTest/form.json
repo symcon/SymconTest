@@ -1,0 +1,21 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "ActionList",
+            "add": true,
+            "remove": true,
+            "columns": [
+                {
+                    "name": "action",
+                    "caption": "Action",
+                    "width": "auto",
+                    "add": "{}",
+                    "edit": {
+                        "type": "SelectAction"
+                    }
+                }
+            ]
+        }
+    ]
+}

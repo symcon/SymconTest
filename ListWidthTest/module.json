@@ -1,0 +1,14 @@
+{
+	"id": "{A75E8FA0-5301-978C-6C29-9AF460C2A2B5}",
+	"name": "ListWidthTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Width)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LWT"
+}

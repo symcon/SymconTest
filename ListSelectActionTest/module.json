@@ -1,0 +1,14 @@
+{
+	"id": "{320F9744-4253-3F54-885A-57C653C1914A}",
+	"name": "ListSelectActionTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (SelectAction)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSAT"
+}
