@@ -1,0 +1,6 @@
+{
+    "require": {
+        "league/oauth2-client": "2.6.0",
+        "egeloen/http-adapter": "1.0.2"
+    }
+}
