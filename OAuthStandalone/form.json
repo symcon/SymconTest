@@ -1,0 +1,17 @@
+{
+	"elements": [
+		{ "type": "ValidationTextBox", "name": "ClientID", "caption": "ClientID" },
+		{ "type": "ValidationTextBox", "name": "ClientSecret", "caption": "ClientSecret" },
+		{ "type": "ValidationTextBox", "name": "AuthorizeUri", "caption": "AuthorizeUri" },
+		{ "type": "ValidationTextBox", "name": "TokenUri", "caption": "TokenUri" },
+		{ "type": "ValidationTextBox", "name": "Scopes", "caption": "Scopes" }
+	],
+	"actions":
+	[
+		{ "type": "Button", "label": "Register", "onClick": "echo OAS_Register($id);" },
+		{ "type": "ValidationTextBox", "caption": "Redirect-Uri", "value": "", "width": "600px"},
+		{ "type": "Label", "name": "Token", "caption": "Token" },
+		{ "type": "ValidationTextBox", "caption": "Test-Uri", "name": "TestUri", "width": "600px"},
+		{ "type": "Button", "label": "Test API", "onClick": "echo OAS_Request($id, $TestUri);" }
+	]
+}

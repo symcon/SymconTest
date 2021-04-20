@@ -1,0 +1,14 @@
+{
+	"id": "{FC08B6D5-A8EE-AB44-A1C2-B0693975DE4D}",
+	"name": "OAuthStandalone",
+	"type": 0,
+	"vendor": "",
+	"aliases": 
+	[
+		"OAuthStandalone"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "OAS"
+}
