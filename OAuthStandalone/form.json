@@ -1,10 +1,10 @@
 {
 	"elements": [
-		{ "type": "ValidationTextBox", "name": "ClientID", "caption": "ClientID" },
-		{ "type": "ValidationTextBox", "name": "ClientSecret", "caption": "ClientSecret" },
-		{ "type": "ValidationTextBox", "name": "AuthorizeUri", "caption": "AuthorizeUri" },
-		{ "type": "ValidationTextBox", "name": "TokenUri", "caption": "TokenUri" },
-		{ "type": "ValidationTextBox", "name": "Scopes", "caption": "Scopes" }
+		{ "type": "ValidationTextBox", "name": "ClientID", "caption": "ClientID", "width": "600px" },
+		{ "type": "ValidationTextBox", "name": "ClientSecret", "caption": "ClientSecret", "width": "600px" },
+		{ "type": "ValidationTextBox", "name": "AuthorizeUri", "caption": "AuthorizeUri", "width": "600px" },
+		{ "type": "ValidationTextBox", "name": "TokenUri", "caption": "TokenUri", "width": "600px" },
+		{ "type": "ValidationTextBox", "name": "Scopes", "caption": "Scopes", "width": "600px" }
 	],
 	"actions":
 	[
