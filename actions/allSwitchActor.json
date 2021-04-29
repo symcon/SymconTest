@@ -25,7 +25,7 @@
   },
   "locale": {
     "de": {
-      "Set actor channel": "Setzte Aktor Kanal",
+      "Set actor channel": "Setze Aktor Kanal",
       "Channel ID": "Kanal ID",
       "Set channel {CHANNELID} to Status {STATUS}" : "Setze Kanal {CHANNELID} auf Status {STATUS}"
     }
