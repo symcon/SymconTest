@@ -1,0 +1,43 @@
+{
+  "id": "{271C73F1-2EC9-60E6-C28E-E8CFC6954E6C}",
+  "caption": "Fade Channel",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "CHANNEL",
+      "caption": "Channel"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "VALUE",
+      "caption": "Value"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "FADING",
+      "caption": "Fading Time",
+      "suffix": "seconds"
+    }
+  ],
+  "action": [
+    "DMX_FadeChannel($_IPS['TARGET'], $_IPS['CHANNEL'], $_IPS['VALUE'], $_IPS['FADING']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{E19C2E41-7347-4A3B-B7D9-A9A88E0D133E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Fade Channel": "Auf Kanal überblenden",
+      "Channel": "Kanal",
+      "Value": "Wert",
+      "Fading time": "Überblendzeit",
+      "seconds": "Sekunden",
+      "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE} in {FADING} Sekunden"
+    }
+  },
+  "format": "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds"
+}

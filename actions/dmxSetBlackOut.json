@@ -1,0 +1,26 @@
+{
+  "id": "{ED32DFA2-FBBD-E8ED-C979-AA2B35177F83}",
+  "caption": "Set Black Out",
+  "form": [
+    {
+      "type": "CheckBox",
+      "name": "STATUS",
+      "caption": "Status"
+    }
+  ],
+  "action": [
+    "DMX_BlackOut($_IPS['TARGET'], $_IPS['STATUS']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{B1E43BF6-770A-4FD7-B4FE-6D265F93746B}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Black Out": "Schalte Blackout"
+    }
+  }
+}

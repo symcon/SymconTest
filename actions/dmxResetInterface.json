@@ -1,0 +1,19 @@
+{
+  "id": "{AE4EB147-CF31-C423-A33D-9F5733F09280}",
+  "caption": "Reset Interface",
+  "form": [],
+  "action": [
+    "DMX_ResetInterface($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{B1E43BF6-770A-4FD7-B4FE-6D265F93746B}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+    }
+  }
+}
