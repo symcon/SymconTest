@@ -1,0 +1,36 @@
+{
+  "id": "{5EAF8E41-C5CD-3328-B0AA-20B44B466D4E}",
+  "caption": "Set Analog Channel",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "CHANNELID",
+      "caption": "Channel ID"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "VALUE",
+      "caption": "Value",
+      "digits": 6
+    }
+  ],
+  "action": [
+    "ALL_SetAnalog($_IPS['TARGET'], $_IPS['CHANNELID'], $_IPS['VALUE']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{FB6B8DD0-CD8E-4CE7-8613-D7BD6436720A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Analog Channel": "Setzte Analog Kanal",
+      "Channel ID": "Kanal ID",
+      "Value": "Wert",
+      "Set channel {CHANNELID} to value {VALUE}" : "Setze Kanal {CHANNELID} auf Wert {VALUE}"
+    }
+  },
+  "format": "Set channel {CHANNELID} to value {VALUE}"
+}

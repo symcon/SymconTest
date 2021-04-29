@@ -1,0 +1,49 @@
+{
+  "id": "{271C73F1-2EC9-60E6-C28E-E8CFC6954E6C}",
+  "caption": "Fade RGB",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "R",
+      "caption": "Red"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "G",
+      "caption": "Green"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "B",
+      "caption": "Blue"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "FADING",
+      "caption": "Fading time",
+      "suffix": "seconds"
+    }
+  ],
+  "action": [
+    "DMX_FadeRGB($_IPS['TARGET'], $_IPS['R'], $_IPS['G'], $_IPS['B'], $_IPS['FADING']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1AF36760-644E-4DA9-8776-01BA6DF6178E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Fade RGB": "Setze RGB über Zeit",
+      "Red": "Rot",
+      "Green": "Grün",
+      "Blue": "Blaue",
+      "Fading time": "Zeit der Rampe",
+      "seconds": "Sekunden",
+      "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B}) in {FADING} Sekunden"
+    }
+  },
+  "format": "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds"
+}

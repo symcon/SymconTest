@@ -1,0 +1,34 @@
+{
+  "id": "{904EFF5E-5CF1-7D96-9E7C-C9EC74540C13}",
+  "caption": "Set actor channel",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "CHANNELID",
+      "caption": "Channel ID"
+    },
+    {
+      "type": "CheckBox",
+      "name": "STATUS",
+      "caption": "Status"
+    }
+  ],
+  "action": [
+    "ALL_SwitchActor($_IPS['TARGET'], $_IPS['CHANNELID'], $_IPS['STATUS']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{FB6B8DD0-CD8E-4CE7-8613-D7BD6436720A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set actor channel": "Setzte Aktor Kanal",
+      "Channel ID": "Kanal ID",
+      "Set channel {CHANNELID} to Status {STATUS}" : "Setze Kanal {CHANNELID} auf Status {STATUS}"
+    }
+  },
+  "format": "Set channel {CHANNELID} to Status {STATUS}"
+}

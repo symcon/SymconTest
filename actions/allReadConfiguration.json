@@ -1,0 +1,20 @@
+{
+  "id": "{4B741889-F4CE-9465-A6C5-A62D7B291B43}",
+  "caption": "Read Configuration",
+  "form": [],
+  "action": [
+    "ALL_ReadConfiguration($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{2D8B0172-166C-45B0-B979-61A787809E22}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Read Configuration": "Lese Konfiguration aus"
+    }
+  }
+}

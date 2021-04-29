@@ -1,0 +1,30 @@
+{
+  "id": "{7D54CCE7-F483-9EF1-29BD-1D04D55491CC}",
+  "caption": "Call scene",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "SCENE",
+      "caption": "Scene"
+    }
+  ],
+  "action": [
+    "DS_CallScene($_IPS['TARGET'], $_IPS['SCENE']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{4E0FE8A0-1A1E-460A-9446-2D18B3635310}",
+      "{555C65F5-F436-467F-A2B1-DAA1BB02CA3B}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Call scene": "Schalte auf Szene",
+      "Scene": "Szene",
+      "Set device on Scene {SCENE}" : "Schalte Gerät auf Szene {SCENE}"
+    }
+  },
+  "format": "Set device on Scene {SCENE}"
+}

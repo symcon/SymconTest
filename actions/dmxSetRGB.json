@@ -1,0 +1,41 @@
+{
+  "id": "{EA015F29-7F07-445F-D85F-1EEEFB05DD4E}",
+  "caption": "Set RGB",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "R",
+      "caption": "Red"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "G",
+      "caption": "Green"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "B",
+      "caption": "Blue"
+    }
+  ],
+  "action": [
+    "DMX_SetRGB($_IPS['TARGET'], $_IPS['R'], $_IPS['G'], $_IPS['B']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1AF36760-644E-4DA9-8776-01BA6DF6178E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set RGB": "Setze RGB",
+      "Red": "Rot",
+      "Green": "Grün",
+      "Blue": "Blaue",
+      "Set RGB on Value Red({R}) Green({G}) Blue({B})": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B})"
+    }
+  },
+  "format": "Set RGB on Value Red({R}) Green({G}) Blue({B})"
+}

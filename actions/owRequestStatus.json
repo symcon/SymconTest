@@ -1,0 +1,29 @@
+{
+  "id": "{26406653-3666-52AF-0FC4-71968659FA35}",
+  "caption": "Request status",
+  "form": [],
+  "action": [
+    "OW_RequestStatus($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{F1B54BB1-DC7D-42D9-A973-6CA4789E358F}",
+      "{685D4911-57CC-43AF-BA36-183EF2C8518F}",
+      "{50DB3978-CF6A-4BCE-87DF-5BB45D900628}",
+      "{88A63FF8-832B-48E3-B989-A416C7908E6A}",
+      "{5DF182B0-01DF-4D8A-82CD-E646FD9BF0B2}",
+      "{301FA314-65F8-4317-8BF5-729CF8664F54}",
+      "{766E337F-A707-48CC-A323-70D7E77E3F8C}",
+      "{6A75828A-25CD-4CF3-83EA-DAAB914030A7}",
+      "{E02955B3-49E4-47A9-A9ED-2C71401F6D6E}",
+      "{BD0F2622-F67C-4248-9A04-316DF13914C3}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Request status": "Frage Status ab"
+    }
+  }
+}

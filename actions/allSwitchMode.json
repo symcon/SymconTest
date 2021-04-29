@@ -1,0 +1,28 @@
+{
+  "id": "{904EFF5E-5CF1-7D96-9E7C-C9EC74540C13}",
+  "caption": "Switch mode",
+  "form": [
+    {
+      "type": "CheckBox",
+      "name": "STATUS",
+      "caption": "Status"
+    }
+  ],
+  "action": [
+    "ALL_SwitchActor($_IPS['TARGET'], $_IPS['STATUS']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{D805EC4C-7D17-4E84-98D3-A441AA71ACA3}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Switch mode": "Schalte den Modus",
+      "Set into mode {STATUS}": "Setze in den Modus {STATUS}"
+    }
+  },
+  "format": "Set into mode {STATUS}"
+}
