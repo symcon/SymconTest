@@ -1,0 +1,8 @@
+{
+"elements": [
+        {
+            "name": "Condition",
+            "type": "SelectCondition"
+        }
+    ]
+}

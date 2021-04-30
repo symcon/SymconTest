@@ -1,0 +1,14 @@
+{
+    "id": "{081FF98F-BE57-844E-B6A9-28E5F63404B8}",
+    "name": "SelectConditionTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Select Condition Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SCT"
+}
