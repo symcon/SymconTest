@@ -23,7 +23,7 @@
 				}, {
 					"label": "WebFront",
 					"name": "webfrontID", 
-					"width": "75px",
+					"width": "auto",
 					"add": 0,
 					"edit": {
 						"type": "SelectModule",
