@@ -1,0 +1,20 @@
+{
+  "id": "{521CFC4E-DA34-90BA-5DB5-A699FAD72CCC}",
+  "caption": "Move Shutter Up",
+  "form": [],
+  "action": [
+    "DS_ShutterMoveUp($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Move Shutter Up": "Fahre Rollladen hoch"
+    }
+  }
+}

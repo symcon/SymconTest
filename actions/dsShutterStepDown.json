@@ -1,0 +1,20 @@
+{
+  "id": "{D157A820-4BA2-40D6-9ED3-587CEF0CF28D}",
+  "caption": "Shutter Step Down",
+  "form": [],
+  "action": [
+    "DS_ShutterStepDown($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Shutter Step Down": "Fahre Rollladen einen Schritt runter"
+    }
+  }
+}

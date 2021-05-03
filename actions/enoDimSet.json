@@ -1,0 +1,34 @@
+{
+  "id": "{3F4F2128-A924-AB4A-39F1-930E16036B88}",
+  "caption": "Set Dim",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "INTENSITY",
+      "caption": "Intensity"
+    }
+  ],
+  "action": [
+    "ENO_DimSet($_IPS['TARGET'], $_IPS['INTENSITY']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{C3825266-A6DE-44B6-97B4-C0BCFB6BD52B}",
+      "{EAF7026C-A0DB-4B25-8DFD-D4FAB7A3EFCF}",
+      "{5B38D44B-A570-4381-B719-8BFB58387AA1}",
+      "{19FDCECC-0735-4ADA-8304-3AF53C919668}",
+      "{BFDADCB0-BAB5-45BC-BF7A-1D19EA0FF31D}",
+      "{48909406-A2B9-4990-934F-28B9A80CD079}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Dim": "Setze Dimmung",
+      "Intensity": "Intensität",
+      "Set dim on intensity {INTENSITY}" : "Setze Dimmung auf Intensität {INTENSITY}"
+    }
+  },
+  "format": "Set dim on intensity {INTENSITY}"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "{51EBFD2E-6BFC-F0F8-F4AB-0C150E108C0A}",
+  "caption": "Shutter Step Up",
+  "form": [],
+  "action": [
+    "DS_ShutterStepUp($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Shutter Step Up": "Fahre Rollladen einen Schritt hoch"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "{932474D7-97FF-A3DB-A8A0-9ADEDD234ABD}",
+  "caption": "Request Info",
+  "form": [],
+  "action": [
+    "DS_RequestStatus($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}",
+      "{DB54D0DB-64C3-4930-9B53-2337183C9C1D}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Request Info": "Frage Information an"
+    }
+  }
+}

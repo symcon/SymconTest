@@ -1,0 +1,29 @@
+{
+  "id": "{7D54CCE7-F483-9EF1-29BD-1D04D55491CC}",
+  "caption": "Set Dim",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "INTENSITY",
+      "caption": "Intensity"
+    }
+  ],
+  "action": [
+    "DS_DimSet($_IPS['TARGET'], $_IPS['INTENSITY']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{DB54D0DB-64C3-4930-9B53-2337183C9C1D}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Dim": "Setze Dimmung",
+      "Intensity": "Intensität",
+      "Set dim on intensity {INTENSITY}" : "Setze Dimmung auf Intensität {INTENSITY}"
+    }
+  },
+  "format": "Set dim on intensity {INTENSITY}"
+}

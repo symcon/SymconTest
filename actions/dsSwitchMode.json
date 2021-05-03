@@ -1,0 +1,29 @@
+{
+  "id": "{5C34ECDC-74D9-E233-E4EF-4FF518925369}",
+  "caption": "Switch Mode",
+  "form": [
+    {
+      "type": "CheckBox",
+      "name": "MODE",
+      "caption": "Mode On/Off"
+    }
+  ],
+  "action": [
+    "DS_SwitchMode($_IPS['TARGET'], $_IPS['MODE']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{DB54D0DB-64C3-4930-9B53-2337183C9C1D}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Switch Mode": "Schalte Modus",
+      "Mode On/Off": "Modus An/Aus",
+      "Set Mode to {MODE}" : "Setze Modus auf {MODE}"
+    }
+  },
+  "format": "Set Mode to {MODE}"
+}
