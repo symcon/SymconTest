@@ -1,0 +1,38 @@
+{
+  "id": "{A26D46F9-78E9-2BC6-4542-CEF1F140EB1F}",
+  "caption": "Send packet",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "SSCK_SendPacket($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{8062CF2B-600E-41D6-AD4B-1BA66C32D6ED}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send packet": "Sende Paket",
+      "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket" : "Sende \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf Server Socket"
+    }
+  },
+  "format": "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket"
+}

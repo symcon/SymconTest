@@ -1,0 +1,20 @@
+{
+  "id": "{C3E8949A-73FA-1E87-72C6-4BB44A4FEAD6}",
+  "caption": "Shutter Step Down",
+  "form": [],
+  "action": [
+    "ENO_ShutterStepDown($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92AA}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Shutter Step Down": "Fahre Rollladen einen Schritt runter"
+    }
+  }
+}

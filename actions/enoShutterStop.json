@@ -1,0 +1,21 @@
+{
+  "id": "{747A42E2-27BE-3E7A-86A4-9BE360467B97}",
+  "caption": "Stop Shutter",
+  "form": [],
+  "action": [
+    "ENO_ShutterStop($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92A9}",
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92AA}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Stop Shutter": "Stoppe Rollladen"
+    }
+  }
+}

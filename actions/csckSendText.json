@@ -1,0 +1,28 @@
+{
+  "id": "{1A5C901E-E35D-2B3B-4839-7F4536388E7E}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "CSCK_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3CFF0FD9-E306-41DB-9B5A-9D06D38576C3}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send \"{TEXT}\" on Client Socket" : "Sende \"{TEXT}\" auf Client Socket"
+    }
+  },
+  "format": "Send \"{TEXT}\" on Client Socket"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "{6532113B-2098-29B9-8304-FC33B8AD1C98}",
+  "caption": "Send event",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "REPORTID",
+      "caption": "Report ID"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "HID_SendEvent($_IPS['TARGET'], $_IPS['REPORTID'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{E6D7692A-7F4C-441D-827B-64062CFE1C02}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send event": "Sende Event",
+      "Send \"{TEXT}\" with ID {ID} on HID" : "Sende \"{TEXT}\" mit ID {ID} auf HID"
+    }
+  },
+  "format": "Send \"{TEXT}\" with ID {ID} on HID"
+}

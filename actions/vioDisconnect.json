@@ -1,0 +1,33 @@
+{
+  "id": "{D4F25A13-0B27-1A22-61C4-B9FA19843832}",
+  "caption": "Disconnect VirtualIO",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "VIO_Disconnect($_IPS['TARGET'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Disconnect VirtualIO": "Trenne VirtualIO",
+      "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Trenne Verbindung {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+    }
+  },
+  "format": "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+}

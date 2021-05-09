@@ -1,0 +1,28 @@
+{
+  "id": "{66C291FB-E34E-26B2-5B1B-18CBD8CAC510}",
+  "caption": "Set DTR",
+  "form": [
+    {
+      "type": "CheckBox",
+      "name": "STATUS",
+      "caption": "Status"
+    }
+  ],
+  "action": [
+    "SPRT_SetDTR($_IPS['TARGET'], $_IPS['STATUS']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6DC3D946-0D31-450F-A8C6-C42DB8D7D4F1}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set DTR": "Setze Break",
+      "Set DTR on {STATUS}": "Setze DTR auf {STATUS}"
+    }
+  },
+  "format": "Set DTR on {STATUS}"
+}

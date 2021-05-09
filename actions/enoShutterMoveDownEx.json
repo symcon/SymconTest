@@ -1,0 +1,30 @@
+{
+  "id": "{9C27138E-8166-F8C7-D75E-6E641083FB13}",
+  "caption": "Move Shutter Down with runtime",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "RUNTIME",
+      "caption": "Runtime",
+      "suffix": "seconds"
+    }
+  ],
+  "action": [
+    "ENO_ShutterMoveDownEx($_IPS['TARGET'], $_IPS['RUNTIME']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92A9}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "seconds": "Sekunden",
+      "Runtime": "Laufzeit",
+      "Move Shutter Down with runtime": "Fahre Rollladen runter mit Laufzeit",
+      "Move Shutter Down for {RUNTIME}": "Fahre Rollladen für {RUNTIME} runter"
+    }
+  }
+}

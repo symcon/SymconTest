@@ -1,0 +1,38 @@
+{
+  "id": "{F6EA0C96-76D4-1C11-527E-B9151FEEF44F}",
+  "caption": "Send paket",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "VIO_PushPaket($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send paket": "Sende Paket",
+      "Send paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Sende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+    }
+  },
+  "format": "Send paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+}

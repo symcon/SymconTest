@@ -1,0 +1,33 @@
+{
+  "id": "{24452C06-C276-8DA8-051B-D821EAA125C5}",
+  "caption": "Connect VirtualIO",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "VIO_Connect($_IPS['TARGET'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Connect VirtualIO": "Verbinde VirtualIO",
+      "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Verbinde über {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+    }
+  },
+  "format": "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+}

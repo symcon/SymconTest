@@ -1,0 +1,28 @@
+{
+  "id": "{222A4671-EF9B-70B5-DF8C-624CA39AEB99}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "VIO_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send text \"{TEXT}\" on VirtualIO" : "Sende Text \"{TEXT}\" auf VirtualIO"
+    }
+  },
+  "format": "Send text \"{TEXT}\" on VirtualIO"
+}

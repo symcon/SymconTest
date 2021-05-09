@@ -1,0 +1,28 @@
+{
+  "id": "{E52EEA18-D4CD-B384-76EF-4008830AC681}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "SSCK_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{8062CF2B-600E-41D6-AD4B-1BA66C32D6ED}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send \"{TEXT}\" on Server Socket" : "Sende \"{TEXT}\" auf Server Socket"
+    }
+  },
+  "format": "Send \"{TEXT}\" on Server Socket"
+}

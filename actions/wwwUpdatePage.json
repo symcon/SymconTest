@@ -1,0 +1,20 @@
+{
+  "id": "{E89A232F-D3F9-82D2-2FAA-5534A1F09821}",
+  "caption": "Update page",
+  "form": [],
+  "action": [
+    "WWW_UpdatePage($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{4CB91589-CE01-4700-906F-26320EFCF6C4}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Update page": "Aktualisiere Seite"
+    }
+  }
+}

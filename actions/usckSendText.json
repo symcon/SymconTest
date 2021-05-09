@@ -1,0 +1,28 @@
+{
+  "id": "{3F6B0C13-783A-4F98-8444-288F9BC6A732}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "USCK_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{82347F20-F541-41E1-AC5B-A636FD3AE2D8}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send \"{TEXT}\" on UDP Socket" : "Sende \"{TEXT}\" auf UDP Socket"
+    }
+  },
+  "format": "Send \"{TEXT}\" on UDP Socket"
+}
