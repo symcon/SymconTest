@@ -1,0 +1,20 @@
+{
+  "id": "{ABCAB228-A14E-EC39-41C3-51FB2BF80249}",
+  "caption": "Request Info",
+  "form": [],
+  "action": [
+    "HM_RequestStatus($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{EE4A81C6-5C90-4DB7-AD2F-F6BBD521412E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Request Info": "Frage Information an"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "{1C1C4558-89F5-E2FD-4DCB-F90A14AC784B}",
+  "caption": "Delete mail",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "UID",
+      "caption": "UID"
+    }
+  ],
+  "action": [
+    "POP3_DeleteMail($_IPS['TARGET'], $_IPS['UID']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{CABFCCA1-FBFF-4AB7-B11B-9879E67E152F}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Delete mail": "Lösche Mail",
+      "Delete mail with UID \"{UID}\"" : "Lösche Mail mit UID \"{UID}\""
+    }
+  },
+  "format": "Delete mail with UID \"{UID}\""
+}
