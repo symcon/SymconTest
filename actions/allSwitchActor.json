@@ -27,8 +27,11 @@
     "de": {
       "Set actor channel": "Setze Aktor Kanal",
       "Channel ID": "Kanal ID",
-      "Set channel {CHANNELID} to Status {STATUS}" : "Setze Kanal {CHANNELID} auf Status {STATUS}"
+      "Set channel {CHANNELID} to Status {STATUS}" : "Setze Kanal {CHANNELID} auf Status {STATUS}",
+      "Set a channel of the target device to the defined value": "Setze einen Kanal des Zielgeräts auf den definerten Wert"
     }
   },
-  "format": "Set channel {CHANNELID} to Status {STATUS}"
+  "format": "Set channel {CHANNELID} to Status {STATUS}",
+  "category": "target",
+  "description": "Set a channel of the target device to the defined value"
 }

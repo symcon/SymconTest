@@ -39,5 +39,7 @@
       "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE} in {FADING} Sekunden"
     }
   },
-  "format": "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds"
+  "format": "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds",
+  "category": "target",
+  "description": "Fade a channel of the target device to a defined value over a given duration"
 }

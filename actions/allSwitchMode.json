@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Switch mode": "Schalte den Modus",
-      "Set into mode {STATUS}": "Setze in den Modus {STATUS}"
+      "Set into mode {STATUS}": "Setze in den Modus {STATUS}",
+      "Switch the target device on or off": "Schalte des Zielgerät an oder aus"
     }
   },
-  "format": "Set into mode {STATUS}"
+  "format": "Set into mode {STATUS}",
+  "category": "target",
+  "description": "Switch the target device on or off"
 }

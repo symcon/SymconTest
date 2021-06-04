@@ -29,8 +29,11 @@
       "Set Analog Channel": "Setzte Analog Kanal",
       "Channel ID": "Kanal ID",
       "Value": "Wert",
-      "Set channel {CHANNELID} to value {VALUE}" : "Setze Kanal {CHANNELID} auf Wert {VALUE}"
+      "Set channel {CHANNELID} to value {VALUE}" : "Setze Kanal {CHANNELID} auf Wert {VALUE}",
+      "Set a channel of the target device to the defined value": "Setze einen Kanal des Zielgeräts auf den definerten Wert"
     }
   },
-  "format": "Set channel {CHANNELID} to value {VALUE}"
+  "format": "Set channel {CHANNELID} to value {VALUE}",
+  "category": "target",
+  "description": "Set a channel of the target device to the defined value"
 }

@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Read Configuration": "Lese Konfiguration aus"
+      "Read Configuration": "Lese Konfiguration aus",
+      "Read the configuration of the target device": "Liest die Konfiguration des Zielgeräts aus"
     }
-  }
+  },
+  "category": "target",
+  "description": "Read the configuration of the target device"
 }

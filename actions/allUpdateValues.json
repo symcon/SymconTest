@@ -18,7 +18,10 @@
   },
   "locale": {
     "de": {
-      "Update values": "Aktualisiere Werte"
+      "Update values": "Aktualisiere Werte",
+      "Update values of the target device": "Aktualisiere Werte des Zielgeräts"
     }
-  }
+  },
+  "category": "target",
+  "description": "Update values of the target device"
 }

@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Clear Buffer": "Lösche Buffer"
+      "Clear Buffer": "Lösche Buffer",
+      "Delete the buffer of the target Cutter": "Lösche den Buffer des Ziel-Cutters"
     }
-  }
+  },
+  "category": "target",
+  "description": "Delete the buffer of the target Cutter"
 }
