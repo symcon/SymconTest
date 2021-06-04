@@ -26,6 +26,11 @@
                     }
                 }
             }]
+        },
+        {
+            "type": "Button",
+            "caption": "Show Configurator Values",
+            "onClick": "var_dump($Configurator);"
         }
     ]
 }
