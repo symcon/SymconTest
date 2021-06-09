@@ -1,5 +1,5 @@
 {
-"elements": [
+    "actions": [
         {
             "type": "Label",
             "caption": "Regular"
@@ -55,6 +55,14 @@
         {
             "type": "ScriptEditor",
             "rowCount": 10
+        },
+        {
+            "type": "Label",
+            "caption": "With Value"
+        },
+        {
+            "type": "ScriptEditor",
+            "value": "<?php\n\n$x = 5"
         }
     ]
 }
