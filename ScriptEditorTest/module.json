@@ -1,0 +1,14 @@
+{
+	"id": "{4C3BE130-FABA-B7CA-056D-1049E345DDD9}",
+	"name": "ScriptEditorTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Script Editor Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "SET"
+}

@@ -1,0 +1,60 @@
+{
+"elements": [
+        {
+            "type": "Label",
+            "caption": "Regular"
+        },
+        {
+            "type": "ScriptEditor"
+        },
+        {
+            "type": "Label",
+            "caption": "With Caption"
+        },
+        {
+            "type": "ScriptEditor",
+            "caption": "Test"
+        },
+        {
+            "type": "Label",
+            "caption": "Disabled"
+        },
+        {
+            "type": "ScriptEditor",
+            "enabled": false
+        },
+        {
+            "type": "Label",
+            "caption": "Disabled with caption"
+        },
+        {
+            "type": "ScriptEditor",
+            "caption": "Disabled Editor",
+            "enabled": false
+        },
+        {
+            "type": "Label",
+            "caption": "Invisible"
+        },
+        {
+            "type": "ScriptEditor",
+            "visible": false
+        },
+        {
+            "type": "Label",
+            "caption": "200px wide"
+        },
+        {
+            "type": "ScriptEditor",
+            "width": "200px"
+        },
+        {
+            "type": "Label",
+            "caption": "10 Rows"
+        },
+        {
+            "type": "ScriptEditor",
+            "rowCount": 10
+        }
+    ]
+}

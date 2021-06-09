@@ -1,0 +1,7 @@
+<?
+
+    class ScriptEditorTest extends IPSModule
+    {
+    }
+
+?>
