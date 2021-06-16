@@ -27,8 +27,11 @@
     "de": {
       "Set Dim": "Setze Dimmung",
       "Intensity": "Intensität",
-      "Set dim on intensity {INTENSITY}" : "Setze Dimmung auf Intensität {INTENSITY}"
+      "Set dim on intensity {INTENSITY}" : "Setze Dimmung auf Intensität {INTENSITY}",
+      "Set the dim of the target device on a defined value": "Setzte die Dimmung des Zielgeräts auf einen bestimmten Wert"
     }
   },
-  "format": "Set dim on intensity {INTENSITY}"
+  "format": "Set dim on intensity {INTENSITY}",
+  "category": "target",
+  "description": "Set the dim of the target device on a defined value"
 }

@@ -42,8 +42,11 @@
       "Blue": "Blaue",
       "Fading time": "Zeit der Rampe",
       "seconds": "Sekunden",
-      "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B}) in {FADING} Sekunden"
+      "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B}) in {FADING} Sekunden",
+      "Fade a RGB of the target device to a defined value over a given duration": "Setze beim Ziel den RGB innerhalb einer festgelegten Zeit auf einen bestimmten Wert"
     }
   },
-  "format": "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds"
+  "format": "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds",
+  "category": "target",
+  "description": "Fade a RGB of the target device to a defined value over a given duration"
 }

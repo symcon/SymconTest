@@ -34,8 +34,11 @@
       "Red": "Rot",
       "Green": "Grün",
       "Blue": "Blaue",
-      "Set RGB on Value Red({R}) Green({G}) Blue({B})": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B})"
+      "Set RGB on values Red({R}) Green({G}) Blue({B})": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B})",
+      "Set the RGB values of the target device to a defined value": "Setze die RGB-Werte des Zielgeräts auf einen bestimmten Wert"
     }
   },
-  "format": "Set RGB on Value Red({R}) Green({G}) Blue({B})"
+  "format": "Set RGB on values Red({R}) Green({G}) Blue({B})",
+  "category": "target",
+  "description": "Set the RGB values of the target device to a defined value"
 }

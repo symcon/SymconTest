@@ -20,7 +20,10 @@
   },
   "locale": {
     "de": {
-      "Set Black Out": "Schalte Blackout"
+      "Set Black Out": "Schalte Blackout",
+      "Set Black Out of the target device": "Setze den Blackout des Zielgeräts"
     }
-  }
+  },
+  "category": "target",
+  "description": "Set Black Out of the target device"
 }

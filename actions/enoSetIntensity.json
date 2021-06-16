@@ -22,8 +22,11 @@
     "de": {
       "Set Intensity": "Setze Intensität",
       "Intensity": "Intensität",
-      "Set intensity on {INTENSITY}" : "Setze Intensität auf {INTENSITY}"
+      "Set intensity on {INTENSITY}" : "Setze Intensität auf {INTENSITY}",
+      "Set the intensity of the target device on a defined value": "Setzte die Intensität des Zielgeräts auf einen bestimmten Wert"
     }
   },
-  "format": "Set intensity on {INTENSITY}"
+  "format": "Set intensity on {INTENSITY}",
+  "category": "target",
+  "description": "Set the intensity of the target device on a defined value"
 }

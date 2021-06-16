@@ -24,7 +24,10 @@
       "seconds": "Sekunden",
       "Runtime": "Laufzeit",
       "Move Shutter Up with runtime": "Fahre Rollladen hoch mit Laufzeit",
-      "Move Shutter Up for {RUNTIME}": "Fahre Rollladen für {RUNTIME} hoch"
+      "Move Shutter Up for {RUNTIME}": "Fahre Rollladen für {RUNTIME} hoch",
+      "Move the target shutter up for a defined runtime": "Fahre den Ziel-Rollladen für eine definierte Laufzeit hoch"
     }
-  }
+  },
+  "category": "target",
+  "description": "Move the target shutter up for a defined runtime"
 }

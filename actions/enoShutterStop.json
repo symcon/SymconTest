@@ -15,7 +15,10 @@
   },
   "locale": {
     "de": {
-      "Stop Shutter": "Stoppe Rollladen"
+      "Stop Shutter": "Stoppe Rollladen",
+      "Stop the target shutter": "Stoppe den Ziel-Rollladen"
     }
-  }
+  },
+  "category": "target",
+  "description": "Stop the target shutter"
 }

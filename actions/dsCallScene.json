@@ -23,8 +23,11 @@
     "de": {
       "Call scene": "Schalte auf Szene",
       "Scene": "Szene",
-      "Set device on Scene {SCENE}" : "Schalte Gerät auf Szene {SCENE}"
+      "Set device on Scene {SCENE}": "Schalte Gerät auf Szene {SCENE}",
+      "Call a Scene on the target device": "Rufe auf dem Zielgerät eine Szene auf" 
     }
   },
-  "format": "Set device on Scene {SCENE}"
+  "format": "Set device on Scene {SCENE}",
+  "category": "target",
+  "description": "Call a Scene on the target device"
 }

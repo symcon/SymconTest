@@ -29,8 +29,11 @@
       "Channel": "Kanal",
       "Value": "Wert",
       "seconds": "Sekunden",
-      "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE}"
+      "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE}",
+      "Set a channel of the target device to a defined value": "Setze einen Kanal des Zielgeräts auf einen bestimmten Wert"
     }
   },
-  "format": "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}"
+  "format": "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}",
+  "category": "target",
+  "description": "Set a channel of the target device to a defined value"
 }

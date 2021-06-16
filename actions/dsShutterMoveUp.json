@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Move Shutter Up": "Fahre Rollladen hoch"
+      "Move Shutter Up": "Fahre Rollladen hoch",
+      "Move the target shutter up": "Fahre den Ziel-Rollladen hoch"
     }
-  }
+  },
+  "category": "target",
+  "description": "Move the target shutter up"
 }

@@ -22,8 +22,11 @@
     "de": {
       "Switch Mode": "Schalte Modus",
       "Mode On/Off": "Modus An/Aus",
-      "Set Mode to {MODE}" : "Setze Modus auf {MODE}"
+      "Set Mode to {MODE}" : "Setze Modus auf {MODE}",
+      "Set mode of the target device": "Setze Modus des Zielgeräts"
     }
   },
-  "format": "Set Mode to {MODE}"
+  "format": "Set Mode to {MODE}",
+  "category": "target",
+  "description": "Set mode of the target device"
 }

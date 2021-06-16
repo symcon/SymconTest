@@ -26,8 +26,11 @@
   "locale": {
     "de": {
       "Send event": "Sende Event",
-      "Send \"{TEXT}\" with ID {ID} on HID" : "Sende \"{TEXT}\" mit ID {ID} auf HID"
+      "Send \"{TEXT}\" with ID {ID} on HID" : "Sende \"{TEXT}\" mit ID {ID} auf HID",
+      "Send event on the target hid device": "Sende Event auf dem Ziel-HID-Gerät"
     }
   },
-  "format": "Send \"{TEXT}\" with ID {ID} on HID"
+  "format": "Send \"{TEXT}\" with ID {ID} on HID",
+  "category": "target",
+  "description": "Send event on the target HID device"
 }

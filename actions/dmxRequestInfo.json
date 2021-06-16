@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Request Info": "Frage Information an"
+      "Request Info": "Frage Information an",
+      "Request info of the target device": "Frage Information des Zielgeräts an"
     }
-  }
+  },
+  "category": "target",
+  "description": "Request info of the target device"
 }

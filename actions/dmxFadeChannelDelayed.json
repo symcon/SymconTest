@@ -43,8 +43,11 @@
       "Fading time": "Überblendzeit",
       "Delay time": "Verzögerung",
       "seconds": "Sekunden",
-      "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds after waiting for {DELAY} seconds": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE} in {FADING} Sekunden nachdem für {DELAY} gewartet wurde"
+      "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds after waiting for {DELAY} seconds": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE} in {FADING} Sekunden nachdem für {DELAY} gewartet wurde",
+      "Fade a channel of the target device to a defined value over a given duration after a defined delay": "Blende beim Ziel einen Kanal nach einer eingestellten Verzögerung innerhalb einer festgelegten Zeit auf einen bestimmten Wert über"
     }
   },
-  "format": "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds after waiting for {DELAY} seconds"
+  "format": "Fade {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE} in {FADING} seconds after waiting for {DELAY} seconds",
+  "category": "target",
+  "description": "Fade a channel of the target device to a defined value over a given duration after a defined delay"
 }

@@ -24,7 +24,10 @@
       "seconds": "Sekunden",
       "Runtime": "Laufzeit",
       "Move Shutter Down with runtime": "Fahre Rollladen runter mit Laufzeit",
-      "Move Shutter Down for {RUNTIME}": "Fahre Rollladen für {RUNTIME} runter"
+      "Move Shutter Down for {RUNTIME}": "Fahre Rollladen für {RUNTIME} runter",
+      "Move the target shutter down for a defined runtime": "Fahre den Ziel-Rollladen für eine definierte Laufzeit runter"
     }
-  }
+  },
+  "category": "target",
+  "description": "Move the target shutter down for a defined runtime"
 }

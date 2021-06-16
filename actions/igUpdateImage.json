@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Update Image": "Aktualisiere Bild"
+      "Update Image": "Aktualisiere Bild",
+      "Update image on the target device": "Aktualisiere das Bild des Zielgeräts"
     }
-  }
+  },
+  "category": "target",
+  "description": "Update image on the target device"
 }
