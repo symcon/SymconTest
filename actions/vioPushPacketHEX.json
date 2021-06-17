@@ -31,8 +31,11 @@
   "locale": {
     "de": {
       "Push paket HEX": "Versende Paket HEX",
-      "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Versende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+      "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Versende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Push packet HEX on the target VirtualIO": "Versende HEX-Paket über die Ziel VirtualIO"
     }
   },
-  "format": "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+  "format": "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Push packet HEX on the target VirtualIO"
 }

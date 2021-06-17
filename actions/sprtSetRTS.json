@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Set RTS": "Setze Break",
-      "Set RTS on {STATUS}": "Setze RTS auf {STATUS}"
+      "Set RTS on {STATUS}": "Setze RTS auf {STATUS}",
+      "Set RTS on the target Serial Port": "Setze DTR auf den Ziel Seriellen Port"
     }
   },
-  "format": "Set RTS on {STATUS}"
+  "format": "Set RTS on {STATUS}",
+  "category": "target",
+  "description": "Set RTS on the target Serial Port"
 }

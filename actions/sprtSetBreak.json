@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Set break": "Setze Break",
-      "Set break on {STATUS}": "Setze Break auf {STATUS}"
+      "Set break on {STATUS}": "Setze Break auf {STATUS}",
+      "Set break on the target Serial Port": "Setze Break auf den Ziel Seriellen Port"
     }
   },
-  "format": "Set break on {STATUS}"
+  "format": "Set break on {STATUS}",
+  "category": "target",
+  "description": "Set break on the target Serial Port"
 }

@@ -27,8 +27,11 @@
     "de": {
       "Send SMS": "Sende SMS",
       "Number": "Nummer",
-      "Send \"{TEXT}\" an {NUMBER}" : "Sende \"{TEXT}\" an {NUMBER}"
+      "Send \"{TEXT}\" an {NUMBER}" : "Sende \"{TEXT}\" an {NUMBER}",
+      "Send SMS on the target device": "Sende SMS auf das Zielgerät"
     }
   },
-  "format": "Send \"{TEXT}\" an {NUMBER}"
+  "format": "Send \"{TEXT}\" an {NUMBER}",
+  "category": "target",
+  "description": "Send SMS on the target device"
 }

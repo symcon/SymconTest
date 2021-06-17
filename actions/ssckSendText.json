@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Send text": "Sende Text",
-      "Send \"{TEXT}\" on Server Socket" : "Sende \"{TEXT}\" auf Server Socket"
+      "Send \"{TEXT}\" on Server Socket" : "Sende \"{TEXT}\" auf Server Socket",
+      "Send text on the target Server Socket": "Sende Text auf den Ziel Server Socket"
     }
   },
-  "format": "Send \"{TEXT}\" on Server Socket"
+  "format": "Send \"{TEXT}\" on Server Socket",
+  "category": "target",
+  "description": "Send text on the target Server Socket"
 }

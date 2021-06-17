@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Update page": "Aktualisiere Seite"
+      "Update page": "Aktualisiere Seite",
+      "Update page on the target HTTP Client": "Aktualisiere Seite auf dem Ziel HTTP Client"
     }
-  }
+  },
+  "category": "target",
+  "description": "Update page on the target HTTP Client"
 }

@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Push text HEX": "Versende Text HEX",
-      "Push text \"{TEXT}\" on VirtualIO" : "Versende Text \"{TEXT}\" auf VirtualIO"
+      "Push text \"{TEXT}\" on VirtualIO" : "Versende Text \"{TEXT}\" auf VirtualIO",
+      "Push text HEX on the target VirtualIO": "Versende HEX-Text über die Ziel VirtualIO"
     }
   },
-  "format": "Push text \"{TEXT}\" on VirtualIO"
+  "format": "Push text \"{TEXT}\" on VirtualIO",
+  "category": "target",
+  "description": "Push text HEX on the target VirtualIO"
 }

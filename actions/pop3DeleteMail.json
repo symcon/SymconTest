@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Delete mail": "Lösche Mail",
-      "Delete mail with UID \"{UID}\"" : "Lösche Mail mit UID \"{UID}\""
+      "Delete mail with UID \"{UID}\"" : "Lösche Mail mit UID \"{UID}\"",
+      "Delete mail of the target imap instance": "Lösche Mail von der Ziel-POP3 Instanz"
     }
   },
-  "format": "Delete mail with UID \"{UID}\""
+  "format": "Delete mail with UID \"{UID}\"",
+  "category": "target",
+  "description": "Delete mail of the target pop3 instance"
 }

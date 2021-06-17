@@ -1,6 +1,6 @@
 {
   "id": "{F6EA0C96-76D4-1C11-527E-B9151FEEF44F}",
-  "caption": "Send paket",
+  "caption": "Send packet",
   "form": [
     {
       "type": "ValidationTextBox",
@@ -19,7 +19,7 @@
     }
   ],
   "action": [
-    "VIO_PushPaket($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+    "VIO_PushPacket($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
   ],
   "restrictions": {
     "objectType": [ 1 ],
@@ -30,9 +30,12 @@
   },
   "locale": {
     "de": {
-      "Send paket": "Sende Paket",
-      "Send paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Sende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+      "Send packet": "Sende Paket",
+      "Send packet \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Sende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Send packet on the target VirtualIO": "Sende Paket über die Ziel VirtualIO"
     }
   },
-  "format": "Send paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+  "format": "Send packet \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Send packet on the target VirtualIO"
 }

@@ -26,8 +26,11 @@
   "locale": {
     "de": {
       "Disconnect VirtualIO": "Trenne VirtualIO",
-      "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Trenne Verbindung {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+      "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Trenne Verbindung {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Disconnect on the target VirtualIO": "Trenne von der Ziel VirtualIO"
     }
   },
-  "format": "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+  "format": "Disconnect connection {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Disconnect on the target VirtualIO"
 }

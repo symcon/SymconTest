@@ -23,7 +23,10 @@
   },
   "locale": {
     "de": {
-      "Request status": "Frage Status ab"
+      "Request status": "Frage Status ab",
+      "Request status of the target device": "Frage Status des Zielgeräts an"
     }
-  }
+  },
+  "category": "target",
+  "description": "Request status of the target device"
 }

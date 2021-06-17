@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Send text": "Sende Text",
-      "Send \"{TEXT}\" on Serial Port" : "Sende \"{TEXT}\" auf Serial Port"
+      "Send \"{TEXT}\" on Serial Port" : "Sende \"{TEXT}\" auf Seriellen Port",
+      "Send text on the target Serial Port": "Sende Text auf den Ziel Seriellen Port"
     }
   },
-  "format": "Send \"{TEXT}\" on Serial Port"
+  "format": "Send \"{TEXT}\" on Serial Port",
+  "category": "target",
+  "description": "Send text on the target Serial Port"
 }

@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Send text": "Sende Text",
-      "Send \"{TEXT}\" on Multicast Socket" : "Sende \"{TEXT}\" auf Multicast Socket"
+      "Send \"{TEXT}\" on Multicast Socket" : "Sende \"{TEXT}\" auf Multicast Socket",
+      "Send text on the target Multicast Socket": "Sende Text auf dem Ziel Multicast Socket"
     }
   },
-  "format": "Send \"{TEXT}\" on Multicast Socket"
+  "format": "Send \"{TEXT}\" on Multicast Socket",
+  "category": "target",
+  "description": "Send text on the target Multicast Socket"
 }

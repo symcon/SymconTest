@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Send text": "Sende Text",
-      "Send text \"{TEXT}\" on VirtualIO" : "Sende Text \"{TEXT}\" auf VirtualIO"
+      "Send text \"{TEXT}\" on VirtualIO" : "Sende Text \"{TEXT}\" auf VirtualIO",
+      "Send text on the target VirtualIO": "Sende Text über die Ziel VirtualIO"
     }
   },
-  "format": "Send text \"{TEXT}\" on VirtualIO"
+  "format": "Send text \"{TEXT}\" on VirtualIO",
+  "category": "target",
+  "description": "Send text on the target VirtualIO"
 }

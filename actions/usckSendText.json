@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Send text": "Sende Text",
-      "Send \"{TEXT}\" on UDP Socket" : "Sende \"{TEXT}\" auf UDP Socket"
+      "Send \"{TEXT}\" on UDP Socket" : "Sende \"{TEXT}\" auf UDP Socket",
+      "Send text on the target UDP Socket": "Sende Text auf den Ziel UDP Socket"
     }
   },
-  "format": "Send \"{TEXT}\" on UDP Socket"
+  "format": "Send \"{TEXT}\" on UDP Socket",
+  "category": "target",
+  "description": "Send text on the target UDP Socket"
 }

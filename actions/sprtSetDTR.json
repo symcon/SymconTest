@@ -21,8 +21,11 @@
   "locale": {
     "de": {
       "Set DTR": "Setze Break",
-      "Set DTR on {STATUS}": "Setze DTR auf {STATUS}"
+      "Set DTR on {STATUS}": "Setze DTR auf {STATUS}",
+      "Set DTR on the target Serial Port": "Setze DTR auf den Ziel Seriellen Port"
     }
   },
-  "format": "Set DTR on {STATUS}"
+  "format": "Set DTR on {STATUS}",
+  "category": "target",
+  "description": "Set DTR on the target Serial Port"
 }

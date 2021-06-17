@@ -31,8 +31,11 @@
   "locale": {
     "de": {
       "Send packet": "Sende Paket",
-      "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket" : "Sende \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf Server Socket"
+      "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket" : "Sende \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf Server Socket",
+      "Send packet on the target Server Socket": "Sende Paket auf den Ziel Server Socket"
     }
   },
-  "format": "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket"
+  "format": "Send \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on Server Socket",
+  "category": "target",
+  "description": "Send packet on the target Server Socket"
 }

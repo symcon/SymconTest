@@ -22,8 +22,11 @@
     "de": {
       "Message": "Nachricht",
       "Send message": "Sende Nachricht",
-      "Send \"{MESSAGE}\" on WebSocket Client" : "Sende \"{MESSAGE}\" auf WebSocket Client"
+      "Send \"{MESSAGE}\" on WebSocket Client" : "Sende \"{MESSAGE}\" auf WebSocket Client",
+      "Send message on the target WebSocket Client": "Sende Nachricht über den Ziel WebSocket Client"
     }
   },
-  "format": "Send \"{MESSAGE}\" on WebSocket Client"
+  "format": "Send \"{MESSAGE}\" on WebSocket Client",
+  "category": "target",
+  "description": "Send message on the target WebSocket Client"
 }

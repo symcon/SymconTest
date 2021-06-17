@@ -26,8 +26,11 @@
   "locale": {
     "de": {
       "Connect VirtualIO": "Verbinde VirtualIO",
-      "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Verbinde über {CLIENTIP}:{CLIENTPORT} auf VirtualIO"
+      "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Verbinde über {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Connect on the target VirtualIO": "Verbinde mit der Ziel VirtualIO"
     }
   },
-  "format": "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO"
+  "format": "Connect on {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Connect on the target VirtualIO"
 }

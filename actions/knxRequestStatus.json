@@ -1,6 +1,6 @@
 {
   "id": "{8862049B-8B59-4A1C-7BA6-C42A41EB2101}",
-  "caption": "Request Info",
+  "caption": "Request status",
   "form": [],
   "action": [
     "KNX_RequestStatus($_IPS['TARGET']);"
@@ -14,7 +14,10 @@
   },
   "locale": {
     "de": {
-      "Request Info": "Frage Information an"
+      "Request status": "Frage Status an",
+      "Request status of the target device": "Frage Status des Zielgeräts an"
     }
-  }
+  },
+  "category": "target",
+  "description": "Request status of the target device"
 }

@@ -97,7 +97,10 @@
       "With media object attachment (image/sound)": "Mit Medienobjekt als Anhang (Bild/Ton)",
       "Send mail with subject \"{SUBJECT}\"": "Versende Mail mit dem Betreff \"{SUBJECT}\"",
       "Send mail with subject \"{SUBJECT}\" {RECEIVER_FROM_INSTANCE, select, false {to Receiver {RECEIVER}} other {}} {ATTACHMENT_TYPE, select, 0 {} 1 {(Attachment: File from {ATTACHMENT_FILE}} 2 {(Attachment: Mediaobject {ATTACHMENT_MEDIA, object})}}": "Sende Mail mit dem Betreff \"{SUBJECT}\" {RECEIVER_FROM_INSTANCE, select, false {zum Empfänger {RECEIVER}} other {}} {ATTACHMENT_TYPE, select, 0 {} 1 {(Anhang: Datei von {ATTACHMENT_FILE}} 2 {(Anhang: Medienobjekt {ATTACHMENT_MEDIA, object})}}"
-    }
+    },
+    "Send Mail on the target address": "Sende Mail auf die Zieladresse"
   },
-  "format": "Send mail with subject \"{SUBJECT}\" {RECEIVER_FROM_INSTANCE, select, false {to Receiver {RECEIVER}} other {}} {ATTACHMENT_TYPE, select, 0 {} 1 {(Attachment: File from {ATTACHMENT_FILE}} 2 {(Attachment: Mediaobject {ATTACHMENT_MEDIA, object})}}"
+  "format": "Send mail with subject \"{SUBJECT}\" {RECEIVER_FROM_INSTANCE, select, false {to Receiver {RECEIVER}} other {}} {ATTACHMENT_TYPE, select, 0 {} 1 {(Attachment: File from {ATTACHMENT_FILE}} 2 {(Attachment: Mediaobject {ATTACHMENT_MEDIA, object})}}",
+  "category": "target",
+  "description": "Send Mail on the target address"
 }
