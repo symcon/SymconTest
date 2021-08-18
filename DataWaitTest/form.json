@@ -1,0 +1,9 @@
+{
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Wait for Data (Max. 5 seconds)",
+            "onClick": "echo DWT_Wait($id);"
+        }
+    ]
+}
