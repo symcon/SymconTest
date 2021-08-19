@@ -12,7 +12,7 @@
 		}
 
 		public function Send() {
-			$this->NotifyWithData("SuperName", "Cool, es geht!");
+			$this->NotifyWithData("SuperName", "Cool, es geht!", false);
 		}
 		
 		public function Wait() {
