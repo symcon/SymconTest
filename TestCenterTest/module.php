@@ -23,6 +23,8 @@
             $this->EnableAction("SomeColor");
             $this->RegisterVariableInteger("SomePercentage", "Some Percentage", "~Intensity.100");
             $this->EnableAction("SomePercentage");
+            $this->RegisterVariableFloat("SomeSuffix", "Some Suffix", "~Temperature");
+            $this->EnableAction("SomeSuffix");
             $this->RegisterVariableFloat("SomeFloat", "Some Float");
             $this->EnableAction("SomeFloat");
             $this->RegisterVariableInteger("SomeInt", "Some Integer");
@@ -35,6 +37,10 @@
         public function RequestAction($Ident, $Value)
         {
             SetValue($this->GetIDForIdent($Ident), $Value);
+        }
+
+        public function UpdateVariableID($ID) {
+            $this->UpdateFormField('SelectValue', 'variableID', $ID);
         }
     }
     
