@@ -3,6 +3,11 @@
         {
             "name": "Condition",
             "type": "SelectCondition"
+        },
+        {
+            "name": "ConditionMulti",
+            "type": "SelectCondition",
+            "multi": true
         }
     ]
 }

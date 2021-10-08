@@ -8,6 +8,6 @@
             parent::Create();
 
             $this->RegisterPropertyString("Condition", "");
-            
+            $this->RegisterPropertyString("ConditionMulti", "");
         }
     }
