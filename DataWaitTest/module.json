@@ -1,0 +1,14 @@
+{
+	"id": "{5C7C7770-F148-32E9-1CAC-145CC474329B}",
+	"name": "DataWaitTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Data Wait Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DWT"
+}
