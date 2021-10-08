@@ -1,0 +1,14 @@
+{
+	"id": "{D5151FAC-3224-B79D-F137-4FCB2212C28A}",
+	"name": "ListDisabledTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Disabled)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LDT"
+}
