@@ -1,0 +1,14 @@
+{
+    "id": "{5860A9B3-2ECB-3901-9E00-7CC35BB78503}",
+    "name": "LabelTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Label Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LT"
+}
