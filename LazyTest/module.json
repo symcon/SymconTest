@@ -1,0 +1,14 @@
+{
+    "id": "{D337930D-C18A-BDD3-F8B8-98CC59BB4E82}",
+    "name": "LazyTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Lazy Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LT"
+}

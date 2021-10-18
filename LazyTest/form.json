@@ -1,0 +1,162 @@
+{
+    "elements": [
+        {
+            "type": "ExpansionPanel",
+            "caption": "Sleepy Textbox, wake up with care!",
+            "items": [
+                {
+                    "type": "ValidationTextBox",
+                    "name": "Text",
+                    "caption": "Grumpy Textbox"
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Check Textbox",
+            "onClick": "echo $Text;"
+        }
+    ],
+    "actions": [
+        {
+            "type": "ExpansionPanel",
+            "caption": "Sleepy Elements, wake up with care!",
+            "items": [
+                {
+                    "type": "ValidationTextBox",
+                    "name": "TextValue",
+                    "caption": "Grumpy Textbox with value",
+                    "value": "Don't wake me up!"
+                },
+                {
+                    "type": "ValidationTextBox",
+                    "name": "TextNoValue",
+                    "caption": "Grumpy Textbox without value"
+                },
+                {
+                    "type": "Select",
+                    "name": "Select",
+                    "caption": "Grumpy Select",
+                    "options": [
+                        {
+                            "value": 0,
+                            "caption": "Caption 1"
+                        },
+                        {
+                            "value": 1,
+                            "caption": "Caption 2"
+                        }
+                    ]
+                },
+                {
+                    "type": "Select",
+                    "name": "MultiSelect",
+                    "caption": "Grumpy MultiSelect",
+                    "options": [
+                        {
+                            "value": [
+                                {
+                                    "name": "Sub1",
+                                    "value": false
+                                },
+                                {
+                                    "name": "Sub2",
+                                    "value": 42
+                                },
+                                {
+                                    "name": "Sub3",
+                                    "value": "My favorite String"
+                                }
+                            ],
+                            "caption": "Caption"
+                        },
+                        {
+                            "value": [
+                                {
+                                    "name": "Sub1",
+                                    "value": true
+                                },
+                                {
+                                    "name": "Sub2",
+                                    "value": 41
+                                },
+                                {
+                                    "name": "Sub3",
+                                    "value": "My most hated String"
+                                }
+                            ],
+                            "caption": "Caption"
+                        }
+                    ]
+                },
+                {
+                    "type": "List",
+                    "name": "TreeData",
+                    "caption": "Devices",
+                    "rowCount": 5,
+                    "add": true,
+                    "delete": true,
+                    "sort": {
+                        "column": "name",
+                        "direction": "ascending"
+                    },
+                    "columns": [
+                        {
+                            "label": "InstanceID",
+                            "name": "instanceID", 
+                            "width": "75px",
+                            "add": 0,
+                            "edit": {
+                                "type": "SelectInstance"
+                            }
+                        }, {
+                            "label": "WebFront",
+                            "name": "webfrontID", 
+                            "width": "auto",
+                            "add": 0,
+                            "edit": {
+                                "type": "SelectModule",
+                                "moduleID": "{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}"
+                            }
+                        }, {
+                            "label": "Name",
+                            "name": "name",
+                            "width": "auto",
+                            "add": ""
+                        }, {
+                            "label": "State",
+                            "name": "state",
+                            "width": "40px",					
+                            "add": "New!"
+                        }, {
+                            "label": "Temperature",
+                            "name": "temperature",
+                            "width": "75px",					
+                            "add": 20.0,
+                            "edit": {
+                                "type": "NumberSpinner",
+                                "digits": 2
+                            }
+                        }
+                    ],
+                    "values": [
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Check Lazy Elements",
+            "onClick": [
+                "var_dump($TextValue);",
+                "var_dump($TextNoValue);",
+                "var_dump($Select);",
+                "var_dump($Sub1);",
+                "var_dump($Sub2);",
+                "var_dump($Sub3);",
+                "var_dump(isset($MultiSelect));",
+                "var_dump($TreeData);"
+            ]
+        }
+    ]
+}
