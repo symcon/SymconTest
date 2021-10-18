@@ -1,3 +1,9 @@
 {
-	"actions": []
+	"elements": [
+		{
+			"type": "NumberSpinner",
+			"name": "Address",
+			"caption": "Address"
+		}
+	]
 }

@@ -1,0 +1,14 @@
+{
+	"id": "{44BA01B0-BB75-EFBC-082E-E7A788006A36}",
+	"name": "ConfiguratorIOAware",
+	"type": 4,
+	"vendor": "",
+	"aliases": 
+	[
+		"Configurator I/O Aware"
+	],
+	"parentRequirements": ["{F82F7323-DAD7-9D89-4CB6-EA17E87651D3}"],
+	"childRequirements": [],
+	"implemented": ["{8853EAF3-843D-8477-3E4A-EDE940AFA80D}"],
+	"prefix": "CIOA"
+}
