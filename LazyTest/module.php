@@ -8,6 +8,7 @@
             parent::Create();
 
             $this->RegisterPropertyString('Text', '');
+            $this->RegisterPropertyString('TreeData', '[]');
         }
     }
 

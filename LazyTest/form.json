@@ -2,19 +2,79 @@
     "elements": [
         {
             "type": "ExpansionPanel",
-            "caption": "Sleepy Textbox, wake up with care!",
+            "caption": "Sleepy Textbox and others, wake up with care!",
             "items": [
                 {
                     "type": "ValidationTextBox",
                     "name": "Text",
                     "caption": "Grumpy Textbox"
+                },
+                {
+                    "type": "List",
+                    "name": "TreeData",
+                    "caption": "Devices",
+                    "rowCount": 5,
+                    "add": true,
+                    "delete": true,
+                    "sort": {
+                        "column": "name",
+                        "direction": "ascending"
+                    },
+                    "columns": [
+                        {
+                            "label": "InstanceID",
+                            "name": "instanceID", 
+                            "width": "75px",
+                            "add": 0,
+                            "edit": {
+                                "type": "SelectInstance"
+                            }
+                        }, {
+                            "label": "WebFront",
+                            "name": "webfrontID", 
+                            "width": "200px",
+                            "add": 0,
+                            "edit": {
+                                "type": "SelectModule",
+                                "moduleID": "{3565B1F2-8F7B-4311-A4B6-1BF1D868F39E}"
+                            }
+                        }, {
+                            "label": "Name",
+                            "name": "name",
+                            "width": "auto",
+                            "add": ""
+                        }, {
+                            "label": "State",
+                            "name": "state",
+                            "width": "40px",					
+                            "add": "New!"
+                        }, {
+                            "label": "Temperature",
+                            "name": "temperature",
+                            "width": "75px",					
+                            "add": 20.0,
+                            "edit": {
+                                "type": "NumberSpinner",
+                                "digits": 2
+                            }
+                        }
+                    ],
+                    "values": [
+                        {
+                            "webfrontID": 12345,
+                            "name": "Test"
+                        }
+                    ]
                 }
             ]
         },
         {
             "type": "Button",
-            "caption": "Check Textbox",
-            "onClick": "echo $Text;"
+            "caption": "Check Elements area",
+            "onClick": [
+                "var_dump($Text);",
+                "var_dump($TreeData);"
+            ]
         }
     ],
     "actions": [
@@ -112,7 +172,7 @@
                         }, {
                             "label": "WebFront",
                             "name": "webfrontID", 
-                            "width": "auto",
+                            "width": "200px",
                             "add": 0,
                             "edit": {
                                 "type": "SelectModule",
@@ -140,6 +200,10 @@
                         }
                     ],
                     "values": [
+                        {
+                            "webfrontID": 12345,
+                            "name": "Test"
+                        }
                     ]
                 }
             ]
