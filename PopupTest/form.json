@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "type": "PopupButton",
+            "name": "PopupButton",
+            "caption": "Open",
+            "popup": {
+                "caption": "Some title",
+                "closeCaption": "Close this dialog",
+                "items": [
+                    {
+                        "type": "RowLayout",
+                        "items": [
+                            {
+                                "type": "Button",
+                                "caption": "Title = Hello",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.caption', 'Hello');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Title = World",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.caption', 'World');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Width = 1000px",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.width', '1000px');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Width = 200px",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.width', '200px');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Close Caption = Close",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.closeCaption', 'Close');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Close Caption = OK",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.closeCaption', 'OK');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Remove additional buttons",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.buttons', '[]');"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Add a button",
+                                "onClick": "PT_UpdateParameter($id, 'PopupButton', 'popup.buttons', '[{\"caption\": \"Dynamic Button\", \"onClick\": \"echo $id;\"}]');"
+                            }
+                        ]
+                    }
+                ],
+                "buttons": [
+                    {
+                        "caption": "Click me!",
+                        "onClick": "echo 'Lalala';"
+                    },
+                    {
+                        "caption": "Can't click me!",
+                        "onClick": "echo 'Lalala';",
+                        "enabled": false
+                    }
+                ]
+            }
+        }
+    ]
+}

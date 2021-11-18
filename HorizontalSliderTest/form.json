@@ -1,0 +1,9 @@
+{
+    "actions": [
+        {
+            "type": "HorizontalSlider",
+            "name": "Slider",
+            "onChange": "echo $Slider;"
+        }
+    ]
+}
