@@ -1,0 +1,43 @@
+{
+    "elements": [
+        {
+            "name": "Icon",
+            "type": "SelectIcon",
+            "caption": "My Icon"
+        },
+        {
+            "type": "Label",
+            "caption": "Default Label for SelectIcon = Icon"
+        },
+        {
+            "type": "SelectIcon"
+        },
+        {
+            "type": "SelectIcon",
+            "caption": "Icon - Disabled",
+            "enabled": false
+        },
+        {
+            "type": "SelectIcon",
+            "caption": "Icon - Hidden",
+            "visible": false
+        },
+        {
+            "type": "SelectIcon",
+            "caption": "Icon - High Width",
+            "width": "800px"
+        }
+    ],
+    "actions": [
+        {
+            "name": "NewIcon",
+            "type": "ValidationTextBox",
+            "caption": "New Icon"
+        },
+        {
+            "type": "Button",
+            "onClick": "SIT_SetIcon($id, $NewIcon);",
+            "caption": "Update"
+        }
+    ]
+}

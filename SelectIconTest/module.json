@@ -1,0 +1,14 @@
+{
+    "id": "{87344F34-D55C-D129-F97D-D90F4FE2B6E2}",
+    "name": "SelectIconTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "SelectIcon Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SIT"
+}
