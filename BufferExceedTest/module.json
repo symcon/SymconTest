@@ -1,0 +1,14 @@
+{
+	"id": "{43A5F90A-41DF-27E9-D958-685E032DDF96}",
+	"name": "BufferExceedTest",
+	"type": 3,
+	"vendor": "",
+	"aliases":
+	[
+		"Buffer Exceed Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "BETT"
+}

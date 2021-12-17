@@ -1,0 +1,13 @@
+{
+    "actions": [
+        {
+            "type": "Label",
+            "caption": "Press two times to trigger error!"
+        },
+        {
+            "type": "Button",
+            "label": "Fill the Buf's!",
+            "onClick": "BETT_FillBuffers($id);"
+        }
+    ]
+}
