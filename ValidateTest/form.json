@@ -87,6 +87,25 @@
                     "onClick": "VT_UpdateParameter($id, 'DynamicTextBox', 'validate', '^[0-9]*$');"
                 }
             ]
+        },
+        {
+            "type": "ValidationTextBox",
+            "caption": "Must include 'aaa'",
+            "validate": "aaa"
+        },
+        {
+            "type": "PopupButton",
+            "caption": "Lazy Textbox",
+            "popup": {
+                "caption": "Lazy Textbox",
+                "items": [
+                    {
+                        "type": "ValidationTextBox",
+                        "caption": "Must include 'aaa'",
+                        "validate": "aaa"
+                    }
+                ]
+            }
         }
     ]
 }
