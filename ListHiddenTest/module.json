@@ -1,0 +1,14 @@
+{
+	"id": "{A282EE67-104B-69F6-AF8F-EDDB805744E2}",
+	"name": "ListHidden",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List (Hidden)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LSH"
+}

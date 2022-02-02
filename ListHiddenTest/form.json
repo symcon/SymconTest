@@ -1,0 +1,45 @@
+{
+    "elements": [	
+		{
+			"type": "CheckBox",
+			"caption": "Visible",
+			"name": "Visible",
+			"onChange": "LSH_ToggleVisibility($id, $Visible);",
+			"value": true
+		},
+		{
+			"type": "CheckBox",
+			"caption": "Row Count",
+			"name": "RowCount",
+			"onChange": "LSH_ToggleRowCount($id, $RowCount);",
+			"value": false
+		},
+		{
+			"type": "Label",
+			"caption": "Top"
+		},
+		{
+			"type": "List",
+			"name": "List",
+			"caption": "List",
+			"rowCount": 0,
+			"visible": true,
+			"add": true,
+			"columns": [
+				{
+					"caption": "Column",
+					"name": "Column", 
+					"width": "auto",
+					"add": "",
+					"edit": {
+						"type": "ValidationTextBox"
+					}
+				}
+			]
+		},
+		{
+			"type":"Label",
+			"caption": "Bottom"
+		}
+    ]
+}
