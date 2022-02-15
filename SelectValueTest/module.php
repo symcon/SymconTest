@@ -1,6 +1,6 @@
 <?
 
-    class TestCenterTest extends IPSModule
+    class SelectValueTest extends IPSModule
     {
 
         public function Create()
@@ -37,6 +37,14 @@
         public function RequestAction($Ident, $Value)
         {
             SetValue($this->GetIDForIdent($Ident), $Value);
+        }
+
+        public function UpdateVariableID($ID) {
+            $this->UpdateFormField('SelectValue', 'variableID', $ID);
+        }
+
+        public function UpdateLabelValue($Value) {
+            $this->UpdateFormField('ValueLabel', 'caption', $Value);
         }
     }
     

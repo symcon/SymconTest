@@ -1,17 +1,6 @@
 {
     "actions": [
         {
-            "type": "SelectValue",
-            "name": "SelectValue",
-            "caption": "Caption"
-        },
-        {
-            "type": "SelectVariable",
-            "name": "VariableID",
-            "caption": "VariableID",
-            "onChange": "TCT_UpdateVariableID($id, $VariableID);"
-        },
-        {
             "type": "TestCenter"
         }
     ]

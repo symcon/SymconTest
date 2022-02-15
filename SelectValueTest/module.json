@@ -1,0 +1,14 @@
+{
+	"id": "{9C3ACBD0-6169-A0D8-D62A-DF8E6752F971}",
+	"name": "SelectValueTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Select Value Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "SVT"
+}

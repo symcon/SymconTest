@@ -1,0 +1,24 @@
+{
+    "actions": [
+        {
+            "type": "Label",
+            "caption": "placeholder",
+            "name": "ValueLabel"
+        },
+        {
+            "type": "SelectValue",
+            "name": "SelectValue",
+            "caption": "Caption",
+            "onChange": "SVT_UpdateLabelValue($id, $SelectValue);"
+        },
+        {
+            "type": "SelectVariable",
+            "name": "VariableID",
+            "caption": "VariableID",
+            "onChange": "SVT_UpdateVariableID($id, $VariableID);"
+        },
+        {
+            "type": "TestCenter"
+        }
+    ]
+}
