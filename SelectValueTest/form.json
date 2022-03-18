@@ -16,9 +16,6 @@
             "name": "VariableID",
             "caption": "VariableID",
             "onChange": "SVT_UpdateVariableID($id, $VariableID);"
-        },
-        {
-            "type": "TestCenter"
         }
     ]
 }
