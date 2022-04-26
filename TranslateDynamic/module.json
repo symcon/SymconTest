@@ -1,0 +1,14 @@
+{
+	"id": "{1ADA1F75-3C10-AAF2-5A19-8C2EF2F98AB8}",
+	"name": "TranslateDynamic",
+	"type": 3,
+	"vendor": "",
+	"aliases":
+	[
+		"Translate Dynamic"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "TLD"
+}

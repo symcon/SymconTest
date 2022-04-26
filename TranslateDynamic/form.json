@@ -1,0 +1,13 @@
+{
+	"actions": [
+		{
+			"type": "Label",
+			"label": ""
+		},
+		{
+			"type": "Button",
+			"label": "Do Test",
+			"onClick": "echo TLD_DoText($id);"
+		}
+	]
+}
