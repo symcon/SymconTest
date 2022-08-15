@@ -1,0 +1,13 @@
+{
+	"id": "{F66F1A1C-5CCE-4B89-A0BE-F2ADF267891B}",
+	"name": "PopupAlertTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": [
+		"PopupAlert Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "PAT"
+}

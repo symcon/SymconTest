@@ -1,0 +1,23 @@
+{
+    "actions": [
+        {
+            "type": "PopupAlert",
+            "name": "ErrorPopup",
+            "visible": true,
+            "popup": {
+                "buttons": [
+                    {
+                        "caption": "No, stop it!",
+                        "onClick": "PAT_Stop($id);"
+                    }
+                ],
+                "items": [
+                    {
+                        "type": "Label",
+                        "caption": "Some errors occur.....in 10 seconds.\r\nPlease press OK and switch to another Tab!"
+                    }
+                ]
+            }
+        }
+    ]
+}

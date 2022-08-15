@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "caption": "List of Events",
+            "type": "List",
+            "name": "Events",
+            "add": false,
+            "delete": false,
+            "sort": {
+                "column": "Topic",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "caption": "Topic",
+                    "name": "Topic",
+                    "width": "auto"
+                },
+                {
+                    "caption": "Open Instance",
+                    "name": "OpenEventReceiversInstance",
+                    "visible": false,
+                    "edit": {
+                        "type": "OpenObjectButton",
+                        "name": "OpenInstanceButton",
+                        "enabled": false
+                    },
+                    "objectID": 0
+                },
+                {
+                    "caption": "Events are used by this instances:",
+                    "name": "Receivers",
+                    "visible": false,
+                    "edit": {
+                        "type": "List",
+                        "name": "EventReceiver",
+                        "add": false,
+                        "delete": false,
+                        "sort": {
+                            "column": "instanceID",
+                            "direction": "ascending"
+                        },
+                        "columns": [
+                            {
+                                "caption": "Instance",
+                                "name": "instanceID",
+                                "width": "90px",
+                                "onClick": "IPS_RequestAction($id, 'UpdateOpenObjectButton', $Receivers['instanceID']);"
+                            },
+                            {
+                                "caption": "Type",
+                                "name": "Type",
+                                "width": "150px",
+                                "onClick": "IPS_RequestAction($id, 'UpdateOpenObjectButton', $Receivers['instanceID']);"
+                            },
+                            {
+                                "caption": "Name",
+                                "name": "Name",
+                                "width": "auto",
+                                "onClick": "IPS_RequestAction($id, 'UpdateOpenObjectButton', $Receivers['instanceID']);"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "values": []
+        }
+    ]
+}

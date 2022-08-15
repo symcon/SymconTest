@@ -1,0 +1,13 @@
+{
+	"id": "{FF001225-12BB-41A4-BD5F-C46A12404ABB}",
+	"name": "ListSelectOpenObjectTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": [
+		"ListSelectInstance OpenObjectButton Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LOT"
+}
