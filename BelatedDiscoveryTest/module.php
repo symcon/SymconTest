@@ -46,6 +46,7 @@
                     [
                         'name' => 'configurator',
                         'type' => 'Configurator',
+                        'discoveryInterval' => 120,
                         'values' => $devices
                     ]
                 ]
