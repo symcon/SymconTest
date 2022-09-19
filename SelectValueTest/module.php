@@ -41,6 +41,8 @@
 
         public function UpdateVariableID($ID) {
             $this->UpdateFormField('SelectValue', 'variableID', $ID);
+            $this->UpdateFormField('SelectValue2', 'variableID', $ID);
+            $this->UpdateFormField('SelectValue3', 'variableID', $ID);
         }
 
         public function UpdateLabelValue($Value) {
