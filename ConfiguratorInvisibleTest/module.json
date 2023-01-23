@@ -1,0 +1,14 @@
+{
+    "id": "{DAA55DF9-AE4D-4006-97F6-32E4CD958CA4}",
+    "name": "ConfiguratorInvisibleTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Invisible)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CIT"
+}

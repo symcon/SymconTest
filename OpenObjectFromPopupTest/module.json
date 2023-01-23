@@ -1,0 +1,14 @@
+{
+    "id": "{DAA554F9-AE4D-4006-97F6-32E4CD958CA4}",
+    "name": "OpenObjectFromPopupTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Open Object From Popup Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "OOFPT"
+}

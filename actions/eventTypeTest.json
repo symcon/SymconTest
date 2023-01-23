@@ -1,0 +1,13 @@
+{
+    "id": "{6CE2F9BF-EE2C-A2C5-BBB4-48C546A3A893}",
+    "caption": "Event Type Test (From SymconTest, Throws Error)",
+    "form": [
+    ],
+    "action": "echo 'This is soooo Fluffy!';",
+    "restrictions": {
+        "objectType": [ 4 ],
+        "eventType": [ 2 ]
+    },
+    "locale": {
+    }
+}

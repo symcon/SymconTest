@@ -5,9 +5,11 @@
             "name": "List",
             "add": true,
             "delete": true,
+            "changeOrder": true,
             "onEdit": "echo 'Edit: ' . print_r($List, true);",
             "onAdd": "echo 'Add: ' . print_r($List, true);",
             "onDelete": "echo 'Delete: ' . print_r($List, true);",
+            "onChangeOrder": "echo 'Sort: ' . print_r($List, true);",
             "columns": [
                 {
                     "caption": "Value",

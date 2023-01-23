@@ -12,6 +12,18 @@
             "onChange": "SVT_UpdateLabelValue($id, $SelectValue);"
         },
         {
+            "type": "SelectValue",
+            "name": "SelectValue2",
+            "caption": "Disabled",
+            "enabled": false
+        },
+        {
+            "type": "SelectValue",
+            "name": "SelectValue3",
+            "caption": "Invisible",
+            "visible": false
+        },
+        {
             "type": "SelectVariable",
             "name": "VariableID",
             "caption": "VariableID",
