@@ -50,6 +50,11 @@
             "type": "Button",
             "label": "Broken Link with http",
             "onClick": "echo 'http://' . PHP_EOL . 'google.com';"
+        },
+        {
+            "type": "Button",
+            "label": "/test with link: syntax",
+            "onClick": "echo 'link:/test';"
         }
     ]
 }
