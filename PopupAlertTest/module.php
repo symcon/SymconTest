@@ -11,7 +11,10 @@
         
         public function Update()
         {
-            $this->UpdateFormField('ErrorPopup', 'visible', true);
+            $visible = boolval($this->GetBuffer('visible'));
+            $this->UpdateFormField('ErrorPopup', 'visible', $visible);
+            IPS_SetName($this->InstanceID, 'PopupAlertTest ' . ($visible ? '(Popup open)' : '(Popup closed)'));
+            $this->SetBuffer('visible', $visible ? '' : '1');
         }
 
         public function Stop()
