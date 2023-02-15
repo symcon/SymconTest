@@ -1,6 +1,6 @@
 <?
 
-    class OpenObjectButtonTest extends IPSModule
+    class OpenObjectButtonIOTest extends IPSModule
     {
 
         function Create() {
@@ -44,13 +44,11 @@
                 IPS_SetIdent($objectID, 'Link');
                 IPS_SetName($objectID, 'Link');
             }
-
-            $this->ForceParent('{8DFFA466-FDA4-9268-946B-CB2D739A5D0D}');
         }
 
         function GetConfigurationForm() {
             return json_encode([
-                'actions' => [
+                'elements' => [
                     [
                         'type' => 'OpenObjectButton',
                         'caption' => 'Category',

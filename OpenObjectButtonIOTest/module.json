@@ -1,0 +1,18 @@
+{
+	"id": "{8DFFA466-FDA4-9268-946B-CB2D739A5D0D}",
+	"name": "OpenObjectButtonIOTest",
+	"type": 1,
+	"vendor": "",
+	"aliases": 
+	[
+		"Open Object Button IO Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [
+		"{44A355AD-53FD-AB86-099B-F0B018A55AB6}"
+	],
+	"implemented": [
+		"{0F5B69EC-5BB1-2CD7-E8E2-730F036E75C9}"
+	],
+	"prefix": "OOBT"
+}

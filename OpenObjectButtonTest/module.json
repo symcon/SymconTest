@@ -7,8 +7,12 @@
 	[
 		"Open Object Button Test"
 	],
-	"parentRequirements": [],
+	"parentRequirements": [
+		"{0F5B69EC-5BB1-2CD7-E8E2-730F036E75C9}"
+	],
 	"childRequirements": [],
-	"implemented": [],
+	"implemented": [
+		"{44A355AD-53FD-AB86-099B-F0B018A55AB6}"
+	],
 	"prefix": "OOBT"
 }
