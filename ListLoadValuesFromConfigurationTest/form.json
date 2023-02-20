@@ -1,0 +1,37 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "Targets",
+            "caption": "Variables",
+            "width": "auto",
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "caption": "Variable",
+                    "name": "VariableID",
+                    "add": 1,
+                    "edit": {
+                        "type": "SelectVariable"
+                    },
+                    "width": "auto"
+                }
+            ],
+            "loadValuesFromConfiguration": false,
+            "values": [
+                {
+                    "VariableID": 12345
+                },
+                {
+                    "VariableID": 23456
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Show current property",
+            "onClick": "var_dump(IPS_GetProperty($id, 'Targets'));"
+        }
+    ]
+}

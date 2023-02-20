@@ -1,0 +1,14 @@
+{
+    "id": "{09039E12-7DC6-D5AA-38D8-5D433D7C626D}",
+    "name": "ListLoadValuesFromConfigurationTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List Test (LoadValuesFromConfiguration)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LLT"
+}
