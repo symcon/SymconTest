@@ -1,30 +1,31 @@
 {
     "elements": [
         {
-            "type": "List",
-            "name": "Targets",
-            "caption": "Variables",
-            "width": "auto",
-            "add": true,
-            "delete": true,
-            "columns": [
+            "type": "ExpansionPanel",
+            "name": "HostvariablesPanel",
+            "caption": "Variables for Hosts",
+            "onClick": "echo 'onClick muss da sein und ExpansionPanel muss zu sein';",
+            "items": [
                 {
-                    "caption": "Variable",
-                    "name": "VariableID",
-                    "add": 1,
-                    "edit": {
-                        "type": "SelectVariable"
-                    },
-                    "width": "auto"
-                }
-            ],
-            "loadValuesFromConfiguration": false,
-            "values": [
-                {
-                    "VariableID": 12345
-                },
-                {
-                    "VariableID": 23456
+                    "type": "List",
+                    "name": "Targets",
+                    "caption": "Variables",
+                    "width": "auto",
+                    "add": true,
+                    "delete": true,
+                    "columns": [
+                        {
+                            "caption": "Variable",
+                            "name": "VariableID",
+                            "add": 1,
+                            "edit": {
+                                "type": "SelectVariable"
+                            },
+                            "width": "auto"
+                        }
+                    ],
+                    "loadValuesFromConfiguration": false,
+                    "values": []
                 }
             ]
         },
