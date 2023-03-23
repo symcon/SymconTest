@@ -10,6 +10,12 @@
             $this->RegisterTimer('AutoDebugTimer', 0, 'DT_MySendDebug($_IPS[\'TARGET\']);');
         }
 
+        public function Destroy() {
+            IPS_LogMessage("DESTROY", $this->InstanceID);
+
+            parent::Destroy();
+        }
+
         public function ApplyChanges() {
             parent::ApplyChanges();
 

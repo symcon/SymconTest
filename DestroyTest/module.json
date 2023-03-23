@@ -1,0 +1,14 @@
+{
+	"id": "{0394C33D-EE8F-9510-24A4-1F12A55D4CEB}",
+	"name": "DestroyTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Destroy Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DT"
+}
