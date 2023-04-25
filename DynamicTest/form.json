@@ -617,7 +617,7 @@
                         },
                         {
                             "type": "Button",
-                            "caption": "Columns = Displayed Column 2",
+                            "caption": "Columns = Displayed Column 2 (no edit)",
                             "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([['caption' => 'Column 1', 'name' => 'column1', 'width' => '200px', 'add' => 'Fill 1'], [ 'caption' => 'Column 2', 'name' => 'column2', 'width' => '200px', 'add' => 'Fill 2' ] ]));"
                         }
                     ]
@@ -625,6 +625,11 @@
                 {
                     "type": "RowLayout",
                     "items": [
+                        {
+                            "type": "Button",
+                            "caption": "Columns = Displayed Column 2 (edit)",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([['caption' => 'Column 1', 'name' => 'column1', 'width' => '200px', 'add' => 'Fill 1'], [ 'caption' => 'Column 2', 'name' => 'column2', 'width' => '200px', 'add' => 'Fill 2', 'edit' => [ 'type' => 'ValidationTextBox' ] ] ]));"
+                        },
                         {
                             "type": "Button",
                             "caption": "Sort = Name Ascending",
