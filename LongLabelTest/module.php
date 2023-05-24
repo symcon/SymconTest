@@ -1,4 +1,4 @@
-<?
+<?php
 
     class LongLabelTest extends IPSModule
     {

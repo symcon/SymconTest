@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class SelectTest extends IPSModule
 	{

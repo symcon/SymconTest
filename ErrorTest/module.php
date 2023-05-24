@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ErrorTest extends IPSModule
     {

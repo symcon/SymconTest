@@ -1,4 +1,4 @@
-<?
+<?php
 
     class LabelTest extends IPSModule
     {

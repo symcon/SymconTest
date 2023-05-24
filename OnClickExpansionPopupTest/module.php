@@ -1,4 +1,4 @@
-<?
+<?php
 
     class OnClickExpansionPopupTest extends IPSModule
     {

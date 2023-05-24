@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ParentConfiguration extends IPSModule
 	{

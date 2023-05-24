@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ValidateTest extends IPSModule
     {

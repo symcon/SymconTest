@@ -1,4 +1,4 @@
-<?
+<?php
 
     class LazyTest extends IPSModule
     {

@@ -1,4 +1,4 @@
-<?
+<?php
 
     class DestroyTest extends IPSModule
     {

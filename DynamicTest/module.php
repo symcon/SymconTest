@@ -1,4 +1,4 @@
-<?
+<?php
 
     class DynamicTest extends IPSModule
     {

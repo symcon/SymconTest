@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class IOTest extends IPSModule
 	{

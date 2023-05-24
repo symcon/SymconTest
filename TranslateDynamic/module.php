@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class TranslateDynamic extends IPSModule
 	{

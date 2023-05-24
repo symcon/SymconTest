@@ -1,4 +1,4 @@
-<?
+<?php
 
     class OpenObjectFromPopupTest extends IPSModule
     {

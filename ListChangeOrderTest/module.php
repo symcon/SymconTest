@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ListChangeOrderTest extends IPSModule
     {

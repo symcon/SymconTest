@@ -1,4 +1,4 @@
-<?
+<?php
 
     class DebugTest extends IPSModule
     {

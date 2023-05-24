@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ListUmlautsTest extends IPSModule
 	{

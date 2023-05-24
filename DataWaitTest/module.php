@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class DataWaitTest extends IPSModule
 	{

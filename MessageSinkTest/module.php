@@ -1,4 +1,4 @@
-<?
+<?php
 
 //These constants are predefined with IP-Symcon 5.0+
 if(!defined("IPS_BASE"))

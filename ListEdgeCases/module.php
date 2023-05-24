@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ListEdgeCases extends IPSModule
 	{

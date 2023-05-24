@@ -1,4 +1,4 @@
-<?
+<?php
 class SpaceModule extends IPSModule {
 
 	public function GetConfigurationForm()

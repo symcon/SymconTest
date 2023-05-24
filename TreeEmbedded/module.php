@@ -1,4 +1,4 @@
-<?
+<?php
 
     class TreeEmbedded extends IPSModule
     {

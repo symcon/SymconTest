@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class DynamicConfigurationForm extends IPSModule
 	{

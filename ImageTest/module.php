@@ -1,4 +1,4 @@
-<?
+<?php
 class ImageTest extends IPSModule {
     
     public function Create(){

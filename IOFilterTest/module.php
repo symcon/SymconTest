@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class IOFilterTest extends IPSModule
 	{

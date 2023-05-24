@@ -1,4 +1,4 @@
-<?
+<?php
 
     class DynamicLinkLabelTest extends IPSModule
     {

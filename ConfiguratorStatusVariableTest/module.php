@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ConfiguratorStatusVariableTest extends IPSModule
     {

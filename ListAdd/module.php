@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ListAdd extends IPSModule
 	{

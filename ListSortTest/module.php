@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ListSortTest extends IPSModule
 	{

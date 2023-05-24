@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ConfigurationForParentExpansionTest extends IPSModule
     {

@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ReferenceTest extends IPSModule
     {

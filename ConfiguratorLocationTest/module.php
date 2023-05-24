@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ConfiguratorLocationTest extends IPSModule
     {

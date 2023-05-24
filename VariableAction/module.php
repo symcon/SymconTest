@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class VariableAction extends IPSModule
 	{

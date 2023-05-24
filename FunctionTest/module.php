@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class FunctionTest extends IPSModule
 	{

@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class FileDialog extends IPSModule
 	{

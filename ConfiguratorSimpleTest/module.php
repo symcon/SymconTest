@@ -1,4 +1,4 @@
-<?
+<?php
 
     class ConfiguratorSimpleTest extends IPSModule
     {

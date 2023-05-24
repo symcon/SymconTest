@@ -1,4 +1,4 @@
-<?
+<?php
 
     class PropertyUpdateTest extends IPSModule
     {

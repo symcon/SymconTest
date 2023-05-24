@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class EmptyDropDownTest extends IPSModule
 	{

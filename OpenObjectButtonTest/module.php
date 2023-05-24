@@ -1,4 +1,4 @@
-<?
+<?php
 
     class OpenObjectButtonTest extends IPSModule
     {

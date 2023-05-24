@@ -1,4 +1,4 @@
-<?
+<?php
 
     class AttributeTest extends IPSModule
     {

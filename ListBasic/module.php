@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class ListBasic extends IPSModule
 	{

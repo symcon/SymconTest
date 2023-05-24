@@ -1,4 +1,4 @@
-<?
+<?php
 class HorizontalSliderTest extends IPSModule {
     
     public function Create(){

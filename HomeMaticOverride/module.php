@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class HomeMaticOverride extends IPSModule
 	{

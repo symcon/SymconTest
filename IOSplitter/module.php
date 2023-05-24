@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class IOSplitter extends IPSModule
 	{

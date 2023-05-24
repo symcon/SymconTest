@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class WWWTest extends IPSModule
 	{

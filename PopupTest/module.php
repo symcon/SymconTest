@@ -1,4 +1,4 @@
-<?
+<?php
 class PopupTest extends IPSModule {
     
     public function Create(){

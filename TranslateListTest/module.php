@@ -1,4 +1,4 @@
-<?
+<?php
 
 	class TranslateListTest extends IPSModule
 	{

@@ -1,4 +1,4 @@
-<?
+<?php
 class LayoutTest extends IPSModule {
     
     public function Create(){
