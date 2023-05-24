@@ -1,0 +1,14 @@
+{
+    "id": "{D337932D-C18A-BDD3-F8B8-98CC59BB4E82}",
+    "name": "PropertyUpdateTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Property Update Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "PUT"
+}

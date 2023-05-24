@@ -1,0 +1,48 @@
+{
+    "elements": [
+        {
+            "type": "ValidationTextBox",
+            "name": "Property2",
+            "caption": "With Property"
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "NoProperty2",
+            "caption": "No Property"
+        },
+        {
+            "type": "ValidationTextBox",
+            "caption": "No name"
+        },
+        {
+            "type": "ExpansionPanel",
+            "caption": "Sleepy Textbox and others, wake up with care!",
+            "items": [
+                {
+                    "type": "ValidationTextBox",
+                    "name": "Property1",
+                    "caption": "With Property"
+                },
+                {
+                    "type": "ValidationTextBox",
+                    "name": "NoProperty1",
+                    "caption": "No Property"
+                },
+                {
+                    "type": "ValidationTextBox",
+                    "caption": "No name"
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Update Field with no Property",
+            "onClick": "PUT_UpdateValue($id, 'NoProperty1', 'UpdatedValue');"
+        },
+        {
+            "type": "Button",
+            "caption": "Update Field with Property",
+            "onClick": "PUT_UpdateValue($id, 'Property1', 'UpdatedValue');"
+        }
+    ]
+}
