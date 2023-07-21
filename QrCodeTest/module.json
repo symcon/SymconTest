@@ -1,0 +1,11 @@
+{
+    "id": "{D1340FF8-FE9B-15C4-96F3-E18C38C5761F}",
+    "name": "QrCodeTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "QT"
+}
