@@ -39,7 +39,7 @@ class QrCodeTest extends IPSModule {
                             "name"=> "ImageDescription", 
                             "value" => true,
                             "caption" =>  "Bildunterschrift anzeigen",
-                            "onChange" => 'QT_UIUpdate($id,\'descriptionVisible\', $ImageDescription);'
+                            "onChange" => 'QT_UIUpdate($id,\'description\', $ImageDescription);'
                         ],
                         [
                             "type" =>  "CheckBox", 
