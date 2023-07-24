@@ -34,6 +34,11 @@ class QrCodeTest extends IPSModule {
                             "caption" => "Text: 日本語の新しいQRコード", //Neuer QR-Code auf Japanisch
                             "onClick" => 'QT_UIUpdate($id, \'source\', \'日本語の新しいQRコード\');'
                         ],
+                    ]
+                ],
+                [
+                    "type" => "RowLayout",
+                    "items" => [
                         [
                             "type" =>  "CheckBox", 
                             "name"=> "ImageDescription", 
@@ -47,10 +52,16 @@ class QrCodeTest extends IPSModule {
                             "caption" =>  "Sichtbar",
                             "value" => true,
                             "onChange" => 'QT_UIUpdate($id,\'visible\', $Invisible);'
+                        ],
+                        [
+                            "type" =>  "CheckBox", 
+                            "name"=> "Center", 
+                            "caption" =>  "Mitteln",
+                            "value" => false,
+                            "onChange" => 'QT_UIUpdate($id,\'center\', $Center);'
                         ]
                     ]
-                ]
-                
+                ]                
             ]
         ]);
     }
