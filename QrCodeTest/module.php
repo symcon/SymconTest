@@ -61,7 +61,23 @@ class QrCodeTest extends IPSModule {
                             "onChange" => 'QT_UIUpdate($id,\'center\', $Center);'
                         ]
                     ]
-                ]                
+                ],
+                [
+                    "type" => "RowLayout",
+                    "items" => [
+                        [
+                            "type" => "ValidationTextBox", 
+                            "name"=> "Caption",
+                            "caption" =>  "Caption",
+                            "value" => "Generierter QRCode"
+                        ],
+                        [
+                            "type" =>  "Button",  
+                            "caption" =>  "Ändern",
+                            "onClick" => 'QT_UIUpdate($id,\'caption\', $Caption);'
+                        ]
+                    ]
+                ]
             ]
         ]);
     }
