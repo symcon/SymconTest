@@ -25,4 +25,14 @@
         {
             echo $Test;
         }
+
+        public function ActiveParentCheck() : bool
+        {
+            // Validating that the IPSModuleStrict stub can access protected methods
+            return $this->HasActiveParent();
+        }
+
+        public function RegisterNewVariable() : bool {
+            return $this->RegisterVariableBoolean('Ident', 'Booly');
+        }
     }
