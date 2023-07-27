@@ -68,6 +68,11 @@
                     "name": "Inner Child"
                 }]
             }]
+        },
+        {
+            "type": "Button",
+            "caption": "Show Tree Values",
+            "onClick": "var_dump($TreeData);"
         }
     ]
 }

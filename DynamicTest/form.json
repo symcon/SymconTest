@@ -264,6 +264,11 @@
                         },
                         {
                             "type": "Button",
+                            "caption": "Values = 10 Dummies",
+                            "onClick": "DT_UpdateParameter($id, \"Configurator\", \"values\", json_encode([['name' => 'Dummy 1', 'address' => '#1', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 3', 'address' => '#3', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]], ['name' => 'Dummy 2', 'address' => '#2', 'create' => [ 'moduleID' => '{485D0419-BE97-4548-AA9C-C083EB82E61E}', 'configuration' => new stdClass() ]]]));"
+                        },
+                        {
+                            "type": "Button",
                             "caption": "Values = Empty",
                             "onClick": "DT_UpdateParameter($id, \"Configurator\", \"values\", \"[]\");"
                         }
@@ -644,6 +649,11 @@
                             "type": "Button",
                             "caption": "Values = 3 Dummies",
                             "onClick": "DT_UpdateParameter($id, \"List\", \"values\", json_encode([['column1' => 'Dummy 1', 'column2' => '#1'], ['column1' => 'Dummy 3', 'column2' => '#3'], ['column1' => 'Dummy 2', 'column2' => '#2']]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Values = 10 Dummies",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values\", json_encode([['column1' => 'Dummy 1', 'column2' => '#1'], ['column1' => 'Dummy 3', 'column2' => '#3'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2'], ['column1' => 'Dummy 2', 'column2' => '#2']]));"
                         },
                         {
                             "type": "Button",

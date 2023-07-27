@@ -52,6 +52,11 @@
 			],
 			"values": [
 			]
-		}
+		},
+        {
+            "type": "Button",
+            "caption": "Show List Values",
+            "onClick": "var_dump($TreeData);"
+        }
     ]
 }
