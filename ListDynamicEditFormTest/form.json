@@ -1,0 +1,47 @@
+{
+    "actions": [    
+        {
+            "type": "List",
+            "caption": "Infos",
+            "name": "infos",
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "caption": "Active",
+                    "name": "active",
+                    "width": "100px",
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                },
+                {
+                    "caption": "Info",
+                    "name": "info", 
+                    "width": "auto",
+                    "add": "Loading..."
+                }
+            ],
+            "values": [
+            ],
+            "form": [
+                {
+                    "type": "CheckBox",
+                    "name": "active"
+                },
+                {
+                    "type": "ValidationTextBox",
+                    "name": "info1",
+                    "caption": "Info 1"
+                },
+                {
+                    "type": "ValidationTextBox",
+                    "name": "info2",
+                    "caption": "Info 2"
+                }
+            ],
+            "onAdd": "LDEFT_UpdateInfo($id, $infos);",
+            "onEdit": "LDEFT_UpdateInfo($id, $infos);"
+        }
+    ]
+}

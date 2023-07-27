@@ -1,0 +1,14 @@
+{
+	"id": "{F99CA9CF-3FAA-09B2-3510-7E3706852A42}",
+	"name": "ListDynamicEditFormTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Dynamic Edit Form)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LDEFT"
+}
