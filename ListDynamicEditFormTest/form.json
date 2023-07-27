@@ -1,5 +1,5 @@
 {
-    "actions": [    
+    "elements": [    
         {
             "type": "List",
             "caption": "Infos",
@@ -13,7 +13,8 @@
                     "width": "100px",
                     "edit": {
                         "type": "CheckBox"
-                    }
+                    },
+                    "add": false
                 },
                 {
                     "caption": "Info",
@@ -40,8 +41,13 @@
                     "caption": "Info 2"
                 }
             ],
-            "onAdd": "LDEFT_UpdateInfo($id, $infos);",
-            "onEdit": "LDEFT_UpdateInfo($id, $infos);"
+            "onAdd": "LDEFT_UpdateInfos($id, $infos);",
+            "onEdit": "LDEFT_UpdateInfos($id, $infos);"
+        },
+        {
+            "type": "Button",
+            "caption": "Show Property",
+            "onClick": "echo IPS_GetProperty($id, 'infos');"
         }
     ]
 }
