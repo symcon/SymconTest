@@ -48,6 +48,52 @@
             "type": "Button",
             "caption": "Show Property",
             "onClick": "echo IPS_GetProperty($id, 'infos');"
+        },
+        {
+            "type": "List",
+            "add": true,
+            "delete": true,
+            "rowCount": 5,
+            "columns": [
+                {
+                    "caption": "Active",
+                    "name": "active",
+                    "width": "100px",
+                    "edit": {
+                        "type": "CheckBox"
+                    },
+                    "add": false
+                }
+            ],
+            "values": [
+            ],
+            "form": [
+                "return [[",
+                "    'type' => 'CheckBox',",
+                "    'name' => 'active',",
+                "    'caption' => 'Custom Caption!!!'",
+                "]];"
+            ]
+        },
+        {
+            "type": "List",
+            "add": true,
+            "delete": true,
+            "rowCount": 5,
+            "columns": [
+                {
+                    "caption": "Active",
+                    "name": "active",
+                    "width": "100px",
+                    "edit": {
+                        "type": "CheckBox"
+                    },
+                    "add": false
+                }
+            ],
+            "values": [
+            ],
+            "form": "return 'Invalid Form!';"
         }
     ]
 }
