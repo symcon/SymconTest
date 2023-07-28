@@ -50,7 +50,9 @@
             "onClick": "echo IPS_GetProperty($id, 'infos');"
         },
         {
+            "caption": "Generated Form and fancy parameters",
             "type": "List",
+            "name": "infos2",
             "add": true,
             "delete": true,
             "rowCount": 5,
@@ -76,7 +78,14 @@
             ]
         },
         {
+            "type": "Button",
+            "caption": "Show Property",
+            "onClick": "echo IPS_GetProperty($id, 'infos2');"
+        },
+        {
+            "caption": "Using parameters for individual rows, asserting they are not stored in the property",
             "type": "List",
+            "name": "infos3",
             "add": true,
             "delete": true,
             "rowCount": 5,
@@ -92,8 +101,59 @@
                 }
             ],
             "values": [
+                {
+                    "active": true,
+                    "rowColor": "#FFFFC0",
+                    "editable": false
+                },
+                {
+                    "active": true,
+                    "rowColor": "#FFFFC0",
+                    "deletable": false
+                }
             ],
             "form": "return 'Invalid Form!';"
+        },
+        {
+            "type": "Button",
+            "caption": "Show Property",
+            "onClick": "echo IPS_GetProperty($id, 'infos3');"
+        },
+        {
+            "caption": "Tree to validate that parameters are saved as intended",
+            "type": "Tree",
+            "name": "tree",
+            "add": true,
+            "delete": true,
+            "rowCount": 5,
+            "columns": [
+                {
+                    "caption": "Active",
+                    "name": "active",
+                    "width": "auto",
+                    "edit": {
+                        "type": "CheckBox"
+                    },
+                    "add": false
+                }
+            ],
+            "values": [
+                {
+                    "id": 1,
+                    "active": true,
+                    "expanded": true
+                },
+                {
+                    "id": 2,
+                    "active": false,
+                    "parent": 1
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Show Property",
+            "onClick": "echo IPS_GetProperty($id, 'tree');"
         }
     ]
 }

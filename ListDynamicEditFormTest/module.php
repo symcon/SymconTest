@@ -7,6 +7,9 @@
             parent::Create();
             
             $this->RegisterPropertyString("infos", "");
+            $this->RegisterPropertyString("infos2", "");
+            $this->RegisterPropertyString("infos3", "");
+            $this->RegisterPropertyString("tree", "");
 
         }
 
