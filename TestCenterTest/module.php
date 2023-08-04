@@ -13,6 +13,12 @@
             $this->EnableAction("SomeBoolProfile");
             $this->RegisterVariableInteger("SomeEnumeration", "Some Enumeration", "~ShutterPosition.100");
             $this->EnableAction("SomeEnumeration");
+            if (!IPS_VariableProfileExists('Test.SingleEnum')) {
+                IPS_CreateVariableProfile('Test.SingleEnum', 3);
+                IPS_SetVariableProfileAssociation('Test.SingleEnum', '', 'TestEnum', '', -1);
+            }            
+            $this->RegisterVariableString("SingleEnumeration", "SingleEnumeration", "Test.SingleEnum");
+            $this->EnableAction("SingleEnumeration");
             $this->RegisterVariableInteger("SomeDate", "Some Date", "~UnixTimestampDate");
             $this->EnableAction("SomeDate");
             $this->RegisterVariableInteger("SomeDateTime", "Some Date/Time", "~UnixTimestamp");
