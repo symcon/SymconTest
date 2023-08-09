@@ -1,7 +1,8 @@
 {
 	"translations": {
 		"de": { 
-			"The current time is %s": "Die aktuelle Zeit ist %s"
+			"The current time is %s": "Die aktuelle Zeit ist %s",
+			"Translate Test": "Übersetzungstest"
 		}
 	}
 }
