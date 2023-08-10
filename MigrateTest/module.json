@@ -1,0 +1,14 @@
+{
+	"id": "{7A2A8379-2F01-6B17-46AD-52BAACFE0048}",
+	"name": "MigrateTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Migrate Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DT"
+}

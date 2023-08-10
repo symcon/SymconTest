@@ -1,0 +1,15 @@
+{
+	"id": "{8703B4A4-BC4A-8386-5566-9F9C6A92F9C0}",
+	"name": "MigrateStrictTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Migrate Test (Strict)"
+	],
+	"url": "https://www.symcon.de/",
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "DT"
+}
