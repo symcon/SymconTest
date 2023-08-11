@@ -1,0 +1,15 @@
+{
+	"id": "{33A74F6F-4312-CD09-78CB-5A9721DEAA27}",
+	"name": "OAuthTestStrict",
+	"type": 0,
+	"vendor": "",
+	"aliases": 
+	[
+		"OAuthTest (Strict)"
+	],
+	"url": "https://www.symcon.de/",
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "OAT"
+}
