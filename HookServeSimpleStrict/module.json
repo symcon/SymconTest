@@ -1,0 +1,15 @@
+{
+	"id": "{4AF7C36A-2133-6162-ACCE-D9A7FC28164E}",
+	"name": "HookServeSimpleStrict",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"HookServeSimple (Strict)"
+	],
+	"url": "https://www.symcon.de/",
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HSS"
+}

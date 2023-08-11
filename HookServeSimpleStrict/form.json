@@ -1,0 +1,19 @@
+{
+    "elements": [
+        {
+            "type": "SelectMedia",
+            "name": "MediaID",
+            "caption": "Media"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Label",
+            "caption": "Text File: http://127.0.0.1:3777/hook/hookservesimplestrict/text"
+        },
+        {
+            "type": "Label",
+            "caption": "Media File: http://127.0.0.1:3777/hook/hookservesimplestrict/media"
+        }
+    ]
+}
