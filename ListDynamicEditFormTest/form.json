@@ -154,6 +154,46 @@
             "type": "Button",
             "caption": "Show Property",
             "onClick": "echo IPS_GetProperty($id, 'tree');"
+        },
+        {
+            "caption": "Generated Form, using the $parameter",
+            "type": "List",
+            "name": "dynamicList",
+            "add": true,
+            "delete": true,
+            "rowCount": 5,
+            "columns": [
+                {
+                    "caption": "Active",
+                    "name": "active",
+                    "width": "100px",
+                    "edit": {
+                        "type": "CheckBox"
+                    },
+                    "add": false
+                },
+                {
+                    "caption": "Info",
+                    "name": "info",
+                    "width": "auto",
+                    "add": "Loading..."
+                }
+            ],
+            "values": [
+                {
+                    "active": true,
+                    "info": "Hallo Welt"
+                }
+            ],
+            "form": [
+                "return [[",
+                "    'type' => 'Label',",
+                "    'caption' => var_export($dynamicList, true)",
+                "], [",
+                "    'type' => 'Label',",
+                "    'caption' => $dynamicList['info']",
+                "]];"
+            ]
         }
     ]
 }
