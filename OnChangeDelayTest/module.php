@@ -8,4 +8,8 @@
 
             $this->RegisterVariableInteger('Test', 'Test', '~Humidity', 0);
         }
+
+        public function setID() {
+            $this->UpdateFormField('SelectValue', 'variableID', $this->GetIDForIdent('Test'));
+        }
     }

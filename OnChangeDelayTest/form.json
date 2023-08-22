@@ -19,6 +19,18 @@
             "moreDigits": true,
             "onChange": "echo('Number ' . $NumberSpinner);"
         },
+        {
+            "name": "SelectValue",
+            "caption": "SelectValue",
+            "type": "SelectValue",
+            "onChange": "echo('Select ' . $SelectValue);",
+            "variableID": 0
+        },
+        {
+            "type": "Button",
+            "onClick": "OCDT_setID($id);",
+            "caption": "Set ID"
+        }
     ],
     "actions": []
 }
