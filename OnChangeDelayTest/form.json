@@ -1,0 +1,24 @@
+{
+    "elements": [
+        {
+            "name": "ValidationText",
+            "type": "ValidationTextBox",
+            "caption": "ValidationText with OnChange",
+            "onChange": "echo('Validation ' . $ValidationText);"
+        },
+        {
+            "name": "PasswordText",
+            "type": "PasswordTextBox",
+            "caption": "PasswordText",
+            "onChange": "echo('Passwort ' . $PasswordText);"
+        },
+        {
+            "name": "NumberSpinner",
+            "type": "NumberSpinner",
+            "caption": "NumberSpinner",
+            "moreDigits": true,
+            "onChange": "echo('Number ' . $NumberSpinner);"
+        },
+    ],
+    "actions": []
+}
