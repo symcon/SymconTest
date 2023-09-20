@@ -1,0 +1,14 @@
+{
+    "id": "{DAA55DF9-AF4D-4006-97F6-32E4CD958CA4}",
+    "name": "ConfiguratorMultiTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (Multi)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CTM"
+}
