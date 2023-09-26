@@ -55,6 +55,18 @@
             "type": "Button",
             "label": "/test with link: syntax",
             "onClick": "echo 'link:/test';"
+        },
+        {
+            "type": "Button",
+            "label": "Test with download",
+            "download": "test.txt",
+            "onClick": "echo 'data:text/plain,asdasdsad';"
+        },
+        {
+            "type": "Button",
+            "label": "Test with invalid download",
+            "download": "test.txt",
+            "onClick": "echo 'Invalid data';"
         }
     ]
 }
