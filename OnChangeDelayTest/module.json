@@ -1,0 +1,14 @@
+{
+    "id": "{8FEF6168-AD28-6B14-F403-59B4158D4749}",
+    "name": "OnChangeDelayTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "OnChangeDelayTest"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "OCDT"
+}
