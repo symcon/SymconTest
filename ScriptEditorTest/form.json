@@ -63,6 +63,33 @@
         {
             "type": "ScriptEditor",
             "value": "<?php\n\n$x = 5"
+        },
+        {
+            "type": "Label",
+            "caption": "With empty Value"
+        },
+        {
+            "type": "ScriptEditor",
+            "value": ""
+        },{
+            "type": "List",
+            "caption": "ScriptEditors",
+            "rowCount": 5,
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "label": "Script",
+                    "name": "script", 
+                    "width": "auto",
+                    "add": "",
+                    "edit": {
+                        "type": "ScriptEditor"
+                    }
+                }
+            ],
+            "values": [
+            ]
         }
     ]
 }
