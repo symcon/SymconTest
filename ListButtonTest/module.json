@@ -1,0 +1,14 @@
+{
+	"id": "{F99CA8CF-3FAA-09B2-3510-7E3706852A42}",
+	"name": "ListButtonTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Buttons)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LBT"
+}
