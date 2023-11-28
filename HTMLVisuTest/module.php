@@ -8,44 +8,32 @@
             parent::Create();
             
             $this->RegisterVariableInteger('Counter', 'Counter');
+            $this->EnableAction('Counter');
             $this->SetVisualizationType(1);
-
         }
 
         public function RequestAction($Ident, $Value) {
+            $this->SendDebug('HTML Update', 'Start', 0);
             switch ($Ident) {
                 case 'Counter':
                     $this->SetValue($Ident, $Value);
                     break;
 
                 case 'Add':
-                    $this->SetValue('Counter', $this->GetValue('Counter') + 1);
+                    $this->SetValue('Counter', $this->GetValue('Counter') + $Value);
                     break;
             }
+
+            $this->UpdateVisualizationValue(strval($this->GetValue('Counter')));
+            $this->SendDebug('HTML Update', 'Done', 0);
         }
         
         public function GetVisualizationTile() {
-            // TODO: First script is to be injected
-            return '<script>' .
-                        'function requestAction(ident, value) {' .
-                            'if (window.RequestAction) {' .
-                                'window.RequestAction(JSON.stringify({ident, value}));' .
-                            '} else' .
-                            '{' .
-                                'window.parent.postMessage({ident, value});' .
-                            '}' .
-                        '}' .
-                        'window.addEventListener("message",' .
-                            '(event) => {' .
-                                'if (window.handleMessage) {' .
-                                    'window.handleMessage(event.data);' .
-                                '}' .
-                            '}, false);' .
-                    '</script>' .
-
-                    '<script>function handleMessage(data) { document.getElementById("display").innerText = data; }</script>' .
+            return  '<script>function handleMessage(data) { document.getElementById("display").innerText = data; }</script>' .
                     '<button onClick="requestAction(\'Add\', -1);">-1</button>' . 
+                    '<div>Counter:</div>' .
                     '<div id="display">' . $this->GetValue('Counter') . '</div>' .
+                    '<div>ducks</div>' .
                     '<button onClick="requestAction(\'Add\', +1);">+1</button>';
         }
     
