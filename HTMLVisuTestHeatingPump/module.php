@@ -74,27 +74,75 @@
 
             $this->RegisterVariableFloat('ConsumptionToday', 'Consumption today', '~Electricity');
 
+            $this->EnableAction('Status');
+            $this->EnableAction('Mode');
+            $this->EnableAction('OutdoorTemperature');
+            $this->EnableAction('WaterTemperature');
+            $this->EnableAction('FlowTemperature');
+            $this->EnableAction('ReturnTemperature');
+            $this->EnableAction('HeaterRodBackupStatus');
+            $this->EnableAction('HeaterRodPhase1');
+            $this->EnableAction('HeaterRodPhase2');
+            $this->EnableAction('HeaterRodPhase3');
+            $this->EnableAction('Flow');
+            $this->EnableAction('FanRotations');
+            $this->EnableAction('CompressorPower');
+            $this->EnableAction('COP');
+            $this->EnableAction('SPF');
+            $this->EnableAction('SPFHeating');
+            $this->EnableAction('SPFWater');
+            $this->EnableAction('Power');
+            $this->EnableAction('Consumption');
+            $this->EnableAction('ConsumptionToday');
+
             $this->SetVisualizationType(1);
         }
 
         public function RequestAction($Ident, $Value) {
-            $this->SendDebug('HTML Update', 'Start', 0);
-            switch ($Ident) {
-                case 'Counter':
-                    $this->SetValue($Ident, $Value);
-                    break;
+            $this->SetValue($Ident, $Value);
 
-                case 'Add':
-                    $this->SetValue('Counter', $this->GetValue('Counter') + $Value);
-                    break;
-            }
-
-            $this->UpdateVisualizationValue(strval($this->GetValue('Counter')));
-            $this->SendDebug('HTML Update', 'Done', 0);
+            $this->UpdateVisualizationValue(json_encode([
+                'Ident' => $Ident,
+                'Value' => $Value,
+                'Max' => $this->GetMaxValue($Ident)
+            ]));
         }
         
         public function GetVisualizationTile() {
-            return file_get_contents(__DIR__ . '/heating_pump.html');
+            $initialHandling = [];
+            foreach (IPS_GetChildrenIDs($this->InstanceID) as $variableID) {
+                if (!IPS_VariableExists($variableID)) {
+                    continue;
+                }
+
+                $ident = IPS_GetObject($variableID)['ObjectIdent'];
+                if (!$ident) {
+                    continue;
+                }
+                $initialHandling[] = 'handleMessage(\'' . json_encode([
+                    'Ident' => $ident,
+                    'Value' => $this->GetValue($ident),
+                    'Max' => $this->GetMaxValue($ident)
+                ]) . '\');';
+            }
+            return file_get_contents(__DIR__ . '/heating_pump.html') . '<script>' . implode(' ', $initialHandling) . '</script>';
+        }
+
+        private function GetMaxValue($variableIdent) {
+            $variableID = @$this->GetIDForIdent($variableIdent);
+
+            if (($variableID === false) || (!IPS_VariableExists($variableID))) {
+                return false;
+            }
+
+            $variable = IPS_GetVariable($variableID);
+
+            $profile = $variable['VariableCustomProfile'];
+            if ($profile === '') {
+                $profile = $variable['VariableProfile'];
+            }
+
+            return IPS_VariableProfileExists($profile) ? IPS_GetVariableProfile($profile)['MaxValue'] : false;
         }
     
     }

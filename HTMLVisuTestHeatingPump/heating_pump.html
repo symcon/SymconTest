@@ -4,6 +4,10 @@
 <head>
     <script src="https://kit.fontawesome.com/7da29d74de.js" crossorigin="anonymous"></script>
     <style>
+        :root {
+            --div-height: 23px;
+        }
+
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -23,10 +27,10 @@
 
         .main_container {
             width: 100%;
+            height: 100%;
             display: flex;
             flex-wrap: nowrap;
             position: relative;
-            font-size: 0.9em;
             box-sizing: border-box;
         }
 
@@ -36,8 +40,9 @@
         }
 
         .div1 img {
-            width: 100%;
             box-sizing: border-box;
+            max-width: 100%;
+            max-height: 100%;
         }
 
         .div2 {
@@ -47,6 +52,9 @@
             box-sizing: border-box;
             border-radius: 0px;
             border-left: 1px dotted #28cdab;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
 
         .balkendiagramm {
@@ -113,7 +121,6 @@
         }
 
         .balken_links_leistung {
-            width: 50%;
             background: repeating-linear-gradient(to right, red 0%, orange 50%, red 100%);
             background-size: 200% auto;
             background-position: 0 100%;
@@ -123,7 +130,6 @@
         }
 
         .balken_links_durchfluss {
-            width: 50%;
             background: repeating-linear-gradient(to right, #0054ff 0%, #44a4f5 50%, #0054ff 100%);
             background-size: 200% auto;
             background-position: 0 100%;
@@ -133,7 +139,6 @@
         }
 
         .balken_links_luefterdrehzahl {
-            width: 50%;
             background: repeating-linear-gradient(to right, #13b7f2 0%, #99e4ff 50%, #13b7f2 100%);
             background-size: 200% auto;
             background-position: 0 100%;
@@ -143,7 +148,6 @@
         }
 
         .balken_links_kompressor {
-            width: 50%;
             background: repeating-linear-gradient(to right, #990303 0%, #ff0000 50%, #990303 100%);
             background-size: 200% auto;
             background-position: 0 100%;
@@ -162,83 +166,11 @@
             padding: 3px;
         }
 
-        .hz_ww_1 {
-            display: inline;
-        }
-
-        .hz_ww_2 {
-            display: inline;
-        }
-
-        .hz_ww_3 {
-            display: inline;
-        }
-
-        .hz_wp_backup {
-            display: inline;
-        }
-
-        .hz_ww_alle {
-            display: inline;
-        }
-
-        .hz_alle {
-            display: inline;
-        }
-
-        .wp_jaz_heizen {
-            display: inline;
-        }
-
-        .wp_jaz_ww {
-            display: inline;
-        }
-
         .balken_rechts {
             width: 100%;
             border-radius: calc(var(--div-height) / 4) calc(var(--div-height) / 4);
             background: linear-gradient(to right, rgba(135, 135, 135, 0.6) 0%, rgba(135, 135, 135, 0.2) 100%);
             overflow: hidden;
-        }
-
-        .status_0 {
-            color: green;
-        }
-
-        .status_1 {
-            color: red;
-        }
-
-        .status_2 {
-            color: blue;
-        }
-
-        .status_3 {
-            color: orange;
-        }
-
-        .status_4 {
-            color: #03a1fc;
-        }
-
-        .status_5 {
-            color: #fc9003;
-        }
-
-        .status_6 {
-            color: purple;
-        }
-
-        .status_7 {
-            color: plum;
-        }
-
-        .status_8 {
-            color: gold;
-        }
-
-        .status_9 {
-            color: magenta;
         }
 
         @keyframes blink {
@@ -265,13 +197,66 @@
         .daten_links {
             margin-right: 20px;
             border: 0px solid #000;
+            display: flex;
+            flex-direction: column;
         }
 
         .daten_rechts {
             border: 0px solid #000;
+            display: flex;
+            flex-direction: column;
         }
 
         .icon {
+            color: #26d4b9;
+            width: 13px;
+        }
+
+        .right-space {
+            padding-right: 2px;
+        }
+
+        .right-padding {
+            padding-right: 15px;
+        }
+
+        #status,
+        #mode {
+            color: gray;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .title {
+            width: 100px;
+        }
+
+        .clickable {
+            cursor: pointer;
+        }
+
+        .status_0 .status-off {
+            color: #26d4b9;
+        }
+
+        .status_3 .status-heating {
+            color: orangered;
+        }
+
+        .status_4 .status-defrost {
+            color: lightskyblue;
+        }
+
+        .status_5 .status-warm-water {
+            color: blue;
+        }
+
+        .mode_0 .mode-normal,
+        .mode_1 .mode-silent,
+        .mode_2 .mode-eco {
             color: #26d4b9;
         }
     </style>
@@ -279,185 +264,283 @@
 
 <body>
     <div class="main_container">
-        <div id="div1" class="div1"> </div>
-        <div class="div2"> <b>Status: </b><span id="14983"></span></br> <b>Modus: </b><span id="41747"></span></br>
+        <div id="div1" class="div1">
+            <img id="image">
+        </div>
+        <div class="div2">
+            <div class="row">
+                <b class="title">Status:</b>
+                <div id="status">
+                    <span class="right-padding" onclick="requestAction('Status', 0);">
+                        <span class="status-off clickable">Off</span>
+                    </span>
+                    <span class="right-padding" onclick="requestAction('Status', 3);">
+                        <span class="status-heating clickable">Heating</span>
+                    </span>
+                    <span class="right-padding" onclick="requestAction('Status', 4);">
+                        <span class="status-defrost clickable">Defrost</span>
+                    </span>
+                    <span class="right-padding" onclick="requestAction('Status', 5);">
+                        <span class="status-warm-water clickable">Warm Water</span>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <b class="title">Mode:</b>
+                <div id="mode">
+                    <span class="right-padding" onclick="requestAction('Mode', 0);">
+                        <span class="mode-normal clickable">Normal</span>
+                    </span>
+                    <span class="right-padding" onclick="requestAction('Mode', 1);">
+                        <span class="mode-silent clickable">Silent</span>
+                    </span>
+                    <span class="right-padding" onclick="requestAction('Mode', 2);">
+                        <span class="mode-eco clickable">Eco</span>
+                    </span>
+                </div>
+                <span id="mode"></span>
+            </div>
             <div class="balkendiagramm">
                 <div class="balken_rechts">
-                    <div class="balken_links_leistung"> <span class="balken_links_text"><b>Leistung: </b> <span
-                                id="20303">0</span> KW</span> </div>
+                    <div class="balken_links_leistung">
+                        <span class="balken_links_text">
+                            <b class="right-space">Power:</b>
+                            <span id="power" class="right-space"></span>
+                            <span>KW</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="balkendiagramm">
                 <div class="balken_rechts">
-                    <div class="balken_links_kompressor"> <span class="balken_links_text"><b>Kompressor: </b><span
-                                id="19570">0</span> Hz</span> </div>
+                    <div class="balken_links_kompressor">
+                        <span class="balken_links_text">
+                            <b class="right-space">Compressor:</b>
+                            <span id="compressor" class="right-space"></span>
+                            <span>Hz</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="balkendiagramm">
                 <div class="balken_rechts">
-                    <div class="balken_links_durchfluss"> <span class="balken_links_text"><b>Durchfluss: </b><span
-                                id="23549">0</span> l/h</span> </div>
+                    <div class="balken_links_durchfluss">
+                        <span class="balken_links_text">
+                            <b class="right-space">Flow:</b>
+                            <span id="flow" class="right-space"></span>
+                            <span>l/h</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="balkendiagramm">
                 <div class="balken_rechts">
-                    <div class="balken_links_luefterdrehzahl"> <span class="balken_links_text"><b>Lüfterdrehzahl:
-                            </b><span id="33890">0</span> rpm</span> </div>
+                    <div class="balken_links_luefterdrehzahl">
+                        <span class="balken_links_text">
+                            <b class="right-space">Fan Rotations:</b>
+                            <span id="rotations" class="right-space"></span>
+                            <span>rpm</span>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="container_daten">
-                <div class="daten_links"> JAZ:</br> COP:</br> Verbrauch:</br> Temp.:</br> <span
-                        class="hz_alle">Heizstäbe: </span></div>
-                <div class="daten_rechts"> <i class="fa-solid fa-house fa-sm icon"></i> <span id="33510"></span><span
-                        class="wp_jaz_heizen">&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-fire-flame-curved fa-sm icon"></i>
-                        <span id="59006"></span></span><span class="wp_jaz_ww">&nbsp;&nbsp;&nbsp;<i
-                            class="fa-solid fa-droplet fa-sm icon"></i> <span id="16842"></span></span></br> <i
-                        class="fa-solid fa-fire-flame-curved fa-sm icon"></i> <span id="54403">0</span></br> <i
-                        class="fa-solid fa-bolt fa-sm icon"></i> <span id="25434"></span> Watt,&nbsp;&nbsp;&nbsp;<i
-                        class="fa-solid fa-bolt fa-sm icon"></i> Heute: <span id="17601"></span> kWh</br> <i
-                        class="fa-solid fa-tree fa-sm icon"></i> <span id="41468">0</span>°C&nbsp;&nbsp;&nbsp;<i
-                        class="fa-solid fa-droplet fa-sm icon"></i> <span id="22043">0</span>°C&nbsp;&nbsp;&nbsp;<i
-                        class="fa-solid fa-circle-down fa-sm icon"></i> <span id="37910">0</span>°C&nbsp;&nbsp;&nbsp;<i
-                        class="fa-solid fa-circle-up fa-sm icon"></i> <span id="27204">0</span>°C</br> <span
-                        class="hz_wp_backup"><i class="fa-solid fa-fan fa-sm icon"></i> WP:&nbsp;<span
-                            id="58032"></span>&nbsp;&nbsp;&nbsp;</span><span class="hz_ww_alle"><i
-                            class="fa-solid fa-droplet fa-sm icon"></i> WW-Speicher:&nbsp;<span class="hz_ww_1"
-                            id="21501"></span>&nbsp;<span class="hz_ww_2" id="56712"></span>&nbsp;<span class="hz_ww_3"
-                            id="39438"></span></span> </div>
+                <div class="daten_links">
+                    <div>SPF:</div>
+                    <div>COP:</div>
+                    <div>Consumption:</div>
+                    <div>Temp.:</div>
+                    <div>Heater Rods:</div>
+                </div>
+                <div class="daten_rechts">
+                    <div>
+                        <i class="fa-solid fa-house fa-sm icon right-space"></i>
+                        <span id="spf-total" class="right-padding"></span>
+                        <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
+                        <span id="spf-heating" class="right-padding"></span>
+                        <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
+                        <span id="spf-water"></span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
+                        <span id="cop"></span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bolt fa-sm icon right-space"></i>
+                        <span id="consumption" class="right-space"></span>
+                        <span class="right-padding">Watt</span>
+                        <i class="fa-solid fa-bolt fa-sm icon right-space"></i>
+                        <span class="right-space">Today:</span>
+                        <span id="consumption-today" class="right-space"></span>
+                        <span>kWh</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-tree fa-sm icon right-space"></i>
+                        <span id="temperature-outdoor" class="right-space"></span>
+                        <span class="right-padding">°C</span>
+                        <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
+                        <span id="temperature-water" class="right-space"></span>
+                        <span class="right-padding">°C</span>
+                        <i class="fa-solid fa-circle-down fa-sm icon right-space"></i>
+                        <span id="temperature-return" class="right-space"></span>
+                        <span class="right-padding">°C</span>
+                        <i class="fa-solid fa-circle-up fa-sm icon right-space"></i>
+                        <span id="temperature-flow" class="right-space"></span>
+                        <span>°C</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-fan fa-sm icon right-space"></i>
+                        <span class="right-space">HP:</span>
+                        <i id="heater-rod" class="fa-solid fa-circle fa-sm icon right-padding"></i></span>
+                        <i class="fa-solid fa-droplet fa-sm icon"></i>
+                        <span class="right-space">WW-Storage:</span>
+                        <i id="heater-rod-1" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heater-rod-2" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heater-rod-3" class="fa-solid fa-circle fa-sm icon"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" charset="UTF-8">
-        //Diagrammbalken-Höhe automatisch an die Schriftgröße anpassen
-        var spanElement = document.querySelector('.balken_links_text');
-        var divElement = document.querySelectorAll('.balken_links_leistung, .balken_links_durchfluss, .balken_links_luefterdrehzahl, .balken_rechts_leistung, .balken_rechts_durchfluss, .balken_rechts_luefterdrehzahl');
-        var root = document.documentElement; // HTML-Dokument
-        // Ermittle die Höhe des span-Elements
-        var spanHeight = spanElement.clientHeight;
-        // Setze eine CSS-Variable mit der Höhe des span-Elements
-        root.style.setProperty('--div-height', spanHeight + 'px');
-    </script>
-    <script type="text/javascript" charset="UTF-8">
-        var baseURL = document.baseURI;
-        var username = '';
-        var wf_password = '';
-        var fern_password = '';
-        var serverAddressLocal = '';
-        var serverAddressConnect = '';
-        var serverPort = '3777';
-        var variableIDs = [14983, 41747, 41468, 22043, 37910, 27204, 58032, 21501, 56712, 39438, 23549, 33890, 19570, 54403, 33510, 59006, 16842, 20303, 25434, 17601];
-        var wfid = '11891';
-        // Create basic authentication string 
-        var credentials = btoa(username + ':' + fern_password);
-        // Function to handle JSON-RPC requests
-        const handleJSONRPCRequest = async (rpcURL, request) => {
-            return {
-                result: 50.0
-            };
-        };
-        // Main function to process JSON-RPC requests   
-        const processJSONRPCRequests = async () => {
-            if (baseURL.includes('ipmagic.de')) {
-                rpcURL = 'https://' + serverAddressConnect + '/api/';
-            } else {
-                rpcURL = 'http://' + serverAddressLocal + ':' + serverPort + '/api/';
+        function handleMessage(message) {
+            const data = JSON.parse(message);
+            let divID = '';
+            switch (data.Ident) {
+                case 'Status':
+                    divID = 'status';
+                    break;
+
+                case 'Mode':
+                    divID = 'mode';
+                    break;
+
+                case 'OutdoorTemperature':
+                    divID = 'temperature-outdoor';
+                    break;
+
+                case 'WaterTemperature':
+                    divID = 'temperature-water';
+                    break;
+
+                case 'FlowTemperature':
+                    divID = 'temperature-flow';
+                    break;
+
+                case 'ReturnTemperature':
+                    divID = 'temperature-return';
+                    break;
+
+                case 'HeaterRodBackupStatus':
+                    divID = 'heater-rod';
+                    break;
+
+                case 'HeaterRodPhase1':
+                    divID = 'heater-rod-1';
+                    break;
+
+                case 'HeaterRodPhase2':
+                    divID = 'heater-rod-2';
+                    break;
+
+                case 'HeaterRodPhase3':
+                    divID = 'heater-rod-3';
+                    break;
+
+                case 'Flow':
+                    divID = 'flow';
+                    break;
+
+                case 'FanRotations':
+                    divID = 'rotations';
+                    break;
+
+                case 'CompressorPower':
+                    divID = 'compressor';
+                    break;
+
+                case 'COP':
+                    divID = 'cop';
+                    break;
+
+                case 'SPF':
+                    divID = 'spf-total';
+                    break;
+
+                case 'SPFHeating':
+                    divID = 'spf-heating';
+                    break;
+
+                case 'SPFWater':
+                    divID = 'spf-water';
+                    break;
+
+                case 'Power':
+                    divID = 'power';
+                    break;
+
+                case 'Consumption':
+                    divID = 'consumption';
+                    break;
+
+                case 'ConsumptionToday':
+                    divID = 'consumption-today';
+                    break;
             }
-            // Process JSON-RPC requests      
-            for (let index = 0; index < variableIDs.length; index++) {
-                const variableID = variableIDs[index];
-                // Define your JSON-RPC request         
-                const request = {
-                    jsonrpc: '2.0',
-                    method: 'GetValue',
-                    params: [variableID],
-                    id: index + 1,
-                };
-                // Handle the JSON-RPC request        
-                const data = await handleJSONRPCRequest(rpcURL, request);
-                if (data) {
-                    // Data processing logic here     
-                    var value = data.result;
-                    var divElement = document.getElementById(variableID.toString());
-                    if (divElement) {
-                        // Deine Datenverarbeitungslogik hier     
-                        if (variableID === 14983) {
-                            var statusMapping = {
-                                0: {
-                                    text: 'Aus',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                1: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                2: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                3: {
-                                    text: 'Heizen',
-                                    image: baseURL + 'user/img/wp/wp_an_heizen.gif'
-                                },
-                                4: {
-                                    text: 'Abtauen',
-                                    image: baseURL + 'user/img/wp/wp_an_heizen.gif'
-                                },
-                                5: {
-                                    text: 'Warmwasser',
-                                    image: baseURL + 'user/img/wp/wp_an_ww.gif'
-                                },
-                                6: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                7: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                8: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                                9: {
-                                    text: 'Statustext',
-                                    image: baseURL + 'user/img/wp/wp_aus.png'
-                                },
-                            };
-                            if (statusMapping[value]) {
-                                divElement.innerHTML = '<span class="status_' + value + '">' + statusMapping[value].text + '</span>';
-                                var div1 = document.getElementById('div1');
-                                div1.innerHTML = '<img src="' + statusMapping[value].image + '"/>';
-                            }
-                        } else if (variableID === 41747) {
-                            var valueMapping = {
-                                0: 'Normal',
-                                1: 'Silent',
-                                2: 'Eco',
-                                3: 'Modustext',
-                                4: 'Modustext',
-                                5: 'Modustext',
-                                6: 'Modustext',
-                                7: 'Modustext',
-                                8: 'Modustext',
-                                9: 'Modustext',
-                            };
-                            divElement.innerHTML = valueMapping[value] || value;
-                        } else if (variableID === 58032 || variableID === 21501 || variableID === 56712 || variableID === 39438) {
-                            var valueHtml = value ? '<i class="fa-solid fa-circle fa-sm icon"></i>' : '<i class="fa-regular fa-circle fa-sm icon"></i>';
-                            divElement.innerHTML = valueHtml;
-                        } else { // Check for decimal places    
-                            if (value.toString().includes('.')) { // Round the value to two decimal places
-                                value = parseFloat(value).toFixed(2);
-                            }
-                            divElement.textContent = value; // Update the CSS variables    
-                            var cssVariableName = '--' + variableID;
-                            var root = document.documentElement;
-                            root.style.setProperty(cssVariableName, value);
+            var value = data.result;
+            var divElement = document.getElementById(divID);
+            if (divElement) {
+                switch (data.Ident) {
+                    case 'Status': {
+                        const statusMapping = {
+                            0: '/user/img/wp/wp_aus.png',
+                            3: '/user/img/wp/wp_an_heizen.gif',
+                            4: '/user/img/wp/wp_an_heizen.gif',
+                            5: '/user/img/wp/wp_an_ww.gif',
+                        };
+
+                        let index = data.Value;
+                        if (!statusMapping[index]) {
+                            index = 0;
                         }
-                    } else {
-                        console.error('Ungültiges JSON-Format oder fehlende Daten.');
+
+                        divElement.className = 'status_' + data.Value;
+                        document.getElementById('image').src = statusMapping[index];
+                        break;
                     }
+
+                    case 'Mode':
+                        divElement.className = 'mode_' + data.Value;
+                        break;
+
+                    case 'HeaterRodBackupStatus':
+                    case 'HeaterRodPhase1':
+                    case 'HeaterRodPhase2':
+                    case 'HeaterRodPhase3':
+                        if (data.Value) {
+                            divElement.classList.remove('fa-regular');
+                            divElement.classList.add('fa-solid');
+                        }
+                        else {
+                            divElement.classList.remove('fa-solid');
+                            divElement.classList.add('fa-regular');
+                        }
+                        break;
+
+                    case 'Power':
+                    case 'CompressorPower':
+                    case 'Flow':
+                    case 'FanRotations':
+                        divElement.textContent = Number.isInteger(data.Value) ? data.Value.toString() : data.Value.toFixed(2);
+                        divElement.parentElement.parentElement.style.width = `${(data.Value / data.Max) * 100}%`;
+                        break;
+
+                    default:
+                        divElement.textContent = Number.isInteger(data.Value) ? data.Value.toString() : data.Value.toFixed(2);
+                        break;
                 }
+            } else {
+                console.error('Ungültiges JSON-Format oder fehlende Daten.');
             }
-        }; // Rufen Sie die Hauptfunktion einmalig auf, um die Daten zu verarbeiten  
-        processJSONRPCRequests();</script>
+        }
+    </script>
