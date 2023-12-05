@@ -101,11 +101,7 @@
         public function RequestAction($Ident, $Value) {
             $this->SetValue($Ident, $Value);
 
-            $this->UpdateVisualizationValue(json_encode([
-                'Ident' => $Ident,
-                'Value' => $Value,
-                'Max' => $this->GetMaxValue($Ident)
-            ]));
+            $this->UpdateVisualizationValue($this->GetUpdatedValue($Ident));
         }
         
         public function GetVisualizationTile() {
@@ -119,16 +115,12 @@
                 if (!$ident) {
                     continue;
                 }
-                $initialHandling[] = 'handleMessage(\'' . json_encode([
-                    'Ident' => $ident,
-                    'Value' => $this->GetValue($ident),
-                    'Max' => $this->GetMaxValue($ident)
-                ]) . '\');';
+                $initialHandling[] = 'handleMessage(\'' . $this->GetUpdatedValue($ident) . '\');';
             }
             return file_get_contents(__DIR__ . '/heating_pump.html') . '<script>' . implode(' ', $initialHandling) . '</script>';
         }
 
-        private function GetMaxValue($variableIdent) {
+        private function GetUpdatedValue($variableIdent) {
             $variableID = @$this->GetIDForIdent($variableIdent);
 
             if (($variableID === false) || (!IPS_VariableExists($variableID))) {
@@ -142,7 +134,11 @@
                 $profile = $variable['VariableProfile'];
             }
 
-            return IPS_VariableProfileExists($profile) ? IPS_GetVariableProfile($profile)['MaxValue'] : false;
+            return json_encode([
+                'Ident' => $variableIdent,
+                'Value' => $this->GetValue($variableIdent),
+                'Max' => IPS_VariableProfileExists($profile) ? IPS_GetVariableProfile($profile)['MaxValue'] : false
+            ]);
         }
     
     }
