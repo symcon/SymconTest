@@ -1,7 +1,7 @@
-<!DOCTYPE html> <!-- Deklaration des HTML-Dokumenttyps -->
-<html lang="de">
-
+<!DOCTYPE html>
+<html>
 <head>
+    <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/7da29d74de.js" crossorigin="anonymous"></script>
     <style>
         :root {
@@ -493,10 +493,10 @@
                 switch (data.Ident) {
                     case 'Status': {
                         const statusMapping = {
-                            0: '/user/img/wp/wp_aus.png',
-                            3: '/user/img/wp/wp_an_heizen.gif',
-                            4: '/user/img/wp/wp_an_heizen.gif',
-                            5: '/user/img/wp/wp_an_ww.gif',
+                            0: window.assets.img_wp_aus,
+                            3: window.assets.img_wp_heizen,
+                            4: window.assets.img_wp_heizen,
+                            5: window.assets.img_wp_ww,
                         };
 
                         let index = data.Value;

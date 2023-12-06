@@ -105,6 +105,7 @@
         }
         
         public function GetVisualizationTile() {
+            // Inject current values using the message handling function
             $initialHandling = [];
             foreach (IPS_GetChildrenIDs($this->InstanceID) as $variableID) {
                 if (!IPS_VariableExists($variableID)) {
@@ -117,7 +118,21 @@
                 }
                 $initialHandling[] = 'handleMessage(\'' . $this->GetUpdatedValue($ident) . '\');';
             }
-            return file_get_contents(__DIR__ . '/heating_pump.html') . '<script>' . implode(' ', $initialHandling) . '</script>';
+            $messages = '<script>' . implode(' ', $initialHandling) . '</script>';
+
+            // We need to include the assets directly as there is no way to load anything afterwards yet
+            $assets = '<script>';
+            $assets .= 'window.assets = {};' . PHP_EOL;
+            $assets .= 'window.assets.img_wp_aus = "data:image/webp;base64,' . base64_encode(file_get_contents(__DIR__ . '/assets/wp_aus.webp')) . '";' . PHP_EOL;
+            $assets .= 'window.assets.img_wp_heizen = "data:image/webp;base64,' . base64_encode(file_get_contents(__DIR__ . '/assets/wp_heizen.webp')) . '";' . PHP_EOL;
+            $assets .= 'window.assets.img_wp_ww = "data:image/webp;base64,' . base64_encode(file_get_contents(__DIR__ . '/assets/wp_ww.webp')) . '";' . PHP_EOL;
+            $assets .= '</script>';
+
+            // Add static HTML content from file to make editing easier
+            $module = file_get_contents(__DIR__ . '/module.html');
+
+            // Return everything to render our fancy tile!
+            return $module . $assets . $messages;
         }
 
         private function GetUpdatedValue($variableIdent) {
@@ -134,10 +149,14 @@
                 $profile = $variable['VariableProfile'];
             }
 
+            // If Min/Max are not needed you can remove those values
+            // The channel
+            $p = IPS_VariableProfileExists($profile) ? IPS_GetVariableProfile($profile) : null;
             return json_encode([
                 'Ident' => $variableIdent,
                 'Value' => $this->GetValue($variableIdent),
-                'Max' => IPS_VariableProfileExists($profile) ? IPS_GetVariableProfile($profile)['MaxValue'] : false
+                'Min' => $p ? $p['MinValue'] : false,
+                'Max' => $p ? $p['MaxValue'] : false,
             ]);
         }
     
