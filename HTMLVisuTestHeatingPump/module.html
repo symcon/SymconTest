@@ -316,7 +316,7 @@
                     <div class="balken_links_kompressor">
                         <span class="balken_links_text">
                             <b class="right-space">Compressor:</b>
-                            <span id="compressor" class="right-space"></span>
+                            <span id="compressorpower" class="right-space"></span>
                             <span>Hz</span>
                         </span>
                     </div>
@@ -338,7 +338,7 @@
                     <div class="balken_links_luefterdrehzahl">
                         <span class="balken_links_text">
                             <b class="right-space">Fan Rotations:</b>
-                            <span id="rotations" class="right-space"></span>
+                            <span id="fanrotations" class="right-space"></span>
                             <span>rpm</span>
                         </span>
                     </div>
@@ -355,11 +355,11 @@
                 <div class="daten_rechts">
                     <div>
                         <i class="fa-solid fa-house fa-sm icon right-space"></i>
-                        <span id="spf-total" class="right-padding"></span>
+                        <span id="spf" class="right-padding"></span>
                         <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
-                        <span id="spf-heating" class="right-padding"></span>
+                        <span id="spfheating" class="right-padding"></span>
                         <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
-                        <span id="spf-water"></span>
+                        <span id="spfwater"></span>
                     </div>
                     <div>
                         <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
@@ -371,32 +371,32 @@
                         <span class="right-padding">Watt</span>
                         <i class="fa-solid fa-bolt fa-sm icon right-space"></i>
                         <span class="right-space">Today:</span>
-                        <span id="consumption-today" class="right-space"></span>
+                        <span id="consumptiontoday" class="right-space"></span>
                         <span>kWh</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-tree fa-sm icon right-space"></i>
-                        <span id="temperature-outdoor" class="right-space"></span>
+                        <span id="outdoortemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
                         <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
-                        <span id="temperature-water" class="right-space"></span>
+                        <span id="watertemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
                         <i class="fa-solid fa-circle-down fa-sm icon right-space"></i>
-                        <span id="temperature-return" class="right-space"></span>
+                        <span id="returntemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
                         <i class="fa-solid fa-circle-up fa-sm icon right-space"></i>
-                        <span id="temperature-flow" class="right-space"></span>
+                        <span id="flowtemperature" class="right-space"></span>
                         <span>°C</span>
                     </div>
                     <div>
                         <i class="fa-solid fa-fan fa-sm icon right-space"></i>
                         <span class="right-space">HP:</span>
-                        <i id="heater-rod" class="fa-solid fa-circle fa-sm icon right-padding"></i></span>
+                        <i id="heaterrodbackupstatus" class="fa-solid fa-circle fa-sm icon right-padding"></i></span>
                         <i class="fa-solid fa-droplet fa-sm icon"></i>
                         <span class="right-space">WW-Storage:</span>
-                        <i id="heater-rod-1" class="fa-solid fa-circle fa-sm icon"></i>
-                        <i id="heater-rod-2" class="fa-solid fa-circle fa-sm icon"></i>
-                        <i id="heater-rod-3" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase1" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase2" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase3" class="fa-solid fa-circle fa-sm icon"></i>
                     </div>
                 </div>
             </div>
@@ -405,90 +405,9 @@
     <script type="text/javascript" charset="UTF-8">
         function handleMessage(message) {
             const data = JSON.parse(message);
-            let divID = '';
-            switch (data.Ident) {
-                case 'Status':
-                    divID = 'status';
-                    break;
-
-                case 'Mode':
-                    divID = 'mode';
-                    break;
-
-                case 'OutdoorTemperature':
-                    divID = 'temperature-outdoor';
-                    break;
-
-                case 'WaterTemperature':
-                    divID = 'temperature-water';
-                    break;
-
-                case 'FlowTemperature':
-                    divID = 'temperature-flow';
-                    break;
-
-                case 'ReturnTemperature':
-                    divID = 'temperature-return';
-                    break;
-
-                case 'HeaterRodBackupStatus':
-                    divID = 'heater-rod';
-                    break;
-
-                case 'HeaterRodPhase1':
-                    divID = 'heater-rod-1';
-                    break;
-
-                case 'HeaterRodPhase2':
-                    divID = 'heater-rod-2';
-                    break;
-
-                case 'HeaterRodPhase3':
-                    divID = 'heater-rod-3';
-                    break;
-
-                case 'Flow':
-                    divID = 'flow';
-                    break;
-
-                case 'FanRotations':
-                    divID = 'rotations';
-                    break;
-
-                case 'CompressorPower':
-                    divID = 'compressor';
-                    break;
-
-                case 'COP':
-                    divID = 'cop';
-                    break;
-
-                case 'SPF':
-                    divID = 'spf-total';
-                    break;
-
-                case 'SPFHeating':
-                    divID = 'spf-heating';
-                    break;
-
-                case 'SPFWater':
-                    divID = 'spf-water';
-                    break;
-
-                case 'Power':
-                    divID = 'power';
-                    break;
-
-                case 'Consumption':
-                    divID = 'consumption';
-                    break;
-
-                case 'ConsumptionToday':
-                    divID = 'consumption-today';
-                    break;
-            }
-            var value = data.result;
-            var divElement = document.getElementById(divID);
+            const divID = data.Ident.toLowercase();
+            const value = data.result;
+            const divElement = document.getElementById(divID);
             if (divElement) {
                 switch (data.Ident) {
                     case 'Status': {
