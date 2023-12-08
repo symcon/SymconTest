@@ -1,0 +1,70 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "TreeData",
+            "caption": "Devices",
+            "rowCount": 3,
+            "columns": [
+                {
+                    "label": "Left",
+                    "name": "left",
+                    "width": "300px",
+                    "align": "left"
+                },
+                {
+                    "label": "Center",
+                    "name": "center",
+                    "width": "auto",
+                    "align": "center"
+                },
+                {
+                    "label": "Right",
+                    "name": "right",
+                    "width": "300px",
+                    "align": "right"
+                }
+            ],
+            "values": [
+                {
+                    "left": "Left",
+                    "center": "Center",
+                    "right": "Right"
+                }
+            ]
+        },
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "rowCount": 3,
+            "columns": [
+                {
+                    "label": "Left",
+                    "name": "left",
+                    "width": "300px",
+                    "align": "left"
+                },
+                {
+                    "label": "Center",
+                    "name": "center",
+                    "width": "auto",
+                    "align": "center"
+                },
+                {
+                    "label": "Right",
+                    "name": "right",
+                    "width": "300px",
+                    "align": "right"
+                }
+            ],
+            "values": [
+                {
+                    "left": "Left",
+                    "center": "Center",
+                    "right": "Right"
+                }
+            ]
+        }
+    ]
+}

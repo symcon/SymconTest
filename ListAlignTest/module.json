@@ -1,0 +1,15 @@
+{
+    "id": "{A75E8FA0-5321-978C-6C29-9AF460C2A2B5}",
+    "name": "ListAlignTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List Test (Align)",
+        "Configurator Test (Align)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LAT"
+}
