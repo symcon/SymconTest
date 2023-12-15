@@ -1,0 +1,72 @@
+<style>
+    /* Ich passe margin vom Body an und überschreibe somit das Standardpadding der Darstellung zu den Seiten */
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* CSS-Klasse um einzelne Elemente zu verstecken */
+    .hidden {
+        display: none;
+    }
+</style>
+<script>
+    /* Hier werden die Daten vom Modul verarbeitet. In unserem Falle verschicken wir ein Objekt mit Informationen, wie bestimmte Elemente angepasst werden sollen
+       Prinzipiell kann das Nachrichtenformat aber beliebig angepasst werden und kann an den Bedarf des Moduls angepasst werden */
+    function handleMessage(data) {
+        const decodedData = JSON.parse(data);
+        for (const parameter in decodedData) {
+            // Die Anpassungen betreffen immer das Element mit der ID des Parameters, daher fragen wir das Element erst einmal ab
+            const element = document.getElementById(parameter);
+            // Abhängig vom Parameter werden allerdings verschiedene Werte angepasst
+            switch (parameter) {
+                // Beim äußeren Container kann die Farbe angepasst werden. Daher ist der Wert die RGB-Farbe, welche wir im Container als Stil setzen
+                case 'container': {
+                    // Zahl in Hex-String überführen
+                    let value = decodedData[parameter].toString(16);
+                    // Auf 6 Zeichen auffüllen, damit es eine gültige Farbdarstellung wird
+                    value = value.padStart(6, '0');
+                    element.style.backgroundColor = '#' + value;
+                    break;
+                }
+
+                // Bei den Divs für die einzelnen Zähler wird die Sichtbarkeit gesetzt (true = sichtbar, false = nicht sichtbar)
+                case 'counter1':
+                case 'counter2':
+                case 'counter3':
+                    element.className = decodedData[parameter] ? '' : 'hidden';
+                    break;
+
+                default:
+                    element.innerText = decodedData[parameter];
+                    break;
+            }
+        }
+    }
+</script>
+<div id="container">
+    <div id="counter1">
+        <!-- Texte werden initial übersetzt, daher konstante Texte einfach englisch eintragen, diese werden automatisch basierend auf der locale.json übersetzt -->
+        <!-- requestAction führt RequestAction im Modul aus. Da Idents nicht zu existierenden Variablen gehören müssen, kann innerhalb RequestAction beliebige Funktionalität realisiert werden -->
+        <button onClick="requestAction('Counter1', -1);">Subtract</button>
+        <!-- Der span bleibt (genauso wie value*) initial leer. Er wird zur Laufzeit dynamisch basierend auf den Meldungen angepasst, siehe handleMessage -->
+        <span id="name1"></span>
+        <span>: </span>
+        <span id="value1"></span>
+        <button onClick="requestAction('Counter1', +1);">Add</button>
+    </div>
+    <div id="counter2">
+        <button onClick="requestAction('Counter2', -1);">Subtract</button>
+        <span id="name2"></span>
+        <span>: </span>
+        <span id="value2"></span>
+        <button onClick="requestAction('Counter2', +1);">Add</button>
+    </div>
+    <div id="counter3">
+        <button onClick="requestAction('Counter3', -1);">Subtract</button>
+        <span id="name3"></span>
+        <span>: </span>
+        <span id="value3"></span>
+        <button onClick="requestAction('Counter3', +1);">Add</button>
+    </div>
+</div>

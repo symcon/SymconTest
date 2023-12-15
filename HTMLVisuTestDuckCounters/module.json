@@ -1,0 +1,14 @@
+{
+	"id": "{E41B0744-9AB6-4A79-863A-7DB080CB1F19}",
+	"name": "HTMLVisuTestDuckCounters",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"HTML Visu Test (Duck Counters)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HVT"
+}
