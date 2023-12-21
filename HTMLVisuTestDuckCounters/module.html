@@ -37,6 +37,12 @@
                     element.className = decodedData[parameter] ? '' : 'hidden';
                     break;
 
+                case 'image':
+                    // Auch das Bild wird versteckt, falls es keine Bilddaten gibt
+                    element.className = decodedData[parameter] ? '' : 'hidden';
+                    element.src = decodedData[parameter];
+                    break;
+
                 default:
                     element.innerText = decodedData[parameter];
                     break;
@@ -45,6 +51,7 @@
     }
 </script>
 <div id="container">
+    <img id="image">
     <div id="counter1">
         <!-- Texte werden initial übersetzt, daher konstante Texte einfach englisch eintragen, diese werden automatisch basierend auf der locale.json übersetzt -->
         <!-- requestAction führt RequestAction im Modul aus. Da Idents nicht zu existierenden Variablen gehören müssen, kann innerhalb RequestAction beliebige Funktionalität realisiert werden -->

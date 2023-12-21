@@ -1,6 +1,12 @@
 {
     "elements": [
         {
+            "type": "SelectMedia",
+            "name": "Image",
+            "caption": "Image",
+            "validVariableTypes": [1,2]
+        },
+        {
             "type": "SelectVariable",
             "name": "Counter1",
             "caption": "Counter 1",

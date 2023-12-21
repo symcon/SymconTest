@@ -7,6 +7,9 @@
             //Never delete this line!
             parent::Create();
 
+            // Eigenschaften für die Darstellung eines Bildes
+            $this->RegisterPropertyInteger('Image', 1);
+
             // Drei Eigenschaften für die dargestellten Zähler
             $this->RegisterPropertyInteger('Counter1', 1);
             $this->RegisterPropertyInteger('Counter2', 1);
@@ -39,6 +42,8 @@
         }
 
         public function MessageSink($TimeStamp, $SenderID, $Message, $Data) {
+            // Man könnte noch auf weitere Nachrichten reagieren, um das ganze "vollständig" zu machen
+            // Werden registrierte Objekte gelöscht? Aktualisiert sich das Bild? Da dies aber nur ein Beispiel ist, lasse ich diese Nachrichten weg
             foreach(['Counter1', 'Counter2', 'Counter3'] as $index => $counterProperty) {
                 if ($SenderID === $this->ReadPropertyInteger($counterProperty)) {
                     switch ($Message) {
@@ -97,6 +102,7 @@
                 'counter1' => $counter1Exists,
                 'counter2' => $counter2Exists,
                 'counter3' => $counter3Exists,
+                'image' => ''
             ];
             if ($counter1Exists) {
                 $result['name1'] = IPS_GetName($counter1ID);
@@ -109,6 +115,45 @@
             if ($counter3Exists) {
                 $result['name3'] = IPS_GetName($counter3ID);
                 $result['value3'] = GetValueFormatted($counter3ID);
+            }
+            // Prüfe vorweg, ob ein Bild ausgewählt wurde
+            $imageID = $this->ReadPropertyInteger('Image');
+            if (IPS_MediaExists($imageID)) {
+                $image = IPS_GetMedia($imageID);
+                if ($image['MediaType'] === MEDIATYPE_IMAGE) {
+                    $imageFile = explode('.', $image['MediaFile']);
+                    $imageContent = '';
+                    // Falls ja, ermittle den Anfang der src basierend auf dem Dateitypen
+                    switch (end($imageFile)) {
+                        case 'bmp':
+                            $imageContent = 'data:image/bmp;base64,';
+                            break;
+    
+                        case 'jpg':
+                        case 'jpeg':
+                            $imageContent = 'data:image/jpeg;base64,';
+                            break;
+    
+                        case 'gif':
+                            $imageContent = 'data:image/gif;base64,';
+                            break;
+    
+                        case 'png':
+                            $imageContent = 'data:image/png;base64,';
+                            break;
+    
+                        case 'ico':
+                            $imageContent = 'data:image/x-icon;base64,';
+                            break;
+                    }
+
+                    // Nur fortfahren, falls Inhalt gesetzt wurde. Ansonsten ist das Bild kein unterstützter Dateityp
+                    if ($imageContent) {
+                        // Hänge base64-codierten Inhalt des Bildes an
+                        $imageContent .= IPS_GetMediaContent($imageID);
+                        $result['image'] = $imageContent;
+                    }
+                }
             }
             return json_encode($result);
         }
