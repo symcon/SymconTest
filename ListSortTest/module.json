@@ -5,7 +5,8 @@
 	"vendor": "",
 	"aliases": 
 	[
-		"List Test (Sort)"
+		"List Test (Sort)",
+		"Configurator Test (Sort)"
 	],
 	"parentRequirements": [],
 	"childRequirements": [],

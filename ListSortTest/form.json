@@ -1,42 +1,136 @@
 {
-    "elements": [	
-		{
-			"type": "List",
-			"name": "SortList",
-			"caption": "List",
-			"rowCount": 5,
-			"add": true,
-			"delete": true,
-			"sort": {
-				"column": "text",
-				"direction": "ascending"
-			},
-			"columns": [
-				{
-					"label": "Order",
-					"name": "order",
-					"width": "100px",					
-					"add": 0,
-					"edit": {
-						"type": "NumberSpinner"
-					}
-				},
-				{
-					"label": "Text",
-					"name": "text",
-					"width": "auto",
-					"add": "",
-					"edit": {
-						"type": "ValidationTextBox"
-					}
-				}
-			],
-			"values": [
-				{"text": "a", "order": 0},
-				{"text": "b", "order": 1},
-				{"text": "C", "order": 2},
-				{"text": "D", "order": 3}
-			]
-		}
+    "elements": [
+        {
+            "type": "List",
+            "name": "SortList",
+            "caption": "List",
+            "rowCount": 5,
+            "add": true,
+            "delete": true,
+            "sort": {
+                "column": "text",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "label": "Order",
+                    "name": "order",
+                    "width": "100px",
+                    "add": 0,
+                    "edit": {
+                        "type": "NumberSpinner"
+                    }
+                },
+                {
+                    "label": "Text",
+                    "name": "text",
+                    "width": "auto",
+                    "add": "",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                }
+            ],
+            "values": [
+                {
+                    "text": "a",
+                    "order": 0
+                },
+                {
+                    "text": "b",
+                    "order": 1
+                },
+                {
+                    "text": "C",
+                    "order": 2
+                },
+                {
+                    "text": "D",
+                    "order": 3
+                }
+            ]
+        },
+        {
+            "type": "List",
+            "caption": "List with Sort Column",
+            "rowCount": 5,
+            "sort": {
+                "column": "text",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "label": "Order",
+                    "name": "order",
+                    "visible": false,
+                    "width": "100px"
+                },
+                {
+                    "label": "Text",
+                    "name": "text",
+                    "width": "auto",
+                    "sortColumn": "order"
+                }
+            ],
+            "values": [
+                {
+                    "text": "Eins",
+                    "order": 1
+                },
+                {
+                    "text": "Zwei",
+                    "order": 2
+                },
+                {
+                    "text": "Drei",
+                    "order": 3
+                },
+                {
+                    "text": "Vier",
+                    "order": 4
+                }
+            ]
+        },
+        {
+            "type": "Configurator",
+            "caption": "Configurator with Sort Column",
+            "rowCount": 5,
+            "sort": {
+                "column": "text",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "label": "Order",
+                    "name": "order",
+                    "visible": false,
+                    "width": "100px"
+                },
+                {
+                    "label": "Text",
+                    "name": "text",
+                    "width": "auto",
+                    "sortColumn": "order"
+                }
+            ],
+            "values": [
+                {
+                    "text": "Eins",
+                    "order": 1
+                },
+                {
+                    "text": "Zwei",
+                    "order": 2
+                },
+                {
+                    "text": "Drei",
+                    "order": 3
+                },
+                {
+                    "text": "Vier",
+                    "order": 4
+                }
+            ]
+        }
     ]
 }
