@@ -1,0 +1,14 @@
+{
+    "id": "{5226094C-F52B-64A8-1DF7-EDC4352933BA}",
+    "name": "ListOnClickTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List Test (onClick)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LOCT"
+}

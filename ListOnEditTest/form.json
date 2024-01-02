@@ -2,9 +2,64 @@
     "actions": [
         {
             "type": "List",
+            "caption": "Normal",
             "add": true,
             "rowCount": 7,
             "onEdit": "echo 'https://symcon.de';",
+            "columns": [{
+                "name": "data",
+                "caption": "Data",
+                "add": 1,
+                "width": "auto",
+                "edit": {
+                    "type": "Select",
+                    "options": [
+                        {
+                            "caption": "One",
+                            "value": 1
+                        },
+                        {
+                            "caption": "Two",
+                            "value": 2
+                        }
+                    ]
+                }
+            }]
+        },
+        {
+            "type": "List",
+            "caption": "Link",
+            "link": true,
+            "add": true,
+            "rowCount": 7,
+            "onEdit": "echo 'https://symcon.de';",
+            "columns": [{
+                "name": "data",
+                "caption": "Data",
+                "add": 1,
+                "width": "auto",
+                "edit": {
+                    "type": "Select",
+                    "options": [
+                        {
+                            "caption": "One",
+                            "value": 1
+                        },
+                        {
+                            "caption": "Two",
+                            "value": 2
+                        }
+                    ]
+                }
+            }]
+        },
+        {
+            "type": "List",
+            "caption": "Download",
+            "download": "test.txt",
+            "add": true,
+            "rowCount": 7,
+            "onEdit": "echo 'data:,Hello%2C%20World%21';",
             "columns": [{
                 "name": "data",
                 "caption": "Data",

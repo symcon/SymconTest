@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "type": "List",
+            "name": "List",
+            "add": true,
+            "rowCount": 7,
+            "columns": [
+                {
+                    "name": "data",
+                    "caption": "Data",
+                    "add": "https://symcon.de",
+                    "width": "auto",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "name": "normal",
+                    "caption": "Normal OnClick",
+                    "add": "Normal",
+                    "width": "150px",
+                    "onClick": "echo $List['data'];"
+                },
+                {
+                    "name": "link",
+                    "caption": "OnClick with link",
+                    "add": "Link",
+                    "width": "150px",
+                    "link": true,
+                    "onClick": "echo $List['data'];"
+                },
+                {
+                    "name": "download",
+                    "caption": "OnClick with download",
+                    "add": "Download",
+                    "width": "150px",
+                    "download": "test.txt",
+                    "onClick": "echo 'data:,' . urlencode($List['data']);"
+                }
+            ]
+        }
+    ]
+}
