@@ -37,6 +37,36 @@
                     "width": "150px",
                     "download": "test.txt",
                     "onClick": "echo 'data:,' . urlencode($List['data']);"
+                },
+                {
+                    "name": "checkbox",
+                    "caption": "OnClick with checkbox",
+                    "add": false,
+                    "width": "150px",
+                    "onClick": "echo $List['data'];",
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                },
+                {
+                    "name": "normal",
+                    "caption": "OnClick with Select",
+                    "add": 0,
+                    "width": "150px",
+                    "onClick": "echo $List['data'];",
+                    "edit": {
+                        "type": "Select",
+                        "options": [
+                            {
+                                "caption": "Null",
+                                "value": 0
+                            },
+                            {
+                                "caption": "One",
+                                "value": 1
+                            }
+                        ]
+                    }
                 }
             ]
         }
