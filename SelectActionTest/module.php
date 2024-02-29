@@ -1,16 +1,14 @@
 <?php
 
-    class SelectConditionTest extends IPSModule
+    class SelectActionTest extends IPSModule
     {
         
         public function Create() {
             //Never delete this line!
             parent::Create();
 
-            $this->RegisterPropertyString("Condition", "");
-            $this->RegisterPropertyString("ConditionMulti", "");
-            $this->RegisterPropertyString("ConditionC", "");
-            $this->RegisterPropertyString("ConditionMultiC", "");
+            $this->RegisterPropertyString("Action", "");
+            $this->RegisterPropertyString("ActionC", "");
         }
 
         public function ChangeParameter($field, $name, $value) {

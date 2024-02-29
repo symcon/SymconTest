@@ -48,6 +48,57 @@
                     "value": true
                 }
             ]
+        },
+        {
+            "caption": "Caption",
+            "name": "ConditionC",
+            "type": "SelectCondition"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Option of Single Condition",
+            "items": [
+                {
+                    "caption": "Visibility",
+                    "type": "CheckBox",
+                    "name": "VisibilitySingle",
+                    "onChange": "SCT_ChangeParameter($id, 'ConditionC', 'visible', $VisibilitySingle);",
+                    "value": true
+                },
+                {
+                    "caption": "Enable",
+                    "type": "CheckBox",
+                    "name": "EnableSingle",
+                    "onChange": "SCT_ChangeParameter($id, 'ConditionC', 'enabled', $EnableSingle);",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "caption": "Caption",
+            "name": "ConditionMultiC",
+            "type": "SelectCondition",
+            "multi": true
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Option of Multi Condition",
+            "items": [
+                {
+                    "caption": "Visibility",
+                    "type": "CheckBox",
+                    "name": "VisibilityMulti",
+                    "onChange": "SCT_ChangeParameter($id, 'ConditionMultiC', 'visible', $VisibilityMulti);",
+                    "value": true
+                },
+                {
+                    "caption": "Enable",
+                    "type": "CheckBox",
+                    "name": "EnableMulti",
+                    "onChange": "SCT_ChangeParameter($id, 'ConditionMultiC', 'enabled', $EnableMulti);",
+                    "value": true
+                }
+            ]
         }
     ]
 }

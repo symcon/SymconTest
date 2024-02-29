@@ -1,0 +1,53 @@
+{
+    "elements": [
+        {
+            "name": "Action",
+            "type": "SelectAction"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Option of Action",
+            "items": [
+                {
+                    "caption": "Visibility",
+                    "type": "CheckBox",
+                    "name": "VisibilitySingle",
+                    "onChange": "SAT_ChangeParameter($id, 'Action', 'visible', $VisibilitySingle);",
+                    "value": true
+                },
+                {
+                    "caption": "Enable",
+                    "type": "CheckBox",
+                    "name": "EnableSingle",
+                    "onChange": "SAT_ChangeParameter($id, 'Action', 'enabled', $EnableSingle);",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "ActionC",
+            "type": "SelectAction",
+            "caption": "Fancy Action"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Option of Action",
+            "items": [
+                {
+                    "caption": "Visibility",
+                    "type": "CheckBox",
+                    "name": "VisibilitySingle",
+                    "onChange": "SAT_ChangeParameter($id, 'ActionC', 'visible', $VisibilitySingle);",
+                    "value": true
+                },
+                {
+                    "caption": "Enable",
+                    "type": "CheckBox",
+                    "name": "EnableSingle",
+                    "onChange": "SAT_ChangeParameter($id, 'ActionC', 'enabled', $EnableSingle);",
+                    "value": true
+                }
+            ]
+        }
+    ]
+}
