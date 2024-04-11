@@ -1,0 +1,19 @@
+{
+    "elements": [
+        {
+            "type": "Select",
+            "name": "VisualizationType",
+            "caption": "Visualization Type",
+            "options": [
+                {
+                    "caption": "Normal",
+                    "value": 0
+                },
+                {
+                    "caption": "HTML",
+                    "value": 1
+                }
+            ]
+        }
+    ]
+}
