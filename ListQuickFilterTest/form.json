@@ -85,6 +85,31 @@
                     "filter2": "555"
                 }
             ]
+        },
+        {
+            "type": "Configurator",
+            "caption": "No Filter Configurator",
+            "rowCount": 3,
+            "columns": [
+                {
+                    "name": "noFilter",
+                    "add": "",
+                    "caption": "No Filter",
+                    "width": "auto",
+                    "quickFilter": false
+                }
+            ],
+            "values": [
+                {
+                    "noFilter": "111"
+                },
+                {
+                    "noFilter": "222"
+                },
+                {
+                    "noFilter": "333"
+                }
+            ]
         }
     ]
 }
