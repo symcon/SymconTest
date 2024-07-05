@@ -1,0 +1,14 @@
+{
+    "id": "{09039E12-7DC6-D5AB-36D8-5D433D7C626D}",
+    "name": "ListQuickFilterTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List Test (Quick Filter)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LQFT"
+}

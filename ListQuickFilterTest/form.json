@@ -1,0 +1,90 @@
+{
+    "elements": [
+        {
+            "type": "List",
+            "name": "List",
+            "caption": "Filter Test",
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "name": "noFilter",
+                    "add": "",
+                    "caption": "No Filter",
+                    "width": "200px",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    },
+                    "quickFilter": false
+                },
+                {
+                    "name": "filter1",
+                    "add": "",
+                    "caption": "Filter 1",
+                    "width": "200px",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    },
+                    "quickFilter": true
+                },
+                {
+                    "name": "filter2",
+                    "add": "",
+                    "caption": "Filter 2",
+                    "width": "200px",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    },
+                    "quickFilter": true
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Configurator",
+            "caption": "Filter Test - Configurator",
+            "rowCount": 3,
+            "columns": [
+                {
+                    "name": "noFilter",
+                    "add": "",
+                    "caption": "No Filter",
+                    "width": "auto",
+                    "quickFilter": false
+                },
+                {
+                    "name": "filter1",
+                    "add": "",
+                    "caption": "Filter 1",
+                    "width": "200px",
+                    "quickFilter": true
+                },
+                {
+                    "name": "filter2",
+                    "add": "",
+                    "caption": "Filter 2",
+                    "width": "200px",
+                    "quickFilter": true
+                }
+            ],
+            "values": [
+                {
+                    "noFilter": "111",
+                    "filter1": "222",
+                    "filter2": "333"
+                },
+                {
+                    "noFilter": "222",
+                    "filter1": "333",
+                    "filter2": "444"
+                },
+                {
+                    "noFilter": "333",
+                    "filter1": "444",
+                    "filter2": "555"
+                }
+            ]
+        }
+    ]
+}
