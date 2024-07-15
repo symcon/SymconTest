@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/7da29d74de.js" crossorigin="anonymous"></script>
+    <script src="/icons.js" crossorigin="anonymous"></script>
     <style>
         :root {
             --div-height: 23px;
@@ -354,49 +354,49 @@
                 </div>
                 <div class="daten_rechts">
                     <div>
-                        <i class="fa-solid fa-house fa-sm icon right-space"></i>
+                        <i class="fa-light fa-house fa-sm icon right-space"></i>
                         <span id="spf" class="right-padding"></span>
-                        <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
+                        <i class="fa-light fa-fire-flame-curved fa-sm icon right-space"></i>
                         <span id="spfheating" class="right-padding"></span>
-                        <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
+                        <i class="fa-light fa-droplet fa-sm icon right-space"></i>
                         <span id="spfwater"></span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-fire-flame-curved fa-sm icon right-space"></i>
+                        <i class="fa-light fa-fire-flame-curved fa-sm icon right-space"></i>
                         <span id="cop"></span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-bolt fa-sm icon right-space"></i>
+                        <i class="fa-light fa-bolt fa-sm icon right-space"></i>
                         <span id="consumption" class="right-space"></span>
                         <span class="right-padding">Watt</span>
-                        <i class="fa-solid fa-bolt fa-sm icon right-space"></i>
+                        <i class="fa-light fa-bolt fa-sm icon right-space"></i>
                         <span class="right-space">Today:</span>
                         <span id="consumptiontoday" class="right-space"></span>
                         <span>kWh</span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-tree fa-sm icon right-space"></i>
+                        <i class="fa-light fa-tree fa-sm icon right-space"></i>
                         <span id="outdoortemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
-                        <i class="fa-solid fa-droplet fa-sm icon right-space"></i>
+                        <i class="fa-light fa-droplet fa-sm icon right-space"></i>
                         <span id="watertemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
-                        <i class="fa-solid fa-circle-down fa-sm icon right-space"></i>
+                        <i class="fa-light fa-circle-down fa-sm icon right-space"></i>
                         <span id="returntemperature" class="right-space"></span>
                         <span class="right-padding">°C</span>
-                        <i class="fa-solid fa-circle-up fa-sm icon right-space"></i>
+                        <i class="fa-light fa-circle-up fa-sm icon right-space"></i>
                         <span id="flowtemperature" class="right-space"></span>
                         <span>°C</span>
                     </div>
                     <div>
-                        <i class="fa-solid fa-fan fa-sm icon right-space"></i>
+                        <i class="fa-light fa-fan fa-sm icon right-space"></i>
                         <span class="right-space">HP:</span>
-                        <i id="heaterrodbackupstatus" class="fa-solid fa-circle fa-sm icon right-padding"></i></span>
-                        <i class="fa-solid fa-droplet fa-sm icon"></i>
+                        <i id="heaterrodbackupstatus" class="fa-light fa-circle fa-sm icon right-padding"></i></span>
+                        <i class="fa-light fa-droplet fa-sm icon"></i>
                         <span class="right-space">WW-Storage:</span>
-                        <i id="heaterrodphase1" class="fa-solid fa-circle fa-sm icon"></i>
-                        <i id="heaterrodphase2" class="fa-solid fa-circle fa-sm icon"></i>
-                        <i id="heaterrodphase3" class="fa-solid fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase1" class="fa-light fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase2" class="fa-light fa-circle fa-sm icon"></i>
+                        <i id="heaterrodphase3" class="fa-light fa-circle fa-sm icon"></i>
                     </div>
                 </div>
             </div>
@@ -438,10 +438,10 @@
                     case 'HeaterRodPhase3':
                         if (data.Value) {
                             divElement.classList.remove('fa-regular');
-                            divElement.classList.add('fa-solid');
+                            divElement.classList.add('fa-light');
                         }
                         else {
-                            divElement.classList.remove('fa-solid');
+                            divElement.classList.remove('fa-light');
                             divElement.classList.add('fa-regular');
                         }
                         break;
