@@ -2,6 +2,10 @@
     "actions": [
         {
             "type": "TestCenter"
+        },
+        {
+            "caption": "Another Test Center! Same content, but with caption",
+            "type": "TestCenter"
         }
     ]
 }
