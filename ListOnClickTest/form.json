@@ -49,10 +49,86 @@
                     }
                 },
                 {
-                    "name": "normal",
+                    "name": "select",
                     "caption": "OnClick with Select",
                     "add": 0,
                     "width": "150px",
+                    "onClick": "echo $List['data'];",
+                    "edit": {
+                        "type": "Select",
+                        "options": [
+                            {
+                                "caption": "Null",
+                                "value": 0
+                            },
+                            {
+                                "caption": "One",
+                                "value": 1
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "List",
+            "name": "ListConfirm",
+            "caption": "With confirm",
+            "add": true,
+            "rowCount": 7,
+            "columns": [
+                {
+                    "name": "data",
+                    "caption": "Data",
+                    "add": "https://symcon.de",
+                    "width": "auto",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "name": "normal",
+                    "caption": "Normal OnClick",
+                    "add": "Normal",
+                    "width": "150px",
+                    "confirm": "Are you sure?",
+                    "onClick": "echo $List['data'];"
+                },
+                {
+                    "name": "link",
+                    "caption": "OnClick with link",
+                    "add": "Link",
+                    "width": "150px",
+                    "confirm": "Are you sure?",
+                    "link": true,
+                    "onClick": "echo $List['data'];"
+                },
+                {
+                    "name": "download",
+                    "caption": "OnClick with download",
+                    "add": "Download",
+                    "width": "150px",
+                    "confirm": "Are you sure?",
+                    "download": "test.txt",
+                    "onClick": "echo 'data:,' . urlencode($List['data']);"
+                },
+                {
+                    "name": "checkbox",
+                    "caption": "OnClick with checkbox",
+                    "add": false,
+                    "width": "150px",
+                    "confirm": "Are you sure?",
+                    "onClick": "echo $List['data'];",
+                    "edit": {
+                        "type": "CheckBox"
+                    }
+                },
+                {
+                    "name": "select",
+                    "caption": "OnClick with Select",
+                    "add": 0,
+                    "width": "150px",
+                    "confirm": "Are you sure?",
                     "onClick": "echo $List['data'];",
                     "edit": {
                         "type": "Select",
