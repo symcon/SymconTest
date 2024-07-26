@@ -589,6 +589,36 @@
                             "type": "Button",
                             "caption": "Delete = false",
                             "onClick": "DT_UpdateParameter($id, \"List\", \"delete\", false);"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Columns = French",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([ [ 'name' => 'column1', 'width' => '300px', 'caption' => 'Colonne 1', 'add' => 'Remplir 1' ], [ 'name' => 'column2', 'width' => '300px', 'caption' => 'Colonne 2', 'add' => 'Remplir 2' ] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Columns = English",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns\", json_encode([ [ 'name' => 'column1', 'width' => '200px', 'caption' => 'Column 1', 'add' => 'Fill 1' ], [ 'name' => 'column2', 'width' => '200px', 'caption' => 'Column 2', 'add' => 'Fill 2' ] ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Column 2 = French",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns.1\", json_encode(['name' => 'column2', 'width' => '300px', 'caption' => 'Colonne 2', 'add' => 'Remplir 2' ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Column 2 = English",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns.1\", json_encode(['name' => 'column2', 'width' => '200px', 'caption' => 'Column 2', 'add' => 'Fill 2' ]));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Column 2 Width = 100px",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns.1.width\", '100px');"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Column 2 Width = 200px",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"columns.1.width\", '200px');"
                         }
                     ]
                 },
@@ -659,6 +689,26 @@
                             "type": "Button",
                             "caption": "Values = Empty",
                             "onClick": "DT_UpdateParameter($id, \"List\", \"values\", \"[]\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value 1 = French",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values.0\", json_encode(['column1' => 'Factice 1', 'column2' => '~1']));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value 1 = English",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values.0\", json_encode(['column1' => 'Dummy 1', 'column2' => '#1']));"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value 1 - Column 2 = ?",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values.0.column2\", '?1');"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Value 1 - Column 2 = *",
+                            "onClick": "DT_UpdateParameter($id, \"List\", \"values.0.column2\", '*1');"
                         }
                     ]
                 }
