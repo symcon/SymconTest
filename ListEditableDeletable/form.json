@@ -26,10 +26,20 @@
                 {
                     "caption": "Checkbox",
                     "name": "check",
-					"width": "150px",
+                    "width": "150px",
                     "add": true,
                     "edit": {
                         "type": "CheckBox"
+                    }
+                },
+                {
+                    "caption": "Disabled Checkbox",
+                    "name": "check",
+                    "width": "150px",
+                    "add": true,
+                    "edit": {
+                        "type": "CheckBox",
+                        "enabled": false
                     }
                 }
 			],
