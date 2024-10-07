@@ -1,0 +1,90 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Config",
+            "rowCount": 7,
+            "columns": [
+                {
+                    "name": "data",
+                    "caption": "Data",
+                    "width": "auto",
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "name": "normal",
+                    "caption": "Normal OnClick",
+                    "width": "150px",
+                    "onClick": "echo $Config['data'];"
+                },
+                {
+                    "name": "link",
+                    "caption": "OnClick with link",
+                    "width": "150px",
+                    "link": true,
+                    "onClick": "echo $Config['data'];"
+                },
+                {
+                    "name": "download",
+                    "caption": "OnClick with download",
+                    "width": "150px",
+                    "download": "test.txt",
+                    "onClick": "echo 'data:,' . urlencode($Config['data']);"
+                }
+            ],
+            "values": [
+                {
+                    "data": "https://symcon.de",
+                    "normal": "Normal",
+                    "link": "Link",
+                    "download": "Download"
+                }
+            ]
+        },
+        {
+            "type": "Configurator",
+            "name": "ConfigConfirm",
+            "rowCount": 7,
+            "columns": [
+                {
+                    "name": "data",
+                    "caption": "Data",
+                    "width": "auto"
+                },
+                {
+                    "name": "normal",
+                    "caption": "Normal OnClick",
+                    "width": "150px",
+                    "confirm": "Are you sure?",
+                    "onClick": "echo $ConfigConfirm['data'];"
+                },
+                {
+                    "name": "link",
+                    "caption": "OnClick with link",
+                    "width": "150px",
+                    "link": true,
+                    "confirm": "Are you sure?",
+                    "onClick": "echo $ConfigConfirm['data'];"
+                },
+                {
+                    "name": "download",
+                    "caption": "OnClick with download",
+                    "width": "150px",
+                    "download": "test.txt",
+                    "confirm": "Are you sure?",
+                    "onClick": "echo 'data:,' . urlencode($ConfigConfirm['data']);"
+                }
+            ],
+            "values": [
+                {
+                    "data": "https://symcon.de",
+                    "normal": "Normal",
+                    "link": "Link",
+                    "download": "Download"
+                }
+            ]
+        }
+    ]
+}
