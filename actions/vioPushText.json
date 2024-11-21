@@ -1,0 +1,31 @@
+{
+  "id": "{68E18232-27CE-8392-9104-81D31F268BEF}",
+  "caption": "Push text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "VIO_PushText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Push text": "Versende Text",
+      "Push text \"{TEXT}\" on VirtualIO" : "Versende Text \"{TEXT}\" auf VirtualIO",
+      "Push text on the target VirtualIO": "Versende Text über die Ziel VirtualIO"
+    }
+  },
+  "format": "Push text \"{TEXT}\" on VirtualIO",
+  "category": "target",
+  "description": "Push text on the target VirtualIO"
+}
