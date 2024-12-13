@@ -1,0 +1,14 @@
+{
+	"id": "{371EFAE8-52DA-4E71-A2E9-CC2FA81EA71F}",
+	"name": "PresentationTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Presentation Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "PT"
+}
