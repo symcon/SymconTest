@@ -4,7 +4,7 @@
         define('PRESENTATION_ENUMERATION', '{52D9E126-D7D2-2CBB-5E62-4CF7BA7C5D82}');
     }
 
-    class PresentationTest extends IPSModule
+    class PresentationTestStrict extends IPSModule
     {
 
         public function Create() {

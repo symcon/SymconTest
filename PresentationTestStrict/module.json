@@ -1,0 +1,14 @@
+{
+	"id": "{8D6C93CF-C57D-C710-63E3-212C1B0BBE79}",
+	"name": "PresentationTestStrict",
+	"type": 3,
+	"vendor": "",
+	"aliases":
+	[
+		"Presentation Test (Strict)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "PT"
+}
