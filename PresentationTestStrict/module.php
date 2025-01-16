@@ -4,10 +4,10 @@
         define('PRESENTATION_ENUMERATION', '{52D9E126-D7D2-2CBB-5E62-4CF7BA7C5D82}');
     }
 
-    class PresentationTestStrict extends IPSModule
+    class PresentationTestStrict extends IPSModuleStrict
     {
 
-        public function Create() {
+        public function Create(): void {
             //Never delete this line!
             parent::Create();
 
