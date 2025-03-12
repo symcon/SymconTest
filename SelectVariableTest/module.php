@@ -32,4 +32,20 @@
             }
             $this->UpdateFormField('SelectDynamic', 'validVariableTypes', json_encode($newTypes));
         }
+
+        public function UpdatePresentations($presentations)
+        {
+            $supportedPresentations = [
+                VARIABLE_PRESENTATION_VALUE_INPUT,
+                VARIABLE_PRESENTATION_LEGACY,
+                VARIABLE_PRESENTATION_ENUMERATION
+            ];
+            $newPresentations = [];
+            for ($i = 0; $i <count($presentations); $i++) {
+                if ($presentations[$i]) {
+                    $newPresentations[]= $supportedPresentations[$i];
+                }
+            }
+            $this->UpdateFormField('SelectDynamic', 'validPresentations', json_encode($newPresentations));
+        }
     }

@@ -57,6 +57,24 @@
                     "onChange": "STSVT_UpdateTypes($id, [$bool, $int, $float, $string]);"
                 },
                 {
+                    "type": "CheckBox",
+                    "name": "valueInput",
+                    "caption": "Value Input",
+                    "onChange": "STSVT_UpdatePresentations($id, [$valueInput, $legacy, $enumeration]);"
+                },
+                {
+                    "type": "CheckBox",
+                    "name": "legacy",
+                    "caption": "Legacy Profile",
+                    "onChange": "STSVT_UpdatePresentations($id, [$valueInput, $legacy, $enumeration]);"
+                },
+                {
+                    "type": "CheckBox",
+                    "name": "enumeration",
+                    "caption": "Enumeration",
+                    "onChange": "STSVT_UpdatePresentations($id, [$valueInput, $legacy, $enumeration]);"
+                },
+                {
                     "type": "Select",
                     "name": "logging",
                     "caption": "requiredLogging",
@@ -123,9 +141,25 @@
         },
         {
             "type": "SelectVariable",
+            "caption": "Variable Value Display",
+            "validPresentations": [ "{3319437D-7CDE-699D-750A-3C6A3841FA75}" ]
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Value Input",
+            "validPresentations": [ "{6F477326-1683-A2FD-D2E7-477F366ECB62}" ]
+        },
+        {
+            "type": "SelectVariable",
+            "caption": "Variable Value Display/Input",
+            "validPresentations": [ "{3319437D-7CDE-699D-750A-3C6A3841FA75}", "{6F477326-1683-A2FD-D2E7-477F366ECB62}" ]
+        },
+        {
+            "type": "SelectVariable",
             "caption": "All",
             "requiredLogging": 3,
             "validVariableTypes": [1, 2],
+            "validPresentations": ["{6F477326-1683-A2FD-D2E7-477F366ECB62}", "{3319437D-7CDE-699D-750A-3C6A3841FA75}"],
             "requiredAction": 1
         }
     ]
