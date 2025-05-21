@@ -4,6 +4,16 @@
             "type": "HorizontalSlider",
             "name": "Slider",
             "onChange": "echo $Slider;"
+        },
+        {
+            "type": "HorizontalSlider",
+            "displayValue": true
+        },
+        {
+            "type": "HorizontalSlider",
+            "displayValue": true,
+            "prefix": "Pre",
+            "suffix": "Post"
         }
     ]
 }
