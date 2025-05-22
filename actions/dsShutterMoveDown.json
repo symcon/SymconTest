@@ -1,0 +1,23 @@
+{
+  "id": "{F74FEB13-FCA2-2EC2-3224-4742E6B7490E}",
+  "caption": "Move Shutter Down",
+  "form": [],
+  "action": [
+    "DS_ShutterMoveDown($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Move Shutter Down": "Fahre Rollladen runter",
+      "Move the target shutter down": "Fahre den Ziel-Rollladen runter"
+    }
+  },
+  "category": "target",
+  "description": "Move the target shutter down"
+}

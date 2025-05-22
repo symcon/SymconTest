@@ -1,0 +1,33 @@
+{
+  "id": "{66DC12F7-5580-14A7-DCEA-87D4229F32D3}",
+  "caption": "Move Shutter Up with runtime",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "RUNTIME",
+      "caption": "Runtime",
+      "suffix": "seconds"
+    }
+  ],
+  "action": [
+    "ENO_ShutterMoveUpEx($_IPS['TARGET'], $_IPS['RUNTIME']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92A9}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "seconds": "Sekunden",
+      "Runtime": "Laufzeit",
+      "Move Shutter Up with runtime": "Fahre Rollladen hoch mit Laufzeit",
+      "Move Shutter Up for {RUNTIME}": "Fahre Rollladen für {RUNTIME} hoch",
+      "Move the target shutter up for a defined runtime": "Fahre den Ziel-Rollladen für eine definierte Laufzeit hoch"
+    }
+  },
+  "category": "target",
+  "description": "Move the target shutter up for a defined runtime"
+}
