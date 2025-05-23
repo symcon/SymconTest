@@ -1,0 +1,52 @@
+{
+    "elements": [
+        {
+            "type": "NumberSpinner",
+            "caption": "50 - 100",
+            "maximum": 100,
+            "minimum": 50
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "NumberSpinner",
+                    "caption": "50 - 100",
+                    "maximum": 100,
+                    "minimum": 50
+                }
+            ]
+        },
+        {
+            "type": "NumberSpinner",
+            "caption": "50 - 100",
+            "maximum": 100,
+            "minimum": 50
+        }
+    ],
+    "actions": [
+        {
+            "type": "NumberSpinner",
+            "caption": "50 - 100",
+            "maximum": 100,
+            "minimum": 50
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "NumberSpinner",
+                    "caption": "50 - 100",
+                    "maximum": 100,
+                    "minimum": 50
+                }
+            ]
+        },
+        {
+            "type": "NumberSpinner",
+            "caption": "50 - 100",
+            "maximum": 100,
+            "minimum": 50
+        }
+    ]
+}
