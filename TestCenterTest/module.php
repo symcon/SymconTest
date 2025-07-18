@@ -7,6 +7,7 @@
         {
             //Never delete this line!
             parent::Create();
+            
             $this->RegisterVariableBoolean("SomeBool", "Some Boolean");
             $this->EnableAction("SomeBool");
             $this->RegisterVariableBoolean("SomeBoolProfile", "Some Boolean", '~Switch');
@@ -36,7 +37,7 @@
             $this->RegisterVariableInteger("SomeInt", "Some Integer");
             $this->EnableAction("SomeInt");
             $this->RegisterVariableString("SomeString", "Some String");
-            $this->EnableAction("SomeString");
+            $this->EnableAction("SomeString");        
         }
 
 
