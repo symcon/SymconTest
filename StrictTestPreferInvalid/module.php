@@ -11,7 +11,7 @@
         public function GetCompatibleParents(): string
         {
             return json_encode([
-                'moduleID' => '{4CB91589-CE01-4700-906F-26320EFCF6C4}'
+                'moduleIDs' => ['{4CB91589-CE01-4700-906F-26320EFCF6C4}']
             ]);
         }
 

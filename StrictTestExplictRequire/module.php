@@ -12,7 +12,6 @@
         {
             return json_encode([
                 'type' => 'require',
-                'moduleID' => '{6179ED6A-FC31-413C-BB8E-1204150CF376}'
             ]);
         }
 
