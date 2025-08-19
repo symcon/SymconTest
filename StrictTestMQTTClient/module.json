@@ -1,0 +1,19 @@
+{
+	"id": "{95981957-E3C6-F641-E110-4D37B0B4CC43}",
+	"name": "StrictTestMQTTClient",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Strict Test MQTT Client"
+	],
+	"parentRequirements": [
+		"{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}"
+	],
+	"childRequirements": [],
+	"implemented": [
+		"{7F7632D9-FA40-4F38-8DEA-C83CD4325A32}"
+	],
+	"prefix": "STS",
+	"url": "https://symcon.de"
+}
