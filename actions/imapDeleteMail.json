@@ -1,0 +1,31 @@
+{
+  "id": "{D62649FF-83B5-78A2-5E40-0A051859CFB4}",
+  "caption": "Delete mail",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "UID",
+      "caption": "UID"
+    }
+  ],
+  "action": [
+    "SPRT_DeleteMail($_IPS['TARGET'], $_IPS['UID']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{69CA7DBF-5FCE-4FDF-9F36-C05E0136ECFD}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Delete mail": "Lösche Mail",
+      "Delete mail with UID \"{UID}\"" : "Lösche Mail mit UID \"{UID}\"",
+      "Delete mail of the target imap instance": "Lösche Mail von der Ziel-IMAP Instanz"
+    }
+  },
+  "format": "Delete mail with UID \"{UID}\"",
+  "category": "target",
+  "description": "Delete mail of the target imap instance"
+}

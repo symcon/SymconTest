@@ -1,0 +1,23 @@
+{
+  "id": "{84115E04-4331-D406-6DE9-566221DF1A71}",
+  "caption": "Request Info",
+  "form": [],
+  "action": [
+    "DMX_RequestInfo($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{B1E43BF6-770A-4FD7-B4FE-6D265F93746B}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Request Info": "Frage Information an",
+      "Request info of the target device": "Frage Information des Zielgeräts an"
+    }
+  },
+  "category": "target",
+  "description": "Request info of the target device"
+}
