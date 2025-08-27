@@ -1,0 +1,118 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "delete": false,
+            "onExpand": "var_dump($Configurator);",
+            "rowCount": 4,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "values": [{
+                "id": 1,
+                "name": "Category",
+                "address": ""
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Test 1",
+                "address": "Adress",
+                "create": {
+                    "moduleID": "{542CC907-CA63-4E7A-A8C7-92F74639FA4C}",
+                    "configuration": {
+                        "ShutterType": 1
+                    }
+                }
+            }]
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Update values (keep expansion)",
+                    "onClick": "SET_UpdateValues($id, $Configurator, 'Configurator', 0);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Update values (expand)",
+                    "onClick": "SET_UpdateValues($id, $Configurator, 'Configurator', 1);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Update values (collapse)",
+                    "onClick": "SET_UpdateValues($id, $Configurator, 'Configurator', -1);"
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Show Configurator Values",
+            "onClick": "var_dump($Configurator);"
+        },
+        {
+            "type": "Tree",
+            "name": "Tree",
+            "caption": "Tree",
+            "delete": false,
+            "onExpand": "var_dump($Tree);",
+            "rowCount": 4,
+            "columns": [
+                {
+                    "width": "auto",
+                    "name": "name",
+                    "caption": "Name"
+                },
+                {
+                    "width": "200px",
+                    "name": "address",
+                    "caption": "Address"
+                }
+            ],
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "values": [{
+                "id": 1,
+                "name": "Category 1",
+                "address": ""
+            },
+            {
+                "id": 2,
+                "parent": 1,
+                "name": "Test 1",
+                "address": "Adress"
+            }]
+        },
+        {
+            "type": "RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Update values (keep expansion)",
+                    "onClick": "SET_UpdateValues($id, $Tree, 'Tree', 0);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Update values (expand)",
+                    "onClick": "SET_UpdateValues($id, $Tree, 'Tree', 1);"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Update values (collapse)",
+                    "onClick": "SET_UpdateValues($id, $Tree, 'Tree', -1);"
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Show Tree Values",
+            "onClick": "var_dump($Tree);"
+        }
+    ]
+}

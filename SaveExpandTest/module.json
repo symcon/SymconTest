@@ -1,0 +1,14 @@
+{
+    "id": "{DAA55DF9-AE4D-4006-97F6-32E6CD557CA4}",
+    "name": "SaveExpandTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Save Expand Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "SET"
+}
