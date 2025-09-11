@@ -18,6 +18,20 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "PopupAlert",
+            "name": "TitlePopup",
+            "visible": true,
+            "popup": {
+                "caption": "This is a title",
+                "items": [
+                    {
+                        "type": "Label",
+                        "caption": "This is content"
+                    }
+                ]
+            }
         }
     ]
 }
