@@ -1,0 +1,14 @@
+{
+	"id": "{03E507AF-A9E4-A38F-2412-878C080023CB}",
+	"name": "HTMLOpenObjectTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"HTML Open Object Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "HOO"
+}
