@@ -121,6 +121,12 @@
             "caption": "Color"
         },
         {
+            "name": "ColorData2",
+            "type": "SelectColor",
+            "caption": "Color with custom transparent label",
+            "transparentCaption": "Me so transparent! :D"
+        },
+        {
             "type": "Button",
             "label": "Show color value!",
             "onClick": "var_dump($ColorData);"

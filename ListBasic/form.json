@@ -48,6 +48,15 @@
 						"type": "NumberSpinner",
 						"digits": 2
 					}
+				}, {
+					"label": "Color",
+					"name": "color",
+					"width": "75px",					
+					"add": -1,
+					"edit": {
+						"type": "SelectColor",
+						"transparentCaption": "None"
+					}
 				}
 			],
 			"values": [
