@@ -1,0 +1,27 @@
+{
+  "id": "{7CA90FD9-848A-EC17-A975-963105A6A605}",
+  "caption": "Update values",
+  "form": [],
+  "action": [
+    "ALL_UpdateValues($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{D805EC4C-7D17-4E84-98D3-A441AA71ACA3}",
+      "{BBD04875-8CC5-412A-B848-B2AB6F08C425}",
+      "{07CAE61E-01FA-4086-A2D1-55C442D8C8BF}",
+      "{2D8B0172-166C-45B0-B979-61A787809E22}",
+      "{FB6B8DD0-CD8E-4CE7-8613-D7BD6436720A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Update values": "Aktualisiere Werte",
+      "Update values of the target device": "Aktualisiere Werte des Zielgeräts"
+    }
+  },
+  "category": "target",
+  "description": "Update values of the target device"
+}

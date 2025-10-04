@@ -1,0 +1,31 @@
+{
+  "id": "{28938FEE-D006-D3DE-CFE9-6D705EE28EF2}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "SPRT_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6DC3D946-0D31-450F-A8C6-C42DB8D7D4F1}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send \"{TEXT}\" on Serial Port" : "Sende \"{TEXT}\" auf Seriellen Port",
+      "Send text on the target Serial Port": "Sende Text auf den Ziel Seriellen Port"
+    }
+  },
+  "format": "Send \"{TEXT}\" on Serial Port",
+  "category": "target",
+  "description": "Send text on the target Serial Port"
+}
