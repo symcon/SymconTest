@@ -28,4 +28,10 @@
             $Form = json_decode(file_get_contents(__DIR__ . '/form.json'), true);
             return json_encode($Form);
         }
+
+        public function ShowPopup(string $PopupID, string $LabelID)
+        {
+            $this->UpdateFormField($PopupID, 'visible', true);
+            $this->UpdateFormField($LabelID, 'caption', date('Y-m-d H:i:s'));
+        }
     }

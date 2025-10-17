@@ -32,6 +32,45 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "PopupAlert",
+            "name": "PopupDynamic",
+            "visible": false,
+            "popup": {
+                "items": [
+                    {
+                        "type": "Label",
+                        "name": "DynamicLabel",
+                        "caption": "This is a text"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "PopupAlert",
+            "name": "TitlePopupDynamic",
+            "visible": false,
+            "popup": {
+                "caption": "This is a title",
+                "items": [
+                    {
+                        "type": "Label",
+                        "name": "DynamicLabelTitle",
+                        "caption": "This is content"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Button",
+            "caption": "Show Dynamic Popup",
+            "onClick": "PAT_ShowPopup($id, 'PopupDynamic', 'DynamicLabel');"
+        },
+        {
+            "type": "Button",
+            "caption": "Show Dynamic Title-Popup",
+            "onClick": "PAT_ShowPopup($id, 'TitlePopupDynamic', 'DynamicLabelTitle');"
         }
     ]
 }
