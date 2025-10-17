@@ -1,0 +1,6 @@
+{
+	"actions":
+	[
+		{ "type": "Label", "label": "Open I/O Configuration to see the magic!" }
+	]
+}
