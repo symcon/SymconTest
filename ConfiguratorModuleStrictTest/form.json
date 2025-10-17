@@ -1,0 +1,20 @@
+{
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "Configurator",
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "values": [{
+                "name": "Test MQTT Client (Simple)",
+                "address": "-",
+                "create": {
+                    "moduleID": "{95981957-E3C6-F641-E110-4D37B0B4CC43}"
+                }
+            }]
+        }
+    ]
+}
