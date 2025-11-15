@@ -1,0 +1,59 @@
+{
+  "id": "{7DF71376-6284-853F-BBA3-64470CB5B6C0}",
+  "caption": "Fade RGB Delayed",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "R",
+      "caption": "Red"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "G",
+      "caption": "Green"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "B",
+      "caption": "Blue"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "FADING",
+      "caption": "Fading time",
+      "suffix": "seconds"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "DELAY",
+      "caption": "Delay time",
+      "suffix": "seconds"
+    }
+  ],
+  "action": [
+    "DMX_FadeRGB($_IPS['TARGET'], $_IPS['R'], $_IPS['G'], $_IPS['B'], $_IPS['FADING'], $_IPS['DELAY']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1AF36760-644E-4DA9-8776-01BA6DF6178E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Fade RGB Delayed": "Setze RGB verzögert über Zeit",
+      "Red": "Rot",
+      "Green": "Grün",
+      "Blue": "Blaue",
+      "Fading time": "Zeit der Rampe",
+      "Delay time": "Verzögerung",
+      "seconds": "Sekunden",
+      "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds after waiting for {DELAY} seconds": "Setze RGB auf Zielwerte Rot({R}) Grün({G}) Blau({B}) in {FADING} Sekunden nachdem für {DELAY} Sekunden gewartet wurde",
+      "Fade a RGB of the target device to a defined value over a given duration after a defined delay": "Setze beim Ziel den RGB nach einer eingestellten Verzögerung innerhalb einer festgelegten Zeit auf einen bestimmten Wert"
+    }
+  },
+  "format": "Fade RGB on Value Red({R}) Green({G}) Blue({B}) in {FADING} seconds after waiting for {DELAY} seconds",
+  "category": "target",
+  "description": "Fade a RGB of the target device to a defined value over a given duration after a defined delay"
+}
