@@ -29,6 +29,12 @@
                 'PRESENTATION' => VARIABLE_PRESENTATION_SHUTTER,
             ]);
             $this->EnableAction('SomeShutter');
+            $this->RegisterVariableFloat('SomeShutterReversed', 'Some Shutter Reversed', [
+                'PRESENTATION'       => VARIABLE_PRESENTATION_SHUTTER,
+                'OPEN_OUTSIDE_VALUE' => 1.0,
+                'CLOSE_INSIDE_VALUE' => 0.0
+            ]);
+            $this->EnableAction('SomeShutterReversed');
             $this->RegisterVariableFloat('SomeFloat', 'Some Float', [
                 'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_INPUT
             ]);
