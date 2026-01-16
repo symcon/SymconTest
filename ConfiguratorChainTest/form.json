@@ -152,6 +152,27 @@
                         "Parity": "Even"
                     }
                 }]
+            },{
+                "id": 5,
+                "parent": 1,
+                "name": "EIB Group (Incomplete Chain)",
+                "address": "12/34/56",
+                "create": [{
+                    "moduleID": "{D62B95D3-0C5E-406E-B1D9-8D102E50F64B}",
+                    "configuration": {
+                        "GroupAddress1": 12,
+                        "GroupAddress2": 34,
+                        "GroupAddress3": 56,
+                        "GroupFunction": "32bitCounter"
+                    }
+                },
+                {
+                    "moduleID": "{1C902193-B044-43B8-9433-419F09C641B8}",
+                    "configuration": {
+                        "GatewayMode": 3,
+                        "SendLimit": 42
+                    }
+                }]
             }]
         }
     ]
