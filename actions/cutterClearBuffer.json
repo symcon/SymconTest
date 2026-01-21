@@ -1,0 +1,23 @@
+{
+  "id": "{7D1FA8D6-64B4-F6A7-8BE8-F517D710B1C8}",
+  "caption": "Clear Buffer",
+  "form": [],
+  "action": [
+    "Cutter_ClearBuffer($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{AC6C6E74-C797-40B3-BA82-F135D941D1A2}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Clear Buffer": "Lösche Buffer",
+      "Delete the buffer of the target Cutter": "Lösche den Buffer des Ziel-Cutters"
+    }
+  },
+  "category": "target",
+  "description": "Delete the buffer of the target Cutter"
+}

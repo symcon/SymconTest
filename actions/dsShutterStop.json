@@ -1,0 +1,23 @@
+{
+  "id": "{71996D15-E710-4314-89CF-48DF15040843}",
+  "caption": "Stop Shutter",
+  "form": [],
+  "action": [
+    "DS_ShutterStop($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3DDA1E2B-B807-4680-AB6D-E7E8FBD6093A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Stop Shutter": "Stoppe Rollladen",
+      "Stop the target shutter": "Stoppe den Ziel-Rollladen"
+    }
+  },
+  "category": "target",
+  "description": "Stop the target shutter"
+}
