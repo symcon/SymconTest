@@ -1,0 +1,15 @@
+{
+	"id": "{E41B0744-95B3-4A79-863A-7DB080CA1219}",
+	"name": "ListIconDemo",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Demo (Icons)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LID",
+	"url": ""
+}

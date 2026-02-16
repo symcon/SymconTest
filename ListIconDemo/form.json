@@ -1,0 +1,110 @@
+{
+    "actions": [    
+        {
+            "type": "List",
+            "columns": [
+                {
+                    "label": "Icons",
+                    "name": "icon1",
+                    "width": "300px"
+                },
+                {
+                    "label": "", 
+                    "name": "icon2",
+                    "width": "300px"
+                },
+                {
+                    "label": "",
+                    "name": "icon3", 
+                    "width": "300px"
+                }
+            ],
+            "values": [
+                {
+                    "icon1": "ips:add", "icon2": "ips:apps", "icon3": "ips:autoscroll",
+                    "icons": {"icon1": "ips:add", "icon2": "ips:apps", "icon3": "ips:autoscroll"}
+                },
+                {
+                    "icon1": "ips:backspace", "icon2": "ips:category", "icon3": "ips:category-special",
+                    "icons": {"icon1": "ips:backspace", "icon2": "ips:category", "icon3": "ips:category-special"}
+                },
+                {
+                    "icon1": "ips:check", "icon2": "ips:close", "icon3": "ips:columns",
+                    "icons": {"icon1": "ips:check", "icon2": "ips:close", "icon3": "ips:columns"}
+                },
+                {
+                    "icon1": "ips:copy", "icon2": "ips:delete", "icon3": "ips:edit",
+                    "icons": {"icon1": "ips:copy", "icon2": "ips:delete", "icon3": "ips:edit"}
+                },
+                {
+                    "icon1": "ips:error", "icon2": "ips:filter", "icon3": "ips:folder",
+                    "icons": {"icon1": "ips:error", "icon2": "ips:filter", "icon3": "ips:folder"}
+                },
+                {
+                    "icon1": "ips:info", "icon2": "ips:notifications", "icon3": "ips:notifications-active",
+                    "icons": {"icon1": "ips:info", "icon2": "ips:notifications", "icon3": "ips:notifications-active"}
+                },
+                {
+                    "icon1": "ips:notifications-none", "icon2": "ips:notifications-off", "icon3": "ips:notifications-paused",
+                    "icons": {"icon1": "ips:notifications-none", "icon2": "ips:notifications-off", "icon3": "ips:notifications-paused"}
+                },
+                {
+                    "icon1": "ips:php-information", "icon2": "ips:play", "icon3": "ips:limit",
+                    "icons": {"icon1": "ips:php-information", "icon2": "ips:play", "icon3": "ips:limit"}
+                },
+                {
+                    "icon1": "ips:load", "icon2": "ips:location-tree", "icon3": "ips:redo",
+                    "icons": {"icon1": "ips:load", "icon2": "ips:location-tree", "icon3": "ips:redo"}
+                },
+                {
+                    "icon1": "ips:save", "icon2": "ips:search", "icon3": "ips:stop",
+                    "icons": {"icon1": "ips:save", "icon2": "ips:search", "icon3": "ips:stop"}
+                },
+                {
+                    "icon1": "ips:undo", "icon2": "ips:instance", "icon3": "ips:variable",
+                    "icons": {"icon1": "ips:undo", "icon2": "ips:instance", "icon3": "ips:variable"}
+                },
+                {
+                    "icon1": "ips:variable-logged-standard", "icon2": "ips:variable-logged-counter", "icon3": "ips:variable-action",
+                    "icons": {"icon1": "ips:variable-logged-standard", "icon2": "ips:variable-logged-counter", "icon3": "ips:variable-action"}
+                },
+                {
+                    "icon1": "ips:variable-logged-standard-action", "icon2": "ips:variable-logged-counter-action", "icon3": "ips:flow-script",
+                    "icons": {"icon1": "ips:variable-logged-standard-action", "icon2": "ips:variable-logged-counter-action", "icon3": "ips:flow-script"}
+                },
+                {
+                    "icon1": "ips:script", "icon2": "ips:event-triggered", "icon3": "ips:event-cyclic",
+                    "icons": {"icon1": "ips:script", "icon2": "ips:event-triggered", "icon3": "ips:event-cyclic"}
+                },
+                {
+                    "icon1": "ips:event-schedule", "icon2": "ips:media-form", "icon3": "ips:media-document",
+                    "icons": {"icon1": "ips:event-schedule", "icon2": "ips:media-form", "icon3": "ips:media-document"}
+                },
+                {
+                    "icon1": "ips:media-image", "icon2": "ips:media-sound", "icon3": "ips:media-stream",
+                    "icons": {"icon1": "ips:media-image", "icon2": "ips:media-sound", "icon3": "ips:media-stream"}
+                },
+                {
+                    "icon1": "ips:media-chart", "icon2": "ips:link", "icon3": "ips:tabs",
+                    "icons": {"icon1": "ips:media-chart", "icon2": "ips:link", "icon3": "ips:tabs"}
+                },
+                {
+                    "icon1": "ips:settings", "icon2": "ips:object-tree", "icon3": "ips:choose",
+                    "icons": {"icon1": "ips:settings", "icon2": "ips:object-tree", "icon3": "ips:choose"}
+                },
+                {
+                    "icon1": "ips:data-collection", "icon2": "ips:radio-button", "icon3": "ips:radio-button-selected",
+                    "icons": {"icon1": "ips:data-collection", "icon2": "ips:radio-button", "icon3": "ips:radio-button-selected"}
+                },
+                {
+                    "icon1": "ips:bool-aggregation", "icon2": "ips:save-circle", "icon3": "logo:house",
+                    "icons": {"icon1": "ips:bool-aggregation", "icon2": "ips:save-circle", "icon3": "logo:house"}
+                },
+                {
+                    "icon1": "season:present", "icon2": "", "icon3": "",
+                    "icons": {"icon1": "season:present", "icon2": "", "icon3": ""}
+                }
+            ]
+        }
+    ]
+}

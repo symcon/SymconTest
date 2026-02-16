@@ -1,0 +1,38 @@
+{
+    "actions": [    
+        {
+            "type": "List",
+            "columns": [
+                {
+                    "label": "InstanceID",
+                    "name": "instanceID", 
+                    "width": "75px",
+                    "add": 0,
+                    "edit": {
+                        "type": "SelectInstance"
+                    }
+                }, {
+                    "label": "Name",
+                    "name": "name",
+                    "width": "auto",
+                    "add": "",
+                    "onClick": "echo 'Clickiclick';"
+                }
+            ],
+            "values": [
+                {"instanceID": 1, "name": "Test 1", "icons": {
+                    "instanceID": "ips:instance",
+                    "name": "bug-report"
+                }},
+                {"instanceID": 1, "name": "", "icons": {
+                    "instanceID": "image:wb-iridescent",
+                    "name": "maps:local-car-wash"
+                }},
+                {"instanceID": 1, "name": "Test 2", "icons": {
+                    "instanceID": "season:present",
+                    "name": "notification:airline-seat-flat-angled"
+                }}
+            ]
+        }
+    ]
+}

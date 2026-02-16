@@ -1,0 +1,15 @@
+{
+	"id": "{E41B0744-95B6-4A79-863A-7DB080CA1219}",
+	"name": "ListIconTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Icon)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LIT",
+	"url": ""
+}
