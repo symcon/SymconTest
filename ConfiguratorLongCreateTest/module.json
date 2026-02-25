@@ -1,0 +1,15 @@
+{
+	"id": "{E42B0744-98B3-4A79-863A-7DB080CA1219}",
+	"name": "ConfiguratorLongCreateTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Configurator Test (Long Create)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "CLCT",
+	"url": ""
+}
