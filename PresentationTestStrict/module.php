@@ -15,6 +15,7 @@
             $this->RegisterVariableInteger('Int', 'Int', ['PRESENTATION' => PRESENTATION_ENUMERATION]);
             $this->RegisterVariableFloat('Float', 'Float', ['PRESENTATION' => PRESENTATION_ENUMERATION]);
             $this->RegisterVariableString('String', 'String', ['PRESENTATION' => PRESENTATION_ENUMERATION]);
+            $this->RegisterVariableInteger('ValueDisplay', 'Value Display', ['PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION]);
 
             $this->EnableAction('Bool');
             $this->EnableAction('Int');
