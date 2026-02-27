@@ -1,0 +1,37 @@
+{
+    "actions": [
+        {
+            "type": "PopupAlert",
+            "name": "PopupAlert",
+            "popup": {
+                "caption": "Popup Alert",
+                "items": [
+                    {
+                        "type": "ExpansionPanel",
+                        "caption": "Expansion Panel",
+                        "items": [
+                            {
+                                "type": "List",
+                                "name": "List",
+                                "columns": [
+                                    {
+                                        "label": "Name",
+                                        "name": "name",
+                                        "width": "200px"
+                                    }
+                                ],
+                                "values": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "visible": false
+        },
+        {
+            "type": "Button",
+            "caption": "Open Popup",
+            "onClick": "PDLT_OpenPopup($id);"
+        }
+    ]
+}
