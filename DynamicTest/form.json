@@ -946,6 +946,16 @@
                             "type": "Button",
                             "caption": "Caption = Wow, so dynamic",
                             "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"caption\", \"Wow, so dynamic\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Close Caption = Close",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"popup.closeCaption\", \"Close\");"
+                        },
+                        {
+                            "type": "Button",
+                            "caption": "Close Caption = Just close it already",
+                            "onClick": "DT_UpdateParameter($id, \"PopupButton\", \"popup.closeCaption\", \"Just close it already\");"
                         }
                     ]
                 },
