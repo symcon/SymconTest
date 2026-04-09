@@ -66,6 +66,35 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "PopupButton",
+            "name": "WizardButton",
+            "caption": "Open Wizard",
+            "popup": {
+                "caption": "Some title",
+                "closeCaption": "Close this dialog",
+                "pages": [
+                    {
+                        "caption": "Page 1",
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "This is page 1"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Page 2",
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "This is page 2"
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     ]
 }
