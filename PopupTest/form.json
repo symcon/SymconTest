@@ -74,24 +74,50 @@
             "popup": {
                 "caption": "Some title",
                 "closeCaption": "Close this dialog",
+                "items": [
+                    {
+                        "type": "Label",
+                        "caption": "This is a wizard popup"
+                    }
+                ],
                 "pages": [
                     {
+                        "caption": "Start",
+                        "items": [
+                            {
+                                "type": "Select",
+                                "name": "NextPage",
+                                "options": [
+                                    {"value": "page1", "caption": "Go to page 1"},
+                                    {"value": "page2", "caption": "Go to page 2"},
+                                    {"value": "close", "caption": "Finish and close"}
+                                ],
+                                "caption": "Select next page"
+                            }
+                        ],
+                        "nextPage": "return $NextPage;"
+                    },
+                    {
+                        "name": "page1",
                         "caption": "Page 1",
                         "items": [
                             {
                                 "type": "Label",
                                 "caption": "This is page 1"
                             }
-                        ]
+                        ],
+                        "onConfirm": "echo 'Confirmed page 1';"
                     },
                     {
+                        "name": "page2",
                         "caption": "Page 2",
                         "items": [
                             {
                                 "type": "Label",
                                 "caption": "This is page 2"
                             }
-                        ]
+                        ],
+                        "onConfirm": "echo 'Confirmed page 2';"
                     }
                 ]
             }
