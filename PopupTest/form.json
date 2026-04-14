@@ -85,6 +85,25 @@
                         "caption": "Start",
                         "items": [
                             {
+                                "type": "Label",
+                                "caption": "Next page: Selection"
+                            }
+                        ],
+                        "nextPage": 2
+                    },
+                    {
+                        "caption": "Never to be seen",
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "If you see this, it's a bug!"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Selection",
+                        "items": [
+                            {
                                 "type": "Select",
                                 "name": "NextPage",
                                 "options": [
@@ -95,7 +114,7 @@
                                 "caption": "Select next page"
                             }
                         ],
-                        "nextPage": "return $NextPage;"
+                        "nextPage": "echo $NextPage;"
                     },
                     {
                         "name": "page1",
