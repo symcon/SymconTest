@@ -122,9 +122,15 @@
                         "items": [
                             {
                                 "type": "Label",
-                                "caption": "This is page 1"
+                                "caption": "This is page 1, offering 'Undo'"
+                            },
+                            {
+                                "type": "NumberSpinner",
+                                "name": "NumberSpinner",
+                                "caption": "Some spinner on page 1"
                             }
                         ],
+                        "onUndo": "echo \"Undoing page 1 with spinner value: $NumberSpinner\";",
                         "onConfirm": "echo 'Confirmed page 1';"
                     },
                     {
@@ -133,10 +139,25 @@
                         "items": [
                             {
                                 "type": "Label",
-                                "caption": "This is page 2"
+                                "caption": "This is page 2, no 'Undo' available"
+                            },
+                            {
+                                "type": "NumberSpinner",
+                                "name": "NumberSpinner",
+                                "caption": "Another spinner on page 2, same name as on page 1, but different instance"
                             }
                         ],
                         "onConfirm": "echo 'Confirmed page 2';"
+                    },
+                    {
+                        "name": "page3",
+                        "caption": "Page 3",
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "This is page 3, last page"
+                            }
+                        ]
                     }
                 ]
             }
