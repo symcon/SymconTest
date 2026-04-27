@@ -112,6 +112,21 @@
                                     {"value": "close", "caption": "Finish and close"}
                                 ],
                                 "caption": "Select next page"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Show external element value",
+                                "onClick": "echo $TextBox;"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Show next page",
+                                "onClick": "echo $NextPage;"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Update Page 2 Label",
+                                "onClick": "PT_UpdateParameter($id, 'Page2Label', 'caption', 'This is still page 2, but better and with blackjack');"
                             }
                         ],
                         "nextPage": "echo $NextPage;"
@@ -128,6 +143,16 @@
                                 "type": "NumberSpinner",
                                 "name": "NumberSpinner",
                                 "caption": "Some spinner on page 1"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Show external element value",
+                                "onClick": "echo $TextBox;"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Show next page",
+                                "onClick": "echo $NextPage;"
                             }
                         ],
                         "onUndo": "echo \"Undoing page 1 with spinner value: $NumberSpinner\";",
@@ -139,12 +164,18 @@
                         "items": [
                             {
                                 "type": "Label",
+                                "name": "Page2Label",
                                 "caption": "This is page 2, no 'Undo' available"
                             },
                             {
                                 "type": "NumberSpinner",
                                 "name": "NumberSpinner",
                                 "caption": "Another spinner on page 2, same name as on page 1, but different instance"
+                            },
+                            {
+                                "type": "Button",
+                                "caption": "Show next page",
+                                "onClick": "echo $NextPage;"
                             }
                         ],
                         "onConfirm": "echo 'Confirmed page 2';"
@@ -161,6 +192,11 @@
                     }
                 ]
             }
+        },
+        {
+            "type": "ValidationTextBox",
+            "name": "TextBox",
+            "caption": "Some external element"
         }
     ]
 }
