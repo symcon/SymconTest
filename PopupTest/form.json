@@ -129,7 +129,7 @@
                                 "onClick": "PT_UpdateParameter($id, 'Page2Label', 'caption', 'This is still page 2, but better and with blackjack');"
                             }
                         ],
-                        "nextPage": "echo $NextPage;"
+                        "nextPage": "return $NextPage;"
                     },
                     {
                         "name": "page1",
@@ -184,10 +184,12 @@
                         "name": "page3",
                         "caption": "Page 3",
                         "items": [
-                            {
-                                "type": "Label",
-                                "caption": "This is page 3, last page"
-                            }
+                            "return [",
+                            "    [",
+                            "        'type' => 'Label',",
+                            "        'caption' => 'This is the generic third page ' . ($TextBox ?? 'no textbox') . ' and spinner value ' . ($NumberSpinner ?? 'no spinner') . ' ID: ' . ($id ?? 'no id')",
+                            "    ]",
+                            "];"
                         ]
                     }
                 ]
