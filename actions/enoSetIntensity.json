@@ -1,0 +1,32 @@
+{
+  "id": "{07B81BF1-65BA-490F-3C84-DECBEB56804F}",
+  "caption": "Set Intensity",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "INTENSITY",
+      "caption": "Intensity"
+    }
+  ],
+  "action": [
+    "ENO_SetIntensity($_IPS['TARGET'], $_IPS['INTENSITY']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{9B1F32CD-CD74-409A-9820-E5FFF064449A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Intensity": "Setze Intensität",
+      "Intensity": "Intensität",
+      "Set intensity on {INTENSITY}" : "Setze Intensität auf {INTENSITY}",
+      "Set the intensity of the target device on a defined value": "Setzte die Intensität des Zielgeräts auf einen bestimmten Wert"
+    }
+  },
+  "format": "Set intensity on {INTENSITY}",
+  "category": "target",
+  "description": "Set the intensity of the target device on a defined value"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "{8E0011E9-A708-908C-9651-49FD8A9E4103}",
+  "caption": "Send text",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "MSCK_SendText($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{BAB408E0-0A0F-48C3-B14E-9FB2FA81F66A}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send text": "Sende Text",
+      "Send \"{TEXT}\" on Multicast Socket" : "Sende \"{TEXT}\" auf Multicast Socket",
+      "Send text on the target Multicast Socket": "Sende Text auf dem Ziel Multicast Socket"
+    }
+  },
+  "format": "Send \"{TEXT}\" on Multicast Socket",
+  "category": "target",
+  "description": "Send text on the target Multicast Socket"
+}

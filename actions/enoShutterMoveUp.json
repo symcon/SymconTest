@@ -1,0 +1,24 @@
+{
+  "id": "{74F9EB71-93CD-E276-1F4E-1A38F3CE01F7}",
+  "caption": "Move Shutter Up",
+  "form": [],
+  "action": [
+    "ENO_ShutterMoveUp($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92A9}",
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92AA}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Move Shutter Up": "Fahre Rollladen hoch",
+      "Move the target shutter up": "Fahre den Ziel-Rollladen hoch"
+    }
+  },
+  "category": "target",
+  "description": "Move the target shutter up"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "{271C73F1-2EC9-60E6-C28E-E8CFC6954E6C}",
+  "caption": "Set Channel",
+  "form": [
+    {
+      "type": "NumberSpinner",
+      "name": "CHANNEL",
+      "caption": "Channel"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "VALUE",
+      "caption": "Value"
+    }
+  ],
+  "action": [
+    "DMX_SetChannel($_IPS['TARGET'], $_IPS['CHANNEL'], $_IPS['VALUE']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{E19C2E41-7347-4A3B-B7D9-A9A88E0D133E}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Set Channel": "Kanal auf Wert setzen",
+      "Channel": "Kanal",
+      "Value": "Wert",
+      "seconds": "Sekunden",
+      "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}": "Überblende {CHANNEL, select, 0 {alle Kanäle} other {Kanal {CHANNEL}}} auf Wert {VALUE}",
+      "Set a channel of the target device to a defined value": "Setze einen Kanal des Zielgeräts auf einen bestimmten Wert"
+    }
+  },
+  "format": "Set {CHANNEL, select, 0 {all Channels} other {Channel {CHANNEL}}} on Value {VALUE}",
+  "category": "target",
+  "description": "Set a channel of the target device to a defined value"
+}

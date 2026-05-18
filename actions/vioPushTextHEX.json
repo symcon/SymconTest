@@ -1,0 +1,31 @@
+{
+  "id": "{63215AE7-2756-2193-0CF9-16313C76B728}",
+  "caption": "Push text HEX",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text in HEX"
+    }
+  ],
+  "action": [
+    "VIO_PushTextHEX($_IPS['TARGET'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Push text HEX": "Versende Text HEX",
+      "Push text \"{TEXT}\" on VirtualIO" : "Versende Text \"{TEXT}\" auf VirtualIO",
+      "Push text HEX on the target VirtualIO": "Versende HEX-Text über die Ziel VirtualIO"
+    }
+  },
+  "format": "Push text \"{TEXT}\" on VirtualIO",
+  "category": "target",
+  "description": "Push text HEX on the target VirtualIO"
+}
