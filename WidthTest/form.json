@@ -87,6 +87,73 @@
             "type": "ValidationTextBox",
             "caption": "Some ValidationTextBox",
             "width": "222px"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Some RowLayout",
+            "items": [
+                {
+                    "type": "SelectObject",
+                    "caption": "Some SelectObject",
+                    "width": "150%"
+                },
+                {
+                    "type": "SelectObject",
+                    "caption": "Some SelectObject",
+                    "width": "150%"
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Some Button",
+            "width": "30%"
+        },
+        {
+            "type": "Button",
+            "caption": "Some Button"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Some RowLayout",
+            "items": [
+                {
+                    "type": "Button",
+                    "caption": "Some Button",
+                    "width": "30%"
+                },
+                {
+                    "type": "Button",
+                    "caption": "Some Button",
+                    "width": "30%"
+                }
+            ]
+        },
+        {
+            "type": "HorizontalSlider",
+            "caption": "Some HorizontalSlider",
+            "width": "30%"
+        },
+        {
+            "type": "HorizontalSlider",
+            "caption": "Some HorizontalSlider"
+        },
+        {
+            "type": "RowLayout",
+            "caption": "Some RowLayout",
+            "items": [
+                {
+                    "type": "HorizontalSlider",
+                    "caption": "Some HorizontalSlider",
+                    "width": "30%"
+                },
+                {
+                    "type": "HorizontalSlider",
+                    "caption": "Some HorizontalSlider",
+                    "width": "30%"
+                }
+            ]
         }
+
     ]
 }
