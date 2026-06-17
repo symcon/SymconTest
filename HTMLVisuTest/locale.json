@@ -2,7 +2,8 @@
     "translations": {
         "de": { 
             "Counter:": "Zähler:",
-            "ducks": "Enten"
+            "ducks": "Enten",
+            "Important Info": "Wichtige Informationen"
         }
     }
 }

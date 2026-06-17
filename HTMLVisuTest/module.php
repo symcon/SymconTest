@@ -31,7 +31,7 @@
         public function GetVisualizationTile() {
             return  '<script>function handleMessage(data) { document.getElementById("display").innerText = data; }</script>' .
                     '<button onClick="requestAction(\'Add\', -1);">-1</button>' . 
-                    '<div>Counter:</div>' .
+                    '<div title="Important Info">Counter:</div>' .
                     '<div id="display">' . $this->GetValue('Counter') . '</div>' .
                     '<div>ducks</div>' .
                     '<button onClick="requestAction(\'Add\', +1);">+1</button>';
