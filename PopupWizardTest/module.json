@@ -1,0 +1,13 @@
+{
+	"id": "{F66F1A1C-5CDE-4B89-A0BE-F2ADF267891B}",
+	"name": "PopupWizardTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": [
+		"PopupWizard Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "PWT"
+}
