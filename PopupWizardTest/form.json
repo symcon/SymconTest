@@ -131,6 +131,54 @@
             "type": "Button",
             "caption": "Show Wizard",
             "onClick": "PWT_ShowPopup($id);"
+        },
+        {
+            "type": "PopupButton",
+            "name": "WizardValidateButton",
+            "caption": "Show Validate Wizard",
+            "popup": {
+                "caption": "Some title",
+                "closeCaption": "Close this dialog",
+                "items": [
+                    {
+                        "type": "Label",
+                        "caption": "This is a wizard popup"
+                    }
+                ],
+                "pages": [
+                    {
+                        "caption": "Start",
+                        "items": [
+                            {
+                                "type": "Label",
+                                "caption": "Next page: Selection"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Validate Form Fields",
+                        "items": [
+                            {
+                                "type": "ValidationTextBox",
+                                "name": "TextBox",
+                                "validate": "aaa",
+                                "caption": "Only 'aaa' is valid"
+                            }
+                        ]
+                    },
+                    {
+                        "caption": "Custom Validation",
+                        "items": [
+                            {
+                                "type": "NumberSpinner",
+                                "name": "BiggerTenSpinner",
+                                "caption": "Valid if > 10"
+                            }
+                        ],
+                        "validate": "if ($BiggerTenSpinner <= 10) { return 'Value must be bigger than 10'; }"
+                    }
+                ]
+            }
         }
     ]
 }
