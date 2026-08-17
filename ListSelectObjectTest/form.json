@@ -1,0 +1,23 @@
+{
+    "actions": [
+        {
+            "type": "List",
+            "name": "Variables",
+            "caption": "Variables with action",
+            "add": true,
+            "delete": true,
+            "columns": [
+                {
+                    "name": "variableID",
+                    "caption": "Variable",
+                    "width": "auto",
+                    "add": 1,
+                    "edit": {
+                        "type": "SelectVariable",
+                        "requiredAction": 1
+                    }
+                }
+            ]
+        }
+    ]
+}

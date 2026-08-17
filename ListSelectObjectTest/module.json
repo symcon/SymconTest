@@ -1,0 +1,14 @@
+{
+    "id": "{09039E12-7DC6-D5AA-36D8-5D43557C626D}",
+    "name": "ListSelectObjectTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "List Test (Select Object)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "LSOT"
+}
