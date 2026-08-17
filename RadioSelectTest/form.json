@@ -35,6 +35,17 @@
                     "caption": "InvalidModule", "value": "{NOT-INSTALLED-GUID}"
                 }
             ]
+        },
+        {
+            "type": "RadioButtonGroup",
+            "name": "DeviceType",
+            "caption": "Einheit",
+            "options": [
+                { "caption": "Bit (1Bit)", "value": 0 },
+                { "caption": "Bits (2Bit)", "value": 1 },
+                { "caption": "Bits (4Bit)", "value": 2 },
+                { "caption": "Byte (8Bit)", "value": 3 }
+            ]
         }
     ]
 }
