@@ -204,6 +204,49 @@
             "type": "Button",
             "caption": "Update Wizard NumberSpinner",
             "onClick": "PT_UpdateParameter($id, 'NumberSpinner', 'value', 42);"
+        },
+        {
+            "type": "PopupButton",
+            "name": "InitialPageButton",
+            "caption": "Open at defined page",
+            "popup": {
+                "closeCaption": "Close this dialog",
+                "items": [],
+                "initialPage": 1,
+                "pages": [
+                    {
+                        "caption": "Page 1"
+                    },
+                    {
+                        "caption": "Page 2"
+                    },
+                    {
+                        "name": "page3",
+                        "caption": "Page 3"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "RadioButtonGroup",
+            "caption": "Where to start?",
+            "name": "StartPage",
+            "value": 1,
+            "onChange": "PT_UpdateParameter($id, 'InitialPageButton', 'popup.initialPage', $StartPage);",
+            "options": [
+                {
+                    "caption": "Page 1",
+                    "value": 0
+                },
+                {
+                    "caption": "Page 2",
+                    "value": 1
+                },
+                {
+                    "caption": "Page 3",
+                    "value": "page3"
+                }
+            ]
         }
     ]
 }
