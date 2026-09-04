@@ -1,0 +1,60 @@
+<?php
+
+    class ConfiguratorHighLoadTest extends IPSModule
+    {
+
+        public function Create() {
+            //Never delete this line!
+            parent::Create();
+
+        }
+
+
+
+        public function GetConfigurationForm() {
+            $values = [];
+            for ($i = 0; $i < 2000; $i++) {
+                $values[] = [
+                    "name" => "Device $i",
+                    "address" => "$i/34/56",
+                    "create" => [
+                        [
+                            "moduleID" => "{D62B95D3-0C5E-406E-B1D9-8D102E50F64B}",
+                            "configuration" => [
+                                "GroupAddress1" => $i,
+                                "GroupAddress2" => 34,
+                                "GroupAddress3" => 56,
+                                "GroupFunction" => "32bitCounter"
+                            ],
+                        ],
+                        [
+                            "moduleID" => "{1C902193-B044-43B8-9433-419F09C641B8}",
+                            "configuration" => [
+                                "GatewayMode" => 3,
+                                "SendLimit" => 42
+                            ]
+                        ],
+                        [
+                            "moduleID" => "{6DC3D946-0D31-450F-A8C6-C42DB8D7D4F1}",
+                            "configuration" => [
+                                "Open" => false,
+                                "Port" => "COM3",
+                                "BaudRate" => "19200",
+                                "DataBits" => "8",
+                                "StopBits" => "1",
+                                "Parity" => "Even"
+                            ]
+                        ]
+                    ]
+                ];
+            }
+            return json_encode([
+                "actions" => [
+                    [
+                        "type" => "Configurator",
+                        "values" => $values
+                    ]
+                ]
+            ]);
+        }
+    }

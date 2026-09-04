@@ -245,6 +245,10 @@
                 {
                     "caption": "Page 3",
                     "value": "page3"
+                },
+                {
+                    "caption": "PHP Code -> page3",
+                    "value": "return 'page3';"
                 }
             ]
         }

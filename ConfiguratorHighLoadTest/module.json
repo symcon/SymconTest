@@ -1,0 +1,14 @@
+{
+    "id": "{7ABCCF49-1503-44C5-AB31-8A4B2C8737B3}",
+    "name": "ConfiguratorHighLoadTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ConfiguratorTest (High Load)"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "CHL"
+}
