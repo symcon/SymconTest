@@ -1,0 +1,18 @@
+{
+    "elements": [
+        {
+            "type": "PopupButton",
+            "caption": "Open me",
+            "popup": {
+                "caption": "Toast Test",
+                "items": [],
+                "buttons": [
+                    {
+                        "caption": "Show long toast",
+                        "onClick": "echo 'This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line. This is a long toast message. It is shown over multiple lines because it is too long to fir in a single line.';"
+                    }
+                ]
+            }
+        }
+    ]
+}

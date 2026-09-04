@@ -1,0 +1,14 @@
+{
+    "id": "{1DF83731-C2B1-D9DF-8DAD-020610ACE82F}",
+    "name": "ToastTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "Toast Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "TT"
+}
