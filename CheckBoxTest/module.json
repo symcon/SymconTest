@@ -1,0 +1,14 @@
+{
+	"id": "{6F89CB27-5E4E-4D6D-9C25-3C4391182049}",
+	"name": "CheckBoxTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"Check Box Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "CBT"
+}

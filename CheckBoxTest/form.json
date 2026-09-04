@@ -1,0 +1,28 @@
+{
+    "actions": [
+        {
+            "type": "CheckBox",
+            "label": "Show more",
+            "itemsPosition": 0,
+            "items": [
+                {
+                    "name": "DaSpinna",
+                    "type": "NumberSpinner",
+                    "caption": "Spin me"
+                }
+            ]
+        },
+        {
+            "type": "CheckBox",
+            "label": "Show more to the right",
+            "itemsPosition": 1,
+            "items": [
+                {
+                    "name": "DaBettaSpinna",
+                    "type": "NumberSpinner",
+                    "caption": "Spin me hard"
+                }
+            ]
+        }
+    ]
+}

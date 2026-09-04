@@ -218,7 +218,65 @@
                 }
             ],
             "onChange": "STSE_ChangeProfileType($id, $SelectDynamicProfile);"
+        },
+        {
+            "name": "SelectItems",
+            "type": "Select",
+            "caption": "Select with items",
+            "options": [
+                {
+                    "caption": "NumberSpinner",
+                    "value": 0,
+                    "items": [
+                        {
+                            "name": "SelectSpinner",
+                            "type": "NumberSpinner",
+                            "caption": "Spin me"
+                        }
+                    ]
+                },
+                {
+                    "caption": "CheckBox",
+                    "value": 1,
+                    "items": [
+                        {
+                            "name": "SelectChecker",
+                            "type": "CheckBox",
+                            "caption": "Check me"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SelectItems2",
+            "type": "Select",
+            "caption": "Select with items to the right",
+            "itemsPosition": 1,
+            "options": [
+                {
+                    "caption": "NumberSpinner",
+                    "value": 0,
+                    "items": [
+                        {
+                            "name": "SelectSpinner",
+                            "type": "NumberSpinner",
+                            "caption": "Spin me"
+                        }
+                    ]
+                },
+                {
+                    "caption": "CheckBox",
+                    "value": 1,
+                    "items": [
+                        {
+                            "name": "SelectChecker",
+                            "type": "CheckBox",
+                            "caption": "Check me"
+                        }
+                    ]
+                }
+            ]
         }
-
     ]
 }

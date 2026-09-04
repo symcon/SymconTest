@@ -46,6 +46,65 @@
                 { "caption": "Bits (4Bit)", "value": 2 },
                 { "caption": "Byte (8Bit)", "value": 3 }
             ]
+        },
+        {
+            "name": "SelectItems",
+            "type": "RadioButtonGroup",
+            "caption": "Radios with items",
+            "options": [
+                {
+                    "caption": "NumberSpinner",
+                    "value": 0,
+                    "items": [
+                        {
+                            "name": "SelectSpinner",
+                            "type": "NumberSpinner",
+                            "caption": "Spin me"
+                        }
+                    ]
+                },
+                {
+                    "caption": "CheckBox",
+                    "value": 1,
+                    "items": [
+                        {
+                            "name": "SelectChecker",
+                            "type": "CheckBox",
+                            "caption": "Check me"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SelectItemsRight",
+            "type": "RadioButtonGroup",
+            "caption": "Radios with items to the right",
+            "itemsPosition": 1,
+            "options": [
+                {
+                    "caption": "NumberSpinner",
+                    "value": 0,
+                    "items": [
+                        {
+                            "name": "SelectSpinner",
+                            "type": "NumberSpinner",
+                            "caption": "Spin me"
+                        }
+                    ]
+                },
+                {
+                    "caption": "CheckBox",
+                    "value": 1,
+                    "items": [
+                        {
+                            "name": "SelectChecker",
+                            "type": "CheckBox",
+                            "caption": "Check me"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
