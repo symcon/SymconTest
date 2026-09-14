@@ -1,0 +1,32 @@
+{
+  "id": "{49D105CA-6EAB-8B9A-4C44-6B43F9593B19}",
+  "caption": "Send message",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "MESSAGE",
+      "caption": "Message"
+    }
+  ],
+  "action": [
+    "WSC_SendMessage($_IPS['TARGET'], $_IPS['MESSAGE']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{3AB77A94-3467-4E66-8A73-840B4AD89582}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Message": "Nachricht",
+      "Send message": "Sende Nachricht",
+      "Send \"{MESSAGE}\" on WebSocket Client" : "Sende \"{MESSAGE}\" auf WebSocket Client",
+      "Send message on the target WebSocket Client": "Sende Nachricht über den Ziel WebSocket Client"
+    }
+  },
+  "format": "Send \"{MESSAGE}\" on WebSocket Client",
+  "category": "target",
+  "description": "Send message on the target WebSocket Client"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "{D1974C67-09A0-C6C3-A766-6B301E152BAC}",
+  "caption": "Move Shutter Down",
+  "form": [],
+  "action": [
+    "ENO_ShutterMoveDown($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92A9}",
+      "{1463CAE7-C7D5-4623-8539-DD7ADA6E92AA}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Move Shutter Down": "Fahre Rollladen runter",
+      "Move the target shutter down": "Fahre den Ziel-Rollladen runter"
+    }
+  },
+  "category": "target",
+  "description": "Move the target shutter down"
+}

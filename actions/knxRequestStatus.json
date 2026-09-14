@@ -1,0 +1,23 @@
+{
+  "id": "{8862049B-8B59-4A1C-7BA6-C42A41EB2101}",
+  "caption": "Request status",
+  "form": [],
+  "action": [
+    "KNX_RequestStatus($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{24A9D68D-7B98-4D74-9BAE-3645D435A9EF}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Request status": "Frage Status an",
+      "Request status of the target device": "Frage Status des Zielgeräts an"
+    }
+  },
+  "category": "target",
+  "description": "Request status of the target device"
+}

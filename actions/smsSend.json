@@ -1,0 +1,37 @@
+{
+  "id": "{91F87B8B-671B-BCFF-C58B-FF45390C62CA}",
+  "caption": "Send SMS",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "NUMBER",
+      "caption": "Number"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    }
+  ],
+  "action": [
+    "SMS_Send($_IPS['TARGET'], $_IPS['NUMBER'], $_IPS['TEXT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{96102E00-FD8C-4DD3-A3C2-376A44895AB1}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Send SMS": "Sende SMS",
+      "Number": "Nummer",
+      "Send \"{TEXT}\" an {NUMBER}" : "Sende \"{TEXT}\" an {NUMBER}",
+      "Send SMS on the target device": "Sende SMS auf das Zielgerät"
+    }
+  },
+  "format": "Send \"{TEXT}\" an {NUMBER}",
+  "category": "target",
+  "description": "Send SMS on the target device"
+}

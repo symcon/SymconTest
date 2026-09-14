@@ -1,0 +1,41 @@
+{
+  "id": "{73938D40-1AA4-E20F-E17A-90CBF9277D9B}",
+  "caption": "Push paket HEX",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text in HEX"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "NumberSpinner",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "VIO_PushPaketHEX($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Push paket HEX": "Versende Paket HEX",
+      "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Versende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Push packet HEX on the target VirtualIO": "Versende HEX-Paket über die Ziel VirtualIO"
+    }
+  },
+  "format": "Push paket \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Push packet HEX on the target VirtualIO"
+}
