@@ -1,0 +1,80 @@
+{
+    "elements": [
+        {
+            "type": "Label",
+            "caption": "Every column of this list generates its value for a new entry automatically via an \"add\" strategy. Add a few entries and check the generated values."
+        },
+        {
+            "type": "List",
+            "name": "Entries",
+            "caption": "Generated Values",
+            "rowCount": 8,
+            "add": true,
+            "delete": true,
+            "changeOrder": true,
+            "onAdd": "LAST_ShowAdded($id, $Entries);",
+            "columns": [
+                {
+                    "caption": "ID (increment, step 10)",
+                    "name": "ID",
+                    "width": "180px",
+                    "add": {
+                        "strategy": "increment",
+                        "step": 10
+                    },
+                    "edit": {
+                        "type": "NumberSpinner"
+                    }
+                },
+                {
+                    "caption": "Token (random-string, 16)",
+                    "name": "Token",
+                    "width": "auto",
+                    "add": {
+                        "strategy": "random-string",
+                        "length": 16
+                    },
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                },
+                {
+                    "caption": "Dice (random-integer, 1-6)",
+                    "name": "Dice",
+                    "width": "200px",
+                    "align": "right",
+                    "add": {
+                        "strategy": "random-integer",
+                        "min": 1,
+                        "max": 6
+                    },
+                    "edit": {
+                        "type": "NumberSpinner"
+                    }
+                },
+                {
+                    "caption": "GUID (guid)",
+                    "name": "GUID",
+                    "width": "320px",
+                    "add": {
+                        "strategy": "guid"
+                    },
+                    "edit": {
+                        "type": "ValidationTextBox"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Label",
+            "caption": "The \"Dice\" column only allows six unique values. Once all of them are in use, adding another entry fails with an error."
+        }
+    ],
+    "actions": [
+        {
+            "type": "Button",
+            "caption": "Show saved entries",
+            "onClick": "echo LAST_GetEntries($id);"
+        }
+    ]
+}

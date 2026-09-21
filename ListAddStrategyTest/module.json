@@ -1,0 +1,14 @@
+{
+	"id": "{C8398190-94BE-4B40-BAD7-B5FBF7C9F8EF}",
+	"name": "ListAddStrategyTest",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"List Test (Add Strategies)"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "LAST"
+}
