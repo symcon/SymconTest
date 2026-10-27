@@ -1,0 +1,23 @@
+{
+  "id": "{7767FCCE-8B5D-403E-8514-357893E0A551}",
+  "caption": "Update Image",
+  "form": [],
+  "action": [
+    "IG_UpdateImage($_IPS['TARGET']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{5A5D5DBD-53AB-4826-8B09-71E9E4E981E5}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Update Image": "Aktualisiere Bild",
+      "Update image on the target device": "Aktualisiere das Bild des Zielgeräts"
+    }
+  },
+  "category": "target",
+  "description": "Update image on the target device"
+}

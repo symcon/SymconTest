@@ -1,0 +1,41 @@
+{
+  "id": "{0EF5D1AD-3E66-DFA3-AF91-7C192018576A}",
+  "caption": "Push packet",
+  "form": [
+    {
+      "type": "ValidationTextBox",
+      "name": "TEXT",
+      "caption": "Text"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTIP",
+      "caption": "ClientIP"
+    },
+    {
+      "type": "ValidationTextBox",
+      "name": "CLIENTPORT",
+      "caption": "ClientPort"
+    }
+  ],
+  "action": [
+    "VIO_PushPacket($_IPS['TARGET'], $_IPS['TEXT'], $_IPS['CLIENTIP'], $_IPS['CLIENTPORT']);"
+  ],
+  "restrictions": {
+    "objectType": [ 1 ],
+    "moduleID": [
+      "{6179ED6A-FC31-413C-BB8E-1204150CF376}"
+    ],
+    "includeEnvironments": ["TestCommands", "Default"]
+  },
+  "locale": {
+    "de": {
+      "Push packet": "Versende Paket",
+      "Push packet \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO" : "Versende Paket \"{TEXT}\" über {CLIENTIP}:{CLIENTPORT} auf VirtualIO",
+      "Push packet on the target VirtualIO": "Versende Paket über die Ziel VirtualIO"
+    }
+  },
+  "format": "Push packet \"{TEXT}\" on {CLIENTIP}:{CLIENTPORT} on VirtualIO",
+  "category": "target",
+  "description": "Push packet on the target VirtualIO"
+}
