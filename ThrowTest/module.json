@@ -1,0 +1,14 @@
+{
+	"id": "{18BD1732-B1E4-4476-8D46-11134709E1D3}",
+	"name": "ThrowTest",
+	"type": 3,
+	"vendor": "",
+	"aliases":
+	[
+		"Throw Test"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "THT"
+}
