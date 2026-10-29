@@ -1,0 +1,58 @@
+{
+    "elements": [
+        {
+            "type": "ExpansionPanel",
+            "caption": "Fields inside the panel",
+            "items": [
+                {
+                    "type": "NumberSpinner",
+                    "name": "Number",
+                    "caption": "Number"
+                },
+                {
+                    "type": "List",
+                    "name": "List",
+                    "caption": "List",
+                    "rowCount": 5,
+                    "add": true,
+                    "delete": true,
+                    "columns": [
+                        {
+                            "name": "Name",
+                            "caption": "Name",
+                            "width": "auto",
+                            "add": "",
+                            "edit": {
+                                "type": "ValidationTextBox"
+                            }
+                        },
+                        {
+                            "name": "Value",
+                            "caption": "Value",
+                            "width": "100px",
+                            "add": 0,
+                            "edit": {
+                                "type": "NumberSpinner"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Button",
+            "caption": "Set NumberSpinner to 42",
+            "onClick": "EPU_UpdateNumber($id, 42);"
+        },
+        {
+            "type": "Button",
+            "caption": "Set List to fixed values",
+            "onClick": "EPU_UpdateList($id, json_encode([['Name' => 'Alpha', 'Value' => 10], ['Name' => 'Beta', 'Value' => 20]]));"
+        },
+        {
+            "type": "Button",
+            "caption": "Set List to random values",
+            "onClick": "EPU_UpdateListRandom($id);"
+        }
+    ]
+}

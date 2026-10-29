@@ -1,0 +1,14 @@
+{
+    "id": "{74767A71-8958-4F58-9879-568D5631C475}",
+    "name": "ExpansionPanelUpdateTest",
+    "type": 3,
+    "vendor": "",
+    "aliases": 
+    [
+        "ExpansionPanel Update Test"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "EPU"
+}
