@@ -1,0 +1,18 @@
+{
+    "id": "{A6D2F2E1-4B14-4C9E-8C2D-1D6D25A1F101}",
+    "name": "CompatibleParentSplitterA",
+    "type": 2,
+    "vendor": "",
+    "aliases": [
+        "Compatible Parent Splitter A"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [
+        "{D9A5C6B4-7E47-4F21-BF50-409058D4C434}"
+    ],
+    "implemented": [
+        "{EAB6D7C5-8F58-4032-C061-51A169E5D545}"
+    ],
+    "prefix": "CPSA",
+    "url": "https://symcon.de"
+}

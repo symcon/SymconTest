@@ -1,0 +1,18 @@
+{
+    "id": "{C8F4B5A3-6D36-4E10-AE4F-3F8F47C3B323}",
+    "name": "CompatibleParentDevice",
+    "type": 3,
+    "vendor": "",
+    "aliases": [
+        "Compatible Parent Device"
+    ],
+    "parentRequirements": [
+        "{EAB6D7C5-8F58-4032-C061-51A169E5D545}"
+    ],
+    "childRequirements": [],
+    "implemented": [
+        "{D9A5C6B4-7E47-4F21-BF50-409058D4C434}"
+    ],
+    "prefix": "CPD",
+    "url": "https://symcon.de"
+}

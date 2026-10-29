@@ -1,0 +1,18 @@
+{
+    "id": "{B7E3A4F2-5C25-4D0F-9D3E-2E7E36B2A212}",
+    "name": "CompatibleParentSplitterB",
+    "type": 2,
+    "vendor": "",
+    "aliases": [
+        "Compatible Parent Splitter B"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [
+        "{D9A5C6B4-7E47-4F21-BF50-409058D4C434}"
+    ],
+    "implemented": [
+        "{EAB6D7C5-8F58-4032-C061-51A169E5D545}"
+    ],
+    "prefix": "CPSB",
+    "url": "https://symcon.de"
+}
